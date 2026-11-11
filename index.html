@@ -3,51 +3,187 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gabriel Grans | Portfolio</title>
+  <title>Gabriel Grans | ServiceNow Developer & Infraestrutura</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body { font-family: Arial, sans-serif; background: #0f172a; color: #e2e8f0; line-height: 1.6; }
-    header { text-align: center; padding: 80px 20px 40px; }
-    header h1 { font-size: 2.5rem; color: #38bdf8; }
+    nav { background: #1e293b; padding: 14px 20px; text-align: center; position: sticky; top: 0; }
+    nav a { color: #94a3b8; text-decoration: none; margin: 0 12px; font-size: 0.95rem; }
+    nav a:hover { color: #38bdf8; }
+    header { text-align: center; padding: 70px 20px 30px; }
+    header h1 { font-size: 2.6rem; color: #38bdf8; }
     header p { margin-top: 10px; font-size: 1.1rem; color: #94a3b8; }
-    section { max-width: 800px; margin: 0 auto; padding: 30px 20px; }
+    section { max-width: 900px; margin: 0 auto; padding: 30px 20px; }
     h2 { color: #38bdf8; margin-bottom: 15px; }
-    .projeto { background: #1e293b; padding: 20px; border-radius: 10px; margin-bottom: 15px; }
-    .projeto h3 { margin-bottom: 8px; }
-    .projeto a { color: #38bdf8; }
+    .card { background: #1e293b; padding: 20px; border-radius: 10px; margin-bottom: 15px; }
+    .card h3 { margin-bottom: 8px; }
+    .card a { color: #38bdf8; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
+    .tags span { display: inline-block; background: #0f172a; border: 1px solid #38bdf8; color: #38bdf8; padding: 3px 10px; border-radius: 20px; font-size: 0.85rem; margin: 3px 3px 3px 0; }
+    .data { color: #94a3b8; font-size: 0.9rem; }
+    ul { padding-left: 20px; }
     footer { text-align: center; padding: 40px 20px; color: #94a3b8; }
     footer a { color: #38bdf8; margin: 0 10px; }
   </style>
 </head>
 <body>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#competencias">Competências</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#certificacoes">Certificações</a>
+    <a href="#experiencia">Experiência</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
   <header>
-    <h1>Gabriel Grans</h1>
-    <p>Sua profissão ou área aqui</p>
+    <h1>Gabriel Santos Grans</h1>
+    <p>ServiceNow Developer | Analista de Infraestrutura | Cloud</p>
+    <p>São Paulo, SP</p>
   </header>
 
-  <section>
+  <section id="sobre">
     <h2>Sobre mim</h2>
-    <p>Escreva aqui uma breve apresentação sobre você, o que faz e o que está aprendendo.</p>
+    <div class="card">
+      <p>Profissional de TI com 5 anos de experiência em infraestrutura, administração de ambientes corporativos e suporte técnico, e com atuação no desenvolvimento de soluções na plataforma ServiceNow. Trabalho com Microsoft 365, Intune, redes, servidores, cloud e segurança, e também com automação de processos, scripting, integrações via REST e construção de interfaces na plataforma.</p>
+      <p style="margin-top:10px;">Tenho um perfil de aprendizado constante: todas as minhas certificações vieram de muito estudo, e continuo evoluindo todos os dias.</p>
+    </div>
   </section>
 
-  <section>
+  <section id="competencias">
+    <h2>Competências</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>ServiceNow</h3>
+        <div class="tags">
+          <span>Flow Designer</span><span>Business Rules</span><span>Client Scripts</span>
+          <span>Script Includes</span><span>UI Policies</span><span>Service Catalog</span>
+          <span>App Engine Studio</span><span>Custom Tables</span><span>IntegrationHub</span>
+          <span>REST APIs</span><span>ACLs</span><span>ATF</span>
+          <span>Dashboards</span><span>Performance Analytics</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Desenvolvimento e Interface</h3>
+        <div class="tags">
+          <span>JavaScript</span><span>GlideRecord</span><span>GlideAjax</span>
+          <span>HTML</span><span>CSS</span><span>AngularJS</span>
+          <span>Jelly Script</span><span>AJAX</span><span>jQuery</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Infraestrutura e Cloud</h3>
+        <div class="tags">
+          <span>Microsoft 365</span><span>Intune</span><span>Exchange</span>
+          <span>Teams</span><span>SharePoint</span><span>Defender for Endpoint</span>
+          <span>VLANs</span><span>VPN</span><span>Telefonia IP/PABX</span>
+          <span>Azure</span><span>Oracle Cloud</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos">
     <h2>Projetos</h2>
-    <div class="projeto">
-      <h3>Nome do projeto 1</h3>
-      <p>Descrição curta do que o projeto faz.</p>
+    <div class="card">
+      <h3>Nome do projeto 1 (ServiceNow)</h3>
+      <p>Descreva aqui o problema que o projeto resolve e o que você construiu.</p>
+      <div class="tags"><span>Flow Designer</span><span>Custom Table</span></div>
       <a href="#">Ver projeto</a>
     </div>
-    <div class="projeto">
-      <h3>Nome do projeto 2</h3>
-      <p>Descrição curta do que o projeto faz.</p>
+    <div class="card">
+      <h3>Nome do projeto 2 (ServiceNow)</h3>
+      <p>Descreva aqui o problema que o projeto resolve e o que você construiu.</p>
+      <div class="tags"><span>AngularJS</span><span>HTML/CSS</span></div>
       <a href="#">Ver projeto</a>
+    </div>
+    <div class="card">
+      <h3>Nome do projeto 3 (Infraestrutura)</h3>
+      <p>Por exemplo: segmentação de VLANs, script de auditoria no Defender, etc.</p>
+      <div class="tags"><span>Redes</span><span>Segurança</span></div>
     </div>
   </section>
 
-  <footer>
-    <a href="https://github.com/GabrielGrans">GitHub</a>
-    <a href="#">LinkedIn</a>
-    <a href="mailto:seuemail@exemplo.com">E-mail</a>
+  <section id="certificacoes">
+    <h2>Certificações</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>ServiceNow</h3>
+        <ul>
+          <li>Certified System Administrator (CSA)</li>
+          <li>Micro-Certification: Flows</li>
+          <li>Micro-Certification: Automated Test Framework (ATF)</li>
+          <li>Delivery Accreditation: Platform Security and Identity</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Microsoft</h3>
+        <ul>
+          <li>Azure Fundamentals (AZ-900)</li>
+          <li>Security, Compliance, and Identity Fundamentals (SC-900)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Oracle</h3>
+        <ul>
+          <li>Data Platform Foundations Associate</li>
+          <li>Cloud Infrastructure Foundations Associate</li>
+          <li>AI Foundations Associate</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Cibersegurança</h3>
+        <ul>
+          <li>Fortinet Certified Associate Cybersecurity</li>
+          <li>Fortinet Certified Fundamentals Cybersecurity</li>
+          <li>Cisco: Analista de Cibersegurança Júnior</li>
+          <li>Cisco: Defesa de Rede</li>
+          <li>Red Team Leaders: CRTOM e CCEP</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="experiencia">
+    <h2>Experiência</h2>
+    <div class="card">
+      <h3>Analista de Infraestrutura Pleno | Chaintech</h3>
+      <p class="data">02/2026 - 10/2026</p>
+      <ul>
+        <li>Administração do Microsoft 365 (Admin Center, Exchange, Teams e SharePoint)</li>
+        <li>Gestão de dispositivos e políticas de conformidade com Intune</li>
+        <li>Segurança com Defender for Endpoint e scripts de auditoria e bloqueio de aplicações não homologadas</li>
+        <li>Evolução da rede local, com segmentação de VLANs para dados, Wi-Fi e CFTV</li>
+        <li>Gestão de telefonia corporativa IP/PABX</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Analista JR | Rede D'Or - OncoStar</h3>
+      <p class="data">08/2023 - 02/2026</p>
+      <ul>
+        <li>Suporte a colaboradores e resolução de incidentes</li>
+        <li>Monitoramento do CPD, servidores e desempenho da infraestrutura</li>
+        <li>Participação em planejamento e expansão de rede, dados e servidores</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Experiências anteriores</h3>
+      <p>HexalT (2023), Teleperformance (2021-2022) e Sitel Group (2019-2020), em suporte técnico e infraestrutura.</p>
+    </div>
+    <div class="card">
+      <h3>Formação</h3>
+      <p>Tecnologia em Análise e Desenvolvimento de Sistemas | UNINOVE</p>
+    </div>
+  </section>
+
+  <footer id="contato">
+    <h2>Contato</h2>
+    <p>
+      <a href="https://www.linkedin.com/in/gabrielgrans/">LinkedIn</a>
+      <a href="https://github.com/GabrielGrans">GitHub</a>
+      <a href="mailto:gabrielgsti@outlook.com">E-mail</a>
+    </p>
   </footer>
 </body>
 </html>
