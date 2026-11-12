@@ -32,6 +32,13 @@
     .icone img { display: block; width: 22px; height: 22px; }
     .badges { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 14px; }
     .badges img { height: 64px; width: auto; display: block; }
+    .contato-topo a { color: #38bdf8; text-decoration: none; margin: 0 8px; }
+    .contato-topo a:hover { text-decoration: underline; }
+    .contato-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; max-width: 900px; margin: 20px auto 0; text-align: left; }
+    .contato-card { display: block; background: #0d0d0d; border: 1px solid #1f1f1f; border-radius: 10px; padding: 18px 20px; text-decoration: none; margin: 0; }
+    .contato-card:hover { border-color: #38bdf8; }
+    .contato-card small { display: block; color: #94a3b8; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; }
+    .contato-card strong { color: #38bdf8; font-size: 1.05rem; word-break: break-word; }
     footer { text-align: center; padding: 40px 20px; color: #94a3b8; }
     footer a { color: #38bdf8; margin: 0 10px; }
   </style>
@@ -51,6 +58,10 @@
     <h1>Gabriel Santos Grans</h1>
     <p>ServiceNow Developer | Infraestrutura | IAM | SecOps</p>
     <p>São Paulo, SP</p>
+    <p class="contato-topo">
+      <a href="mailto:gabrielgsti@outlook.com">gabrielgsti@outlook.com</a> ·
+      <a href="https://www.linkedin.com/in/gabrielgrans/" target="_blank" rel="noopener">LinkedIn</a>
+    </p>
   </header>
 
   <section id="sobre">
@@ -351,11 +362,18 @@
 
   <footer id="contato">
     <h2>Contato</h2>
-    <p>
-      <a href="https://www.linkedin.com/in/gabrielgrans/">LinkedIn</a>
-      <a href="https://github.com/GabrielGrans">GitHub</a>
-      <a href="mailto:gabrielgsti@outlook.com">E-mail</a>
-    </p>
+    <p>Aberto a oportunidades em ServiceNow, infraestrutura e segurança.</p>
+    <div class="contato-grid">
+      <a class="contato-card" href="mailto:gabrielgsti@outlook.com">
+        <small>E-mail</small>
+        <strong>gabrielgsti@outlook.com</strong>
+      </a>
+      <a class="contato-card" href="https://www.linkedin.com/in/gabrielgrans/" target="_blank" rel="noopener">
+        <small>LinkedIn</small>
+        <strong>linkedin.com/in/gabrielgrans</strong>
+      </a>
+    </div>
+    <p style="margin-top:25px;"><a href="https://github.com/GabrielGrans" target="_blank" rel="noopener">GitHub</a></p>
   </footer>
 </body>
 </html>
