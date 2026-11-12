@@ -11,85 +11,92 @@
     :root{--bg:#101114;--surface:#17181c;--surface2:#1e2026;--line:#2d2f36;--wine:#8f1018;--burgundy:#4a080d;--red:#ed252e;--text:#f0f0f2;--muted:#a6a7ae;--soft:#d1d1d5;--max:1160px}
     *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:radial-gradient(ellipse at 82% 0%,rgba(237,37,46,.24),transparent 36%),radial-gradient(ellipse at 0% 40%,rgba(143,16,24,.16),transparent 35%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}.topbar{position:sticky;top:0;z-index:10;background:rgba(16,17,20,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.07)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:13px;font-weight:800;letter-spacing:.16em}.brand span{color:#ef343b}.navlinks{display:flex;gap:27px;color:var(--muted);font-size:13px}.navlinks a:hover,.textlink:hover{color:#ff3038}.menu{display:none;background:none;border:1px solid var(--line);color:var(--text);padding:8px 11px;border-radius:8px}.nav-actions{display:flex;align-items:center;gap:12px}.lang-switch{display:flex;align-items:center;gap:3px;padding:4px;border:1px solid var(--line);border-radius:9px;background:#17181c}.lang-switch button{border:0;background:transparent;color:#a6a7ae;padding:7px 9px;border-radius:6px;font-size:11px;font-weight:800;cursor:pointer}.lang-switch button.active{background:linear-gradient(115deg,#ed252e,#8f1018);color:#fff}
     .hero{padding:104px 0 88px;display:grid;grid-template-columns:1fr 300px;gap:70px;align-items:center}.eyebrow{color:#ef343b;font-size:11px;font-weight:800;letter-spacing:.2em;text-transform:uppercase}.hero h1{font-size:clamp(42px,6vw,72px);line-height:1.04;letter-spacing:-.055em;margin:17px 0 12px}.role{font-size:clamp(17px,2vw,22px);color:#ff3038;font-weight:600;margin:0 0 24px}.intro{max-width:720px;color:#b7b8bf;font-size:16px;line-height:1.9}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.tech-stack{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.tech-item{display:flex;align-items:center;gap:9px;padding:10px 13px;background:linear-gradient(135deg,#202126,#15161a);border:1px solid #34353b;border-radius:9px;color:#e5e5e8;font-size:12px;font-weight:700;transition:.2s}.tech-item:hover{border-color:#ed252e;transform:translateY(-3px)}.tech-item i{font-size:21px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 17px;border-radius:8px;font-size:13px;font-weight:700;border:1px solid var(--line);transition:.2s}.btn.primary{background:linear-gradient(115deg,#ed252e,#8f1018);border-color:#c51c25;color:#fff}.btn:hover{transform:translateY(-2px);border-color:#c51c25}.monogram{width:280px;height:330px;margin:auto;border-radius:28px;background:linear-gradient(145deg,#ed252e 0%,#8f1018 42%,#17181c 82%);border:1px solid #651016;display:grid;place-items:center;position:relative;box-shadow:0 24px 80px rgba(0,0,0,.28)}.monogram:before{content:"";position:absolute;inset:13px;border:1px solid rgba(239,52,59,.34);border-radius:19px}.monogram strong{font-size:66px;letter-spacing:-.1em;color:#ffffff;margin-top:8px}.monogram small{position:absolute;bottom:22px;color:#ef343b;font-size:10px;letter-spacing:.2em}.profile-photo{width:142px;height:142px;object-fit:cover;border-radius:50%;border:3px solid #ed252e;box-shadow:0 12px 34px rgba(0,0,0,.4);margin-top:12px}.monogram-inner{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;z-index:1}
-    section{padding:76px 0;border-top:1px solid rgba(255,255,255,.06)}.section-head{display:flex;flex-direction:column;align-items:flex-start;gap:8px;margin-bottom:30px}.section-head h2{font-size:30px;letter-spacing:-.04em;margin:7px 0 0}.section-head p{color:var(--muted);font-size:13px;max-width:760px;margin:0;line-height:1.7}.section-head>div{width:100%}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.card{background:linear-gradient(145deg,rgba(35,35,40,.98),rgba(18,18,21,.98));border:1px solid var(--line);border-radius:13px;padding:24px;transition:.2s}.card:hover{border-color:#a5222a;transform:translateY(-3px)}.card h3{font-size:17px;margin:0 0 8px}.card p{color:var(--muted);font-size:13px;margin:0}.taglist{display:flex;flex-wrap:wrap;gap:8px;margin-top:17px}.tag{font-size:11px;color:#ff424a;border:1px solid #672027;background:rgba(190,18,28,.18);padding:5px 9px;border-radius:99px}.profile-summary{padding:30px}.profile-lead{font-size:18px!important;color:#f2f2f3!important;font-weight:650;line-height:1.65!important;margin:0 0 24px!important;max-width:900px}.profile-area{padding:22px 0;border-top:1px solid var(--line)}.profile-area h3{font-size:17px;color:#ff3038;margin:0 0 10px}.profile-area p{font-size:14px;color:#c0c0c6;line-height:1.9;margin:0 0 12px}.profile-area p:last-child{margin-bottom:0}.profile-area strong{color:#f2f2f3}.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.skillcard{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px}.skillcard h3{font-size:15px;margin:0 0 12px;color:#ff3038}.skillcard p{font-size:13px;color:var(--muted);margin:0;line-height:1.9}
+    section{padding:76px 0;border-top:1px solid rgba(255,255,255,.06)}.section-head{display:flex;flex-direction:column;align-items:flex-start;gap:8px;margin-bottom:30px}.section-head h2{font-size:30px;letter-spacing:-.04em;margin:7px 0 0}.section-head p{color:var(--muted);font-size:13px;max-width:760px;margin:0;line-height:1.7}.section-head>div{width:100%}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.card{background:linear-gradient(145deg,rgba(35,35,40,.98),rgba(18,18,21,.98));border:1px solid var(--line);border-radius:13px;padding:24px;transition:.2s}.card:hover{border-color:#a5222a;transform:translateY(-3px)}.card h3{font-size:17px;margin:0 0 8px}.card p{color:var(--muted);font-size:13px;margin:0}.taglist{display:flex;flex-wrap:wrap;gap:8px;margin-top:17px}.tag{font-size:11px;color:#ff424a;border:1px solid #672027;background:rgba(190,18,28,.18);padding:5px 9px;border-radius:99px}.profile-summary{padding:30px}.profile-lead{font-size:18px!important;color:#f2f2f3!important;font-weight:650;line-height:1.65!important;margin:0 0 24px!important;max-width:900px}.profile-area{padding:22px 0;border-top:1px solid var(--line)}.profile-area h3{font-size:17px;color:#ff3038;margin:0 0 10px}.profile-area p{font-size:14px;color:#c0c0c6;line-height:1.9;margin:0 0 12px}.profile-area p:last-child{margin-bottom:0}.profile-area strong{color:#f2f2f3}.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.skillcard{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px}.skillcard h3{font-size:15px;margin:0 0 12px;color:#ff3038}.skillcard p{font-size:13px;color:var(--muted);margin:0;line-height:1.9}
     .timeline{display:grid;gap:14px}.job{display:grid;grid-template-columns:210px 1fr;gap:25px;padding:22px 0;border-bottom:1px solid var(--line)}.job:last-child{border:0}.date{font-size:12px;color:#ef343b;font-weight:700}.job h3{font-size:16px;margin:0}.company{font-size:13px;color:#e5e5e8;margin:2px 0 8px}.job p{font-size:13px;color:var(--muted);margin:0;max-width:780px}.previous-experience{padding:20px 22px;background:linear-gradient(120deg,rgba(143,16,24,.13),rgba(23,24,28,.92));border:1px solid var(--line);border-radius:12px}.previous-experience h3{font-size:15px;margin:0 0 7px;color:#f0f0f2}.previous-experience p{font-size:13px;color:var(--muted);line-height:1.8;margin:0}.project-feature{border-color:#75151d;background:linear-gradient(120deg,rgba(190,18,28,.24),rgba(23,24,28,.95) 55%)}.project-top{display:flex;justify-content:space-between;gap:20px;align-items:start}.project-label{font-size:10px;letter-spacing:.15em;color:#ff3038;text-transform:uppercase;font-weight:800}.project-feature h3{font-size:22px;margin:8px 0}.project-feature p{max-width:850px;line-height:1.8}.project-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:16px}.project-list .card{min-height:160px}
     .edu{display:grid;grid-template-columns:1fr 1fr;gap:16px}.edu .card{height:100%}.certs{columns:2;column-gap:36px;padding-left:18px;color:var(--muted);font-size:13px}.certs li{break-inside:avoid;margin:0 0 9px;padding-left:3px}.contact{background:linear-gradient(120deg,rgba(143,16,24,.48),rgba(16,17,20,.1));border:1px solid #68151b;border-radius:16px;padding:34px;display:flex;justify-content:space-between;align-items:center;gap:30px}.contact h2{font-size:28px;margin:6px 0}.contact p{color:var(--muted);font-size:13px;margin:0}.contact-links{display:flex;gap:10px;flex-wrap:wrap}.footer{padding:30px 0;color:#777982;font-size:11px;display:flex;justify-content:space-between;gap:15px}.textlink{color:#ff3038}
 
     .screenshots{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.shot{margin:0;background:#17181c;border:1px solid var(--line);border-radius:12px;overflow:hidden}.shot img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;object-position:top}.shot figcaption{padding:12px 15px;color:#f0f0f2;font-size:12px;font-weight:700;border-top:1px solid var(--line)}
-    .badge-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.badge-card{margin:0;min-width:0;background:linear-gradient(150deg,#222329,#15161a);border:1px solid var(--line);border-radius:11px;padding:13px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;gap:12px;transition:.2s}.badge-card:hover{transform:translateY(-3px);border-color:#a5222a}.badge-card img{width:100%;height:112px;object-fit:contain}.badge-card figcaption{font-size:11px;line-height:1.45;color:#d8d8dc}
+    .badge-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.badge-card{margin:0;min-width:0;background:linear-gradient(150deg,#222329,#15161a);border:1px solid var(--line);border-radius:11px;padding:13px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;gap:12px;transition:.2s}.badge-card:hover{transform:translateY(-3px);border-color:#a5222a}.badge-card img{width:100%;height:84px;object-fit:contain}.badge-card figcaption{font-size:11px;line-height:1.45;color:#d8d8dc}
     .brand img{width:24px;height:24px;object-fit:contain;vertical-align:middle;margin-right:7px}.brand span{color:#ed252e}
     @media(max-width:800px){.badge-grid{grid-template-columns:repeat(3,1fr)}}@media(max-width:560px){.screenshots{grid-template-columns:1fr}.badge-grid{grid-template-columns:repeat(2,1fr)}}
     @media(max-width:800px){.hero{grid-template-columns:1fr;padding:75px 0 65px;gap:38px}.monogram{width:220px;height:280px}.profile-photo{width:112px;height:112px}.monogram strong{font-size:54px}.skills{grid-template-columns:1fr 1fr}.job{grid-template-columns:1fr;gap:5px}.contact{align-items:flex-start;flex-direction:column}}
     @media(max-width:560px){.wrap{width:min(100% - 30px,var(--max))}.nav{height:66px}.menu{display:block}.navlinks{display:none;position:absolute;top:65px;left:0;right:0;padding:18px 22px;background:#15161a;border-bottom:1px solid var(--line);flex-direction:column;gap:15px}.navlinks.open{display:flex}.hero h1{font-size:45px}.grid,.skills,.edu,.project-list{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:10px}.certs{columns:1}.contact{padding:25px}.footer{flex-direction:column}}
+
+    .note{color:var(--muted);font-size:12px;margin:16px 0 0}.job ul{margin:0;padding-left:18px;color:var(--muted);font-size:13px;max-width:780px}.job li{margin:0 0 4px}
+    details.more{margin-top:16px}details.more summary{cursor:pointer;list-style:none;display:inline-flex;align-items:center;padding:10px 16px;border:1px solid var(--line);border-radius:8px;font-size:13px;font-weight:700;color:var(--soft);transition:.2s}details.more summary::-webkit-details-marker{display:none}details.more summary:hover{border-color:#c51c25;color:#fff}details.more[open] summary{margin-bottom:16px}
+    .subhead{font-size:12px;letter-spacing:.15em;color:#ff3038;text-transform:uppercase;font-weight:800;margin:0 0 14px}
   </style>
 </head>
 <body>
-  <header class="topbar"><div class="wrap nav"><a class="brand" href="#inicio">GABRIEL<span>.</span>GRANS</a><nav class="navlinks" id="navlinks"><a href="#sobre" data-nav="about">Sobre</a><a href="#conhecimentos" data-nav="skills">Conhecimentos</a><a href="#experiencia" data-nav="experience">Experiência</a><a href="#projetos" data-nav="projects">Projetos</a><a href="#formacao" data-nav="education">Formação</a><a href="#contato" data-nav="contact">Contato</a></nav><div class="nav-actions"><div class="lang-switch" aria-label="Language selector"><button type="button" id="ptBtn" class="active" aria-pressed="true">PT-BR</button><button type="button" id="enBtn" aria-pressed="false">EN</button></div><button class="menu" id="menuBtn" aria-label="Abrir menu">Menu</button></div></div></header>
+  <header class="topbar"><div class="wrap nav"><a class="brand" href="#inicio">GABRIEL<span>.</span>GRANS</a><nav class="navlinks" id="navlinks"><a data-i18n="nav1" href="#sobre">Sobre</a><a data-i18n="nav2" href="#conhecimentos">Conhecimentos</a><a data-i18n="nav3" href="#experiencia">Experiência</a><a data-i18n="nav4" href="#projetos">Projetos</a><a data-i18n="nav5" href="#formacao">Formação</a><a data-i18n="nav6" href="#contato">Contato</a></nav><div class="nav-actions"><div class="lang-switch" aria-label="Language selector"><button type="button" id="ptBtn" class="active" aria-pressed="true">PT-BR</button><button type="button" id="enBtn" aria-pressed="false">EN</button></div><button class="menu" id="menuBtn" aria-label="Menu">Menu</button></div></div></header>
   <main>
-    <div class="wrap hero" id="inicio"><div><div class="eyebrow">Portfólio profissional · Tecnologia da Informação</div><h1>Gabriel Santos<br>Grans</h1><p class="role">ServiceNow Developer | Infraestrutura | IAM | SecOps</p><div class="intro"><p id="heroIntro">Profissional de TI com mais de 5 anos de experiência em infraestrutura e suporte a ambientes corporativos. Atualmente direcionando minha carreira para desenvolvimento na plataforma ServiceNow, unindo experiência prática em TI à criação de soluções e automações.</p><div class="tech-stack" aria-label="Tecnologias"><div class="tech-item"><i class="devicon-html5-plain colored"></i><span>HTML</span></div><div class="tech-item"><i class="devicon-css3-plain colored"></i><span>CSS</span></div><div class="tech-item"><i class="devicon-angularjs-plain colored"></i><span>AngularJS</span></div><div class="tech-item"><i class="devicon-jquery-plain colored"></i><span>jQuery</span></div><div class="tech-item"><i class="devicon-powershell-plain colored"></i><span>PowerShell</span></div></div></div><div class="actions"><a class="btn primary" href="#projetos">Explorar projetos</a><a class="btn" href="https://www.linkedin.com/in/gabrielgrans/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a class="btn" href="https://github.com/gabrielgrans" target="_blank" rel="noreferrer">GitHub ↗</a></div></div><div class="monogram" aria-label="Foto e monograma GS"><div class="monogram-inner"><img class="profile-photo" src="./gabriel-foto.png" alt="Foto de Gabriel" onerror="this.style.display='none'"><strong>GS</strong></div><small>TECHNOLOGY · IT</small></div></div>
+    <div class="wrap hero" id="inicio"><div><div class="eyebrow" data-i18n="heroEyebrow">Portfólio profissional · Tecnologia da Informação</div><h1>Gabriel Santos<br>Grans</h1><p class="role" data-i18n="role">ServiceNow Developer | Infraestrutura | IAM | SecOps</p><div class="intro"><p data-i18n="heroIntro">Mais de 5 anos em TI, com experiência em suporte, infraestrutura e segurança de ambientes corporativos, e foco atual em desenvolvimento na plataforma ServiceNow.</p><div class="tech-stack" aria-label="Tecnologias"><div class="tech-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div><div class="tech-item"><i class="devicon-html5-plain colored"></i><span>HTML</span></div><div class="tech-item"><i class="devicon-css3-plain colored"></i><span>CSS</span></div><div class="tech-item"><i class="devicon-angularjs-plain colored"></i><span>AngularJS</span></div><div class="tech-item"><i class="devicon-jquery-plain colored"></i><span>jQuery</span></div><div class="tech-item"><i class="devicon-powershell-plain colored"></i><span>PowerShell</span></div></div></div><div class="actions"><a class="btn primary" data-i18n="btnProjects" href="#projetos">Explorar projetos</a><a class="btn" href="https://www.linkedin.com/in/gabrielgrans/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a class="btn" href="https://github.com/gabrielgrans" target="_blank" rel="noreferrer">GitHub ↗</a></div></div><div class="monogram" aria-label="Foto e monograma GS"><div class="monogram-inner"><img class="profile-photo" src="./gabriel-foto.png" alt="Foto de Gabriel" onerror="this.style.display='none'"><strong>GS</strong></div><small>TECHNOLOGY · IT</small></div></div>
 
-    <section id="sobre"><div class="wrap"><div class="section-head"><div><div class="eyebrow">01 / Apresentação</div><h2>Sobre mim</h2></div></div>
-      <article class="card profile-summary"><p class="profile-lead">Profissional de TI com mais de 5 anos de experiência, atuando com suporte, sistemas, segurança e infraestrutura.</p>
-        <div class="profile-area"><h3>ServiceNow</h3><p>Desenvolvo soluções na plataforma ServiceNow, com portais e widgets, tabelas personalizadas, automações com Flow Designer, Service Catalog e integrações via REST. Possuo a certificação System Administrator (CSA) e estou estudando para a certificação CAD (Certified Application Developer).</p></div>
-        <div class="profile-area"><h3>Infraestrutura</h3><p>Tenho experiência com Microsoft 365, Intune, redes, servidores e telefonia IP. Fui responsável pelo ambiente de TI de uma filial em São Paulo: implantei VLANs de dados, voz e câmeras, padronizei mais de 300 máquinas com Intune e conduzi a migração para telefonia IP/PABX.</p></div>
-        <div class="profile-area"><h3>IAM e SecOps</h3><p><strong>Identidade (IAM):</strong> trabalho com Microsoft Entra ID e Acesso Condicional (incluindo geoblock), autenticação multifator (MFA) e políticas de senha, controle de acesso por função (RBAC) seguindo o princípio do menor privilégio e gestão do ciclo de vida de usuários, da entrada à saída, passando por mudanças de área.</p>
-        <p><strong>Segurança operacional (SecOps):</strong> faço resposta a incidentes e análise de alertas do Defender for Endpoint, análise de logs e SIEM, segurança de rede com Fortinet e Ubiquiti e hardening de estações e servidores, com controle de sessão, restrição de PowerShell para usuários comuns, bloqueio de aplicações não homologadas por script e proteção contra phishing e domínios maliciosos.</p>
-        <p>Minha base teórica vem de certificações em cibersegurança (SC-900, Fortinet e Cisco, com Defesa de Rede e Analista de Cibersegurança Júnior) e de formações em Red Team (CRTOM e CCEP).</p></div>
+    <section id="sobre"><div class="wrap"><div class="section-head"><div><div class="eyebrow" data-i18n="eb1">01 / Apresentação</div><h2 data-i18n="h1t">Sobre mim</h2></div></div>
+      <article class="card profile-summary">
+        <div class="profile-area"><h3>ServiceNow</h3><p data-i18n="ab1">Desenvolvo soluções na plataforma ServiceNow: portais e widgets, tabelas personalizadas, automações com Flow Designer e integrações REST. Sou certificado CSA e estou estudando para a CAD (Certified Application Developer).</p></div>
+        <div class="profile-area"><h3 data-i18n="abh2">Infraestrutura</h3><p data-i18n="ab2">Experiência com Microsoft 365, Intune, redes, servidores e telefonia IP. Fui responsável pelo ambiente de TI de uma filial em São Paulo, com VLANs de dados, voz e câmeras, mais de 300 máquinas padronizadas e migração para IP/PABX.</p></div>
+        <div class="profile-area"><h3 data-i18n="abh3">IAM e SecOps</h3><p data-i18n="ab3"><strong>Identidade:</strong> Entra ID e Acesso Condicional (com geoblock), MFA, RBAC com menor privilégio e ciclo de vida de usuários. <strong>SecOps:</strong> resposta a incidentes no Defender, análise de logs e SIEM, Fortinet e Ubiquiti e hardening de estações e servidores.</p></div>
       </article></div></section>
 
-    <section id="conhecimentos"><div class="wrap"><div class="section-head"><div><div class="eyebrow">02 / Stack técnica</div><h2>Conhecimentos</h2></div><p>Conhecimentos aplicados no dia a dia, em projetos e no desenvolvimento profissional.</p></div><div class="skills">
-      <article class="skillcard"><h3>ServiceNow</h3><p>Service Catalog · Flow Designer · Business Rules · Client Scripts · UI Policies · Script Includes · Custom Tables · App Engine Studio · ACLs · ATF · GlideRecord · REST APIs</p></article>
-      <article class="skillcard"><h3>Infraestrutura & Cloud</h3><p>Microsoft 365 · Exchange · Teams · SharePoint · Microsoft Intune · Azure · Windows · Administração de servidores · Redes · VLAN · VPN · Troubleshooting</p></article>
-      <article class="skillcard"><h3>IAM & Segurança</h3><p>Gestão de acessos · Entra ID · Microsoft Defender for Endpoint · Políticas de conformidade · Segurança de endpoints · Inventário e gerenciamento de ativos</p></article>
-      <article class="skillcard"><h3>Automação & Desenvolvimento</h3><p>JavaScript · PowerShell · Scripts de administração e auditoria · Automação de processos · Integrações REST · Glide APIs</p></article>
-      <article class="skillcard"><h3>Redes & Comunicação</h3><p>Segmentação de rede · VLANs · Wi-Fi corporativo · VPN · Telefonia IP · PABX · Monitoramento e diagnóstico de conectividade</p></article>
-      <article class="skillcard"><h3>Processos & Operação</h3><p>Gestão de incidentes · Atendimento e suporte · Gestão de ativos · Documentação técnica · Melhoria contínua · Análise e resolução de problemas</p></article>
+    <section id="conhecimentos"><div class="wrap"><div class="section-head"><div><div class="eyebrow" data-i18n="eb2">02 / Stack técnica</div><h2 data-i18n="h2t">Conhecimentos</h2></div></div><div class="skills">
+      <article class="skillcard"><h3>ServiceNow</h3><p>Service Catalog · Flow Designer · Business Rules · Client Scripts · UI Policies · Script Includes · Custom Tables · App Engine Studio · ACLs · ATF · GlideRecord · GlideAjax · REST APIs</p></article>
+      <article class="skillcard"><h3 data-i18n="sk2h">Infraestrutura &amp; Cloud</h3><p data-i18n="sk2">Microsoft 365 · Exchange · Teams · SharePoint · Intune · Azure · Windows · Servidores · VLANs · VPN · Wi-Fi corporativo · Telefonia IP/PABX · Troubleshooting</p></article>
+      <article class="skillcard"><h3 data-i18n="sk3h">IAM &amp; SecOps</h3><p data-i18n="sk3">Entra ID · Acesso Condicional · MFA · RBAC · Ciclo de vida de usuários · Defender for Endpoint · Resposta a incidentes · Logs e SIEM · Fortinet · Hardening</p></article>
+      <article class="skillcard"><h3 data-i18n="sk4h">Desenvolvimento &amp; Automação</h3><p data-i18n="sk4">JavaScript · PowerShell · Glide APIs · Integrações REST · Scripts de auditoria e automação</p></article>
     </div></div></section>
 
-    <section id="experiencia"><div class="wrap"><div class="section-head"><div><div class="eyebrow">03 / Trajetória</div><h2>Experiência profissional</h2></div><p>Experiência em ambientes corporativos, sustentação e evolução de serviços de TI.</p></div><div class="timeline">
-      <article class="job"><div class="date">Fev/2026 — Out/2026</div><div><h3>Analista de Infraestrutura Pleno</h3><div class="company">Chaintech</div><p>Administração de Microsoft 365, Exchange, Teams e SharePoint; gerenciamento de dispositivos e políticas pelo Intune; segurança de endpoints; organização de inventário; atuação em redes, segmentação por VLAN e telefonia IP. Participação em melhorias do ambiente corporativo e automações com scripts.</p></div></article>
-      <article class="job"><div class="date">Ago/2023 — Fev/2026</div><div><h3>Analista Júnior</h3><div class="company">Rede D'Or — OncoStar</div><p>Atuação em suporte e infraestrutura de TI, atendimento de chamados, gestão de acessos, acompanhamento de servidores e ambiente de CPD, além de apoio em atividades de rede, telecomunicações e expansão da infraestrutura.</p></div></article>
-      <article class="previous-experience"><h3>Experiências anteriores</h3><p>HexalT (Mai/2023 — Ago/2023), Teleperformance (Fev/2021 — Fev/2022) e Sitel Group (Mar/2019 — Jan/2020), em suporte técnico e infraestrutura.</p></article>
+    <section id="experiencia"><div class="wrap"><div class="section-head"><div><div class="eyebrow" data-i18n="eb3">03 / Trajetória</div><h2 data-i18n="h3t">Experiência profissional</h2></div></div><div class="timeline">
+      <article class="job"><div class="date" data-i18n="d1">Fev/2026 — Out/2026</div><div><h3 data-i18n="j1t">Analista de Infraestrutura Pleno</h3><div class="company">Chaintech</div><p data-i18n="j1">Responsável pelo ambiente de TI da filial de São Paulo: Microsoft 365, Intune, segurança de endpoints, redes e telefonia IP. As entregas estão detalhadas em Projetos.</p></div></article>
+      <article class="job"><div class="date" data-i18n="d2">Ago/2023 — Fev/2026</div><div><h3 data-i18n="j2t">Analista Júnior</h3><div class="company">Rede D'Or — OncoStar</div><p data-i18n="j2">Suporte e infraestrutura de TI: chamados e acessos, monitoramento do CPD e dos servidores, correção de falhas e apoio à expansão da infraestrutura de rede e telecomunicações.</p></div></article>
+      <article class="previous-experience"><h3 data-i18n="prevh">Experiências anteriores</h3><p data-i18n="prev">HexalT (Mai/2023 — Ago/2023), Teleperformance (Fev/2021 — Fev/2022) e Sitel Group (Mar/2019 — Jan/2020), em suporte técnico e infraestrutura de TI.</p></article>
     </div></div></section>
 
-    <section id="projetos"><div class="wrap"><div class="section-head"><div><div class="eyebrow">04 / Aplicação prática</div><h2>Projetos e iniciativas</h2></div><p>Iniciativas práticas em desenvolvimento, infraestrutura e segurança.</p></div>
-      <article class="card project-feature"><div class="project-top"><div><div class="project-label">Projeto em destaque · ServiceNow PDI</div><h3>Flextrix — IT Service Desk</h3></div><span class="tag">Portfolio project</span></div><p>Desenvolvimento de um portal corporativo de serviços em ambiente ServiceNow Personal Developer Instance. O laboratório reúne experiência de usuário, estrutura de dados e automação: portal personalizado, widgets, tabelas próprias para solicitações e ativos, indicadores e fluxos de atendimento.</p><p style="margin-top:12px">Uma das automações desenvolvidas utiliza o Flow Designer para consultar ativos disponíveis, associar um equipamento ao solicitante e atualizar o status do patrimônio, demonstrando integração entre solicitações, inventário e processos de TI.</p><div class="taglist"><span class="tag">Service Portal</span><span class="tag">Flow Designer</span><span class="tag">Custom Tables</span><span class="tag">IT Asset Management</span><span class="tag">Widgets</span><span class="tag">Dashboards</span></div></article>
-      <div class="project-list"><article class="card"><h3>Gestão de dispositivos e segurança</h3><p>Administração de endpoints com Microsoft Intune, políticas de conformidade, inventário e recursos de segurança para ambientes corporativos.</p><div class="taglist"><span class="tag">Microsoft Intune</span><span class="tag">Defender</span><span class="tag">PowerShell</span></div></article><article class="card"><h3>Modernização de infraestrutura e redes</h3><p>Participação na organização da infraestrutura de rede, segmentação por VLAN, identificação de pontos de rede e evolução de soluções de conectividade e telefonia.</p><div class="taglist"><span class="tag">Networking</span><span class="tag">VLAN</span><span class="tag">Ubiquiti</span><span class="tag">VoIP</span></div></article></div>
-    </div>
-      <div class="section-head" style="margin-top:30px;margin-bottom:18px"><div><div class="eyebrow">Por dentro do projeto</div><h2>Conheça o Flextrix</h2></div><p>Telas do portal corporativo criado no meu ambiente ServiceNow PDI.</p></div>
-      <div class="screenshots">
-        <figure class="shot"><img src="./flextrix-home.png" alt="Página inicial do portal Flextrix"><figcaption>Portal e página inicial</figcaption></figure>
-        <figure class="shot"><img src="./flextrix-solicitacoes.png" alt="Página de solicitações do Flextrix"><figcaption>Solicitações de TI</figcaption></figure>
-        <figure class="shot"><img src="./flextrix-equipamentos.png" alt="Gestão de equipamentos do Flextrix"><figcaption>Gestão de equipamentos</figcaption></figure>
-        <figure class="shot"><img src="./flextrix-conhecimento.png" alt="Base de conhecimento do Flextrix"><figcaption>Base de conhecimento</figcaption></figure>
+    <section id="projetos"><div class="wrap"><div class="section-head"><div><div class="eyebrow" data-i18n="eb4">04 / Aplicação prática</div><h2 data-i18n="h4t">Projetos</h2></div></div>
+      <article class="card project-feature"><div class="project-top"><div><div class="project-label" data-i18n="pl">Projeto em destaque · ServiceNow PDI</div><h3>Flextrix — IT Service Desk</h3></div><span class="tag" data-i18n="ptag">Projeto de portfólio</span></div><p data-i18n="fx">Portal corporativo de service desk e gestão de ativos de TI criado em uma ServiceNow Personal Developer Instance: portal personalizado, widgets, tabelas próprias e indicadores. Uma automação com Flow Designer consulta os ativos disponíveis, vincula o equipamento ao solicitante e atualiza o status do patrimônio.</p><div class="taglist"><span class="tag">Service Portal</span><span class="tag">Flow Designer</span><span class="tag">Custom Tables</span><span class="tag">IT Asset Management</span><span class="tag">Widgets</span></div></article>
+      <div class="screenshots" style="margin-top:16px">
+        <figure class="shot"><img src="./flextrix-home.png" alt="Flextrix" loading="lazy"><figcaption data-i18n="s1">Portal e página inicial</figcaption></figure>
+        <figure class="shot"><img src="./flextrix-solicitacoes.png" alt="Flextrix" loading="lazy"><figcaption data-i18n="s2">Solicitações de TI</figcaption></figure>
+        <figure class="shot"><img src="./flextrix-equipamentos.png" alt="Flextrix" loading="lazy"><figcaption data-i18n="s3">Gestão de equipamentos</figcaption></figure>
+        <figure class="shot"><img src="./flextrix-conhecimento.png" alt="Flextrix" loading="lazy"><figcaption data-i18n="s4">Base de conhecimento</figcaption></figure>
+      </div>
+      <div class="project-list">
+        <article class="card"><h3 data-i18n="pc1h">Estruturação do ambiente de TI — filial São Paulo</h3><p data-i18n="pc1">VLANs de dados, voz e câmeras com Ubiquiti, 21 pontos de rede identificados, CPD reorganizado, mais de 300 máquinas padronizadas com Intune e migração para telefonia IP/PABX.</p><div class="taglist"><span class="tag">Ubiquiti</span><span class="tag">VLAN</span><span class="tag">Intune</span><span class="tag">IP/PABX</span></div></article>
+        <article class="card"><h3 data-i18n="pc2h">Segurança de endpoints e acessos</h3><p data-i18n="pc2">Geoblock e controle de sessão com Acesso Condicional, restrição de PowerShell para usuários comuns e um script .ps1 que bloqueia launchers de jogos (Steam, EA, Epic, Rockstar) nas máquinas ingressadas no Entra ID.</p><div class="taglist"><span class="tag">Entra ID</span><span class="tag">Conditional Access</span><span class="tag">PowerShell</span><span class="tag">Defender</span></div></article>
       </div>
     </div></section>
 
-    <section id="formacao"><div class="wrap"><div class="section-head"><div><div class="eyebrow">05 / Formação</div><h2>Formação acadêmica</h2></div><p>Formação e credenciais em desenvolvimento, infraestrutura, cloud e segurança.</p></div><div class="edu"><article class="card"><div class="project-label">Formação acadêmica</div><h3 style="margin-top:10px">Tecnologia em Análise e Desenvolvimento de Sistemas</h3><p>Universidade Nove de Julho — UNINOVE</p><p style="margin-top:10px">Mar/2019 — Set/2021</p></article><article class="card"><div class="project-label">Certificações ServiceNow</div><ul class="certs" style="columns:1"><li>Certified System Administrator (CSA)</li><li>Micro-Certification — Flow Designer</li><li>Micro-Certification — Automated Test Framework</li><li>Delivery Accreditation — Platform Security and Identity</li><li>Certified Application Developer (CAD) — em preparação</li></ul></article></div>
-      <div class="card" style="margin-top:16px"><div class="section-head" style="margin-bottom:22px"><div><div class="project-label">Badges e credenciais</div><h3 style="margin-top:8px">Certificações e treinamentos</h3></div><p>Credenciais Microsoft, Oracle, Cisco, Fortinet, ServiceNow e Red Team Leaders.</p></div>
+    <section id="formacao"><div class="wrap"><div class="section-head"><div><div class="eyebrow" data-i18n="eb5">05 / Formação</div><h2 data-i18n="h5t">Formação e certificações</h2></div></div>
+      <div class="edu"><article class="card"><div class="project-label" data-i18n="el">Formação acadêmica</div><h3 data-i18n="deg" style="margin-top:10px">Tecnologia em Análise e Desenvolvimento de Sistemas</h3><p data-i18n="inst">Universidade Nove de Julho — UNINOVE · Mar/2019 — Set/2021</p></article>
+      <article class="card"><div class="project-label" data-i18n="cl">Formação complementar</div><div class="taglist" style="margin-top:14px"><span class="tag" data-i18n="c1">Cisco — Conceitos Básicos de Redes</span><span class="tag">FIAP — Cybersecurity</span><span class="tag" data-i18n="c3">FIAP — Gestão de Infraestrutura de TI</span><span class="tag">FIAP — Cloud Fundamentals</span><span class="tag">FIAP — Administration and Solution Architect</span></div></article></div>
+      <div class="card" style="margin-top:16px"><p class="subhead" data-i18n="bt">Certificações</p>
         <div class="badge-grid">
-          <figure class="badge-card"><img src="./badge-csa.png" alt="ServiceNow Certified System Administrator"><figcaption>ServiceNow Certified System Administrator (CSA)</figcaption></figure>
-          <figure class="badge-card"><img src="./badge-micro-flows.png" alt="ServiceNow Flow Designer Micro-Certification"><figcaption>ServiceNow Micro-Certification — Flow Designer</figcaption></figure>
-          <figure class="badge-card"><img src="./badge-micro-atf.png" alt="ServiceNow Automated Test Framework Micro-Certification"><figcaption>ServiceNow Micro-Certification — Automated Test Framework</figcaption></figure>
-          <figure class="badge-card"><img src="./badge-security-identity.png" alt="ServiceNow Platform Security and Identity"><figcaption>ServiceNow Delivery Accreditation — Platform Security and Identity</figcaption></figure>
-          <figure class="badge-card"><img src="./badge-az900.png" alt="Microsoft Azure Fundamentals AZ-900"><figcaption>Microsoft Azure Fundamentals (AZ-900)</figcaption></figure>
-          <figure class="badge-card"><img src="./badge-sc900.png" alt="Microsoft SC-900"><figcaption>Security, Compliance and Identity Fundamentals (SC-900)</figcaption></figure>
-          <figure class="badge-card"><img src="./badge-oci.png" alt="Oracle Cloud Infrastructure Foundations"><figcaption>Oracle Cloud Infrastructure Foundations Associate</figcaption></figure>
-          <figure class="badge-card"><img src="./badge-oracle-ai.png" alt="Oracle AI Foundations"><figcaption>Oracle AI Foundations Associate</figcaption></figure>
-          <figure class="badge-card"><img src="./badge-oracle-data.png" alt="Oracle Data Platform Foundations"><figcaption>Oracle Data Platform Foundations Associate</figcaption></figure>
-          <figure class="badge-card"><img src="./badge-cisco-intro-ciberseguranca.png" alt="Cisco Introdução à Cibersegurança"><figcaption>Cisco — Introdução à Cibersegurança</figcaption></figure>
-          <figure class="badge-card"><img src="./badge-cisco-analista-junior.png" alt="Cisco Analista de Cibersegurança Júnior"><figcaption>Cisco — Analista de Cibersegurança Júnior</figcaption></figure>
-          <figure class="badge-card"><img src="./badge-cisco-defesa-rede.png" alt="Cisco Defesa de Rede"><figcaption>Cisco — Defesa de Rede</figcaption></figure>
-          <figure class="badge-card"><img src="./badge-fortinet-associate.png" alt="Fortinet Certified Associate Cybersecurity"><figcaption>Fortinet Certified Associate Cybersecurity</figcaption></figure>
-          <figure class="badge-card"><img src="./badge-fortinet-fundamentals.png" alt="Fortinet Certified Fundamentals Cybersecurity"><figcaption>Fortinet Certified Fundamentals Cybersecurity</figcaption></figure>
-          <figure class="badge-card"><img src="./badge-fortigate-operator.png" alt="FortiGate Operator"><figcaption>FortiGate Operator</figcaption></figure>
-          <figure class="badge-card"><img src="./badge-crtom.png" alt="Certified Red Team Operations Management"><figcaption>Certified Red Team Operations Management (CRTOM)</figcaption></figure>
-          <figure class="badge-card"><img src="./badge-ccep.png" alt="Certified Cybersecurity Educator Professional"><figcaption>Certified Cybersecurity Educator Professional (CCEP)</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-csa.png" alt="ServiceNow Certified System Administrator (CSA)" loading="lazy"><figcaption data-i18n="badge1">ServiceNow Certified System Administrator (CSA)</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-micro-flows.png" alt="ServiceNow Micro-Certification — Flow Designer" loading="lazy"><figcaption data-i18n="badge2">ServiceNow Micro-Certification — Flow Designer</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-micro-atf.png" alt="ServiceNow Micro-Certification — Automated Test Framework" loading="lazy"><figcaption data-i18n="badge3">ServiceNow Micro-Certification — Automated Test Framework</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-security-identity.png" alt="ServiceNow Delivery Accreditation — Platform Security and Identity" loading="lazy"><figcaption data-i18n="badge4">ServiceNow Delivery Accreditation — Platform Security and Identity</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-az900.png" alt="Microsoft Azure Fundamentals (AZ-900)" loading="lazy"><figcaption data-i18n="badge5">Microsoft Azure Fundamentals (AZ-900)</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-sc900.png" alt="Security, Compliance and Identity Fundamentals (SC-900)" loading="lazy"><figcaption data-i18n="badge6">Security, Compliance and Identity Fundamentals (SC-900)</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-fortigate-operator.png" alt="Fortinet FortiGate 7.6 Operator" loading="lazy"><figcaption data-i18n="badge7">Fortinet FortiGate 7.6 Operator</figcaption></figure>
         </div>
+        <p class="note" data-i18n="cad">Certified Application Developer (CAD) da ServiceNow — em preparação.</p>
+        <details class="more"><summary data-i18n="more">Ver todas as certificações (+10)</summary>
+        <div class="badge-grid">
+          <figure class="badge-card"><img src="./badge-oci.png" alt="Oracle Cloud Infrastructure Foundations Associate" loading="lazy"><figcaption data-i18n="badge8">Oracle Cloud Infrastructure Foundations Associate</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-oracle-ai.png" alt="Oracle AI Foundations Associate" loading="lazy"><figcaption data-i18n="badge9">Oracle AI Foundations Associate</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-oracle-data.png" alt="Oracle Data Platform Foundations Associate" loading="lazy"><figcaption data-i18n="badge10">Oracle Data Platform Foundations Associate</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-cisco-intro-ciberseguranca.png" alt="Cisco — Introdução à Cibersegurança" loading="lazy"><figcaption data-i18n="badge11">Cisco — Introdução à Cibersegurança</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-cisco-analista-junior.png" alt="Cisco — Analista de Cibersegurança Júnior" loading="lazy"><figcaption data-i18n="badge12">Cisco — Analista de Cibersegurança Júnior</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-cisco-defesa-rede.png" alt="Cisco — Defesa de Rede" loading="lazy"><figcaption data-i18n="badge13">Cisco — Defesa de Rede</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-fortinet-associate.png" alt="Fortinet Certified Associate Cybersecurity" loading="lazy"><figcaption data-i18n="badge14">Fortinet Certified Associate Cybersecurity</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-fortinet-fundamentals.png" alt="Fortinet Certified Fundamentals Cybersecurity" loading="lazy"><figcaption data-i18n="badge15">Fortinet Certified Fundamentals Cybersecurity</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-crtom.png" alt="Certified Red Team Operations Management (CRTOM)" loading="lazy"><figcaption data-i18n="badge16">Certified Red Team Operations Management (CRTOM)</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-ccep.png" alt="Certified Cybersecurity Educator Professional (CCEP)" loading="lazy"><figcaption data-i18n="badge17">Certified Cybersecurity Educator Professional (CCEP)</figcaption></figure>
+        </div></details>
       </div>
     </div></section>
 
-    <section id="contato"><div class="wrap"><div class="contact"><div><div class="eyebrow">06 / Vamos conversar</div><h2>Entre em contato.</h2><p>Aberto a oportunidades e conexões na área de Tecnologia da Informação.</p></div><div class="contact-links"><a class="btn primary" href="mailto:gabrielgsti@outlook.com">Enviar e-mail ↗</a><a class="btn" href="https://www.linkedin.com/in/gabrielgrans/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a class="btn" href="https://github.com/gabrielgrans" target="_blank" rel="noreferrer">GitHub ↗</a></div></div><footer class="footer"><span>© 2026 Gabriel Santos Grans</span><span>Desenvolvido com foco em tecnologia, automação e soluções.</span></footer></div></section>
+    <section id="contato"><div class="wrap"><div class="contact"><div><div class="eyebrow" data-i18n="eb6">06 / Vamos conversar</div><h2 data-i18n="h6t">Entre em contato.</h2><p data-i18n="ct">Aberto a oportunidades e conexões na área de Tecnologia da Informação.</p></div><div class="contact-links"><a class="btn primary" data-i18n="mail" href="mailto:gabrielgsti@outlook.com">Enviar e-mail ↗</a><a class="btn" href="https://www.linkedin.com/in/gabrielgrans/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a class="btn" href="https://github.com/gabrielgrans" target="_blank" rel="noreferrer">GitHub ↗</a></div></div><footer class="footer"><span>© 2026 Gabriel Santos Grans</span><span data-i18n="foot">Desenvolvido com foco em tecnologia, automação e soluções.</span></footer></div></section>
   </main>
 <script>
 const menuBtn=document.getElementById('menuBtn');
@@ -97,74 +104,114 @@ const nav=document.getElementById('navlinks');
 menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
 nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
 
-const translations={
-  en:{
-    metaTitle:'Gabriel Santos Grans | Portfolio', metaDescription:'Professional portfolio of Gabriel Santos Grans — ServiceNow, infrastructure, cloud, IAM and SecOps.',
-    nav:['About','Skills','Experience','Projects','Education','Contact'],
-    heroEyebrow:'Professional portfolio · Information Technology', heroIntro:'IT professional with 5+ years of experience in corporate infrastructure and technical support. Currently focusing my career on ServiceNow development, combining hands-on IT experience with the creation of solutions and automation.', explore:'Explore projects', menu:'Menu',
-    sectionEyebrows:['01 / About','02 / Technical stack','03 / Career','04 / Hands-on experience','05 / Education','06 / Let’s talk'],
-    sectionTitles:['About me','Skills','Professional experience','Projects and initiatives','Academic background','Get in touch.'],
-    sectionSubs:['Knowledge applied in daily operations, projects and professional development.','Experience in corporate environments, IT service operations and continuous improvement.','Practical initiatives in development, infrastructure and security.','Screenshots of the corporate portal built in my ServiceNow PDI.','Education and credentials in development, infrastructure, cloud and security.'],
-    aboutLead:'IT professional with 5+ years of experience across technical support, systems, security and infrastructure.',
-    aboutHeads:['ServiceNow','Infrastructure','IAM & SecOps'],
-    aboutTexts:[
-      'I build solutions on the ServiceNow platform, including portals and widgets, custom tables, Flow Designer automations, Service Catalog and REST integrations. I hold the System Administrator (CSA) certification and am currently preparing for the CAD (Certified Application Developer) certification.',
-      'I have experience with Microsoft 365, Intune, networks, servers and IP telephony. I was responsible for the IT environment of a branch office in São Paulo: implemented data, voice and camera VLANs, standardized more than 300 machines with Intune and led the migration to IP telephony/PABX.',
-      '<strong>Identity (IAM):</strong> experience with Microsoft Entra ID and Conditional Access (including geoblocking), multi-factor authentication (MFA), password policies, role-based access control (RBAC) following the principle of least privilege, and user lifecycle management from onboarding to offboarding, including role changes.',
-      '<strong>Security Operations (SecOps):</strong> incident response and Defender for Endpoint alert analysis, log and SIEM analysis, network security with Fortinet and Ubiquiti, and workstation/server hardening. This includes session controls, PowerShell restrictions for standard users, script-based blocking of unauthorized applications, and protection against phishing and malicious domains.',
-      'My theoretical foundation includes cybersecurity credentials (SC-900, Fortinet and Cisco, including Network Defense and Junior Cybersecurity Analyst) and Red Team training (CRTOM and CCEP).'
-    ],
-    skillHeads:['ServiceNow','Infrastructure & Cloud','IAM & Security','Automation & Development','Networking & Communications','IT Operations & Processes'],
-    skillTexts:[
-      'Service Catalog · Flow Designer · Business Rules · Client Scripts · UI Policies · Script Includes · Custom Tables · App Engine Studio · ACLs · ATF · GlideRecord · REST APIs',
-      'Microsoft 365 · Exchange · Teams · SharePoint · Microsoft Intune · Azure · Windows · Server administration · Networks · VLAN · VPN · Troubleshooting',
-      'Access management · Entra ID · Microsoft Defender for Endpoint · Compliance policies · Endpoint security · Asset inventory and management',
-      'JavaScript · PowerShell · Administration and auditing scripts · Process automation · REST integrations · Glide APIs',
-      'Network segmentation · VLANs · Corporate Wi-Fi · VPN · IP telephony · PABX · Connectivity monitoring and diagnostics',
-      'Incident management · IT support · Asset management · Technical documentation · Continuous improvement · Analysis and troubleshooting'
-    ],
-    experienceIntro:'Experience in corporate environments, IT service operations and continuous improvement.',
-    jobs:[
-      'Full administration of Microsoft 365, Exchange, Teams and SharePoint; device and policy management through Intune; endpoint security; inventory organization; networking, VLAN segmentation and IP telephony. Contributed to corporate environment improvements and script automation.',
-      'IT support and infrastructure, ticket handling, access management, server and data center monitoring, and support for networking, telecommunications and infrastructure expansion.'
-    ], previous:'Previous experience', previousText:'HexalT (May/2023 — Aug/2023), Teleperformance (Feb/2021 — Feb/2022) and Sitel Group (Mar/2019 — Jan/2020), in technical support and IT infrastructure.',
-    projectLabel:'Featured project · ServiceNow PDI', projectTag:'Portfolio project', projectDesc:'Development of a corporate service portal in a ServiceNow Personal Developer Instance. The lab brings together user experience, data structure and automation: a customized portal, widgets, custom request and asset tables, indicators and service workflows.', projectDesc2:'One of the automations uses Flow Designer to look up available assets, assign equipment to the requester and update the asset status, demonstrating integration between requests, inventory and IT processes.',
-    projectCards:['Device management and security','Infrastructure and network modernization'], projectCardTexts:['Endpoint administration with Microsoft Intune, compliance policies, inventory and security features for corporate environments.','Contributed to network infrastructure organization, VLAN segmentation, network point identification, and the improvement of connectivity and telephony solutions.'],
-    insideProject:'A closer look at the project', flextrixTitle:'Explore Flextrix', shotsIntro:'Screens from the corporate portal built in my ServiceNow PDI.', shotCaptions:['Portal home page','IT requests','Asset management','Knowledge base'],
-    educationLabel:'Academic background', degree:'Technology Degree in Systems Analysis and Development', institution:'Nove de Julho University — UNINOVE', certLabel:'ServiceNow Certifications', cadPrep:'Certified Application Developer (CAD) — in preparation', badgeTitle:'Certifications and training', badgeIntro:'Credentials from Microsoft, Oracle, Cisco, Fortinet, ServiceNow and Red Team Leaders.',
-    contactText:'Open to opportunities and connections in Information Technology.', email:'Send an email', footer:'Built with a focus on technology, automation and solutions.',
-    badgeCaptions:[
-      'ServiceNow Certified System Administrator (CSA)','ServiceNow Micro-Certification — Flow Designer','ServiceNow Micro-Certification — Automated Test Framework','ServiceNow Delivery Accreditation — Platform Security and Identity','Microsoft Azure Fundamentals (AZ-900)','Security, Compliance and Identity Fundamentals (SC-900)','Oracle Cloud Infrastructure Foundations Associate','Oracle AI Foundations Associate','Oracle Data Platform Foundations Associate','Cisco — Introduction to Cybersecurity','Cisco — Junior Cybersecurity Analyst','Cisco — Network Defense','Fortinet Certified Associate Cybersecurity','Fortinet Certified Fundamentals Cybersecurity','FortiGate Operator','Certified Red Team Operations Management (CRTOM)','Certified Cybersecurity Educator Professional (CCEP)'
-    ]
-  }
+/* ===== IDIOMAS =====
+   PT-BR: o texto fica direto no HTML (cada item tem data-i18n="chave").
+   EN: o texto em inglês de cada chave fica no objeto EN abaixo.
+   Para alterar um texto, mude os DOIS: o PT no HTML e o EN aqui com a mesma chave. */
+const EN = {
+ "nav1": "About",
+ "nav2": "Skills",
+ "nav3": "Experience",
+ "nav4": "Projects",
+ "nav5": "Education",
+ "nav6": "Contact",
+ "heroEyebrow": "Professional portfolio · Information Technology",
+ "role": "ServiceNow Developer | Infrastructure | IAM | SecOps",
+ "heroIntro": "5+ years in IT across support, infrastructure and corporate security, now focused on ServiceNow development.",
+ "btnProjects": "Explore projects",
+ "eb1": "01 / About",
+ "h1t": "About me",
+ "ab1": "I build solutions on the ServiceNow platform: portals and widgets, custom tables, Flow Designer automations and REST integrations. I hold the CSA certification and am studying for the CAD (Certified Application Developer).",
+ "abh2": "Infrastructure",
+ "ab2": "Experience with Microsoft 365, Intune, networking, servers and IP telephony. I was responsible for the IT environment of a São Paulo branch, with data, voice and camera VLANs, 300+ standardized machines and a migration to IP/PABX.",
+ "abh3": "IAM &amp; SecOps",
+ "ab3": "<strong>Identity:</strong> Entra ID and Conditional Access (with geoblocking), MFA, least-privilege RBAC and user lifecycle management. <strong>SecOps:</strong> incident response in Defender, log and SIEM analysis, Fortinet and Ubiquiti, and workstation/server hardening.",
+ "eb2": "02 / Technical stack",
+ "h2t": "Skills",
+ "sk2h": "Infrastructure &amp; Cloud",
+ "sk2": "Microsoft 365 · Exchange · Teams · SharePoint · Intune · Azure · Windows · Servers · VLANs · VPN · Corporate Wi-Fi · IP telephony/PABX · Troubleshooting",
+ "sk3h": "IAM &amp; SecOps",
+ "sk3": "Entra ID · Conditional Access · MFA · RBAC · User lifecycle · Defender for Endpoint · Incident response · Logs and SIEM · Fortinet · Hardening",
+ "sk4h": "Development &amp; Automation",
+ "sk4": "JavaScript · PowerShell · Glide APIs · REST integrations · Audit and automation scripts",
+ "eb3": "03 / Career",
+ "h3t": "Professional experience",
+ "j1t": "Mid-level Infrastructure Analyst",
+ "j1": "Responsible for the IT environment of the São Paulo branch: Microsoft 365, Intune, endpoint security, networking and IP telephony. Deliverables are detailed in Projects.",
+ "j2t": "Junior Analyst",
+ "j2": "IT support and infrastructure: tickets and access, data center and server monitoring, troubleshooting, and support for network and telecom infrastructure expansion.",
+ "prevh": "Previous experience",
+ "prev": "HexalT (May/2023 — Aug/2023), Teleperformance (Feb/2021 — Feb/2022) and Sitel Group (Mar/2019 — Jan/2020), in technical support and IT infrastructure.",
+ "eb4": "04 / Hands-on experience",
+ "h4t": "Projects",
+ "pl": "Featured project · ServiceNow PDI",
+ "ptag": "Portfolio project",
+ "fx": "Corporate service desk and IT asset management portal built in a ServiceNow Personal Developer Instance: a customized portal, widgets, custom tables and indicators. A Flow Designer automation looks up available assets, assigns equipment to the requester and updates the asset status.",
+ "s1": "Portal home page",
+ "s2": "IT requests",
+ "s3": "Asset management",
+ "s4": "Knowledge base",
+ "pc1h": "IT environment build-out — São Paulo branch",
+ "pc1": "Data, voice and camera VLANs on Ubiquiti, 21 network points identified, data center reorganized, 300+ machines standardized with Intune and a migration to IP/PABX telephony.",
+ "pc2h": "Endpoint and access security",
+ "pc2": "Geoblocking and session control with Conditional Access, PowerShell restriction for standard users, and a .ps1 script that blocks game launchers (Steam, EA, Epic, Rockstar) on Entra ID–joined machines.",
+ "eb5": "05 / Education",
+ "h5t": "Education and certifications",
+ "el": "Academic background",
+ "deg": "Technology Degree in Systems Analysis and Development",
+ "inst": "Nove de Julho University — UNINOVE · Mar/2019 — Sep/2021",
+ "cl": "Additional training",
+ "badge1": "ServiceNow Certified System Administrator (CSA)",
+ "badge2": "ServiceNow Micro-Certification — Flow Designer",
+ "badge3": "ServiceNow Micro-Certification — Automated Test Framework",
+ "badge4": "ServiceNow Delivery Accreditation — Platform Security and Identity",
+ "badge5": "Microsoft Azure Fundamentals (AZ-900)",
+ "badge6": "Security, Compliance and Identity Fundamentals (SC-900)",
+ "badge7": "Fortinet FortiGate 7.6 Operator",
+ "cad": "ServiceNow Certified Application Developer (CAD) — in preparation.",
+ "badge8": "Oracle Cloud Infrastructure Foundations Associate",
+ "badge9": "Oracle AI Foundations Associate",
+ "badge10": "Oracle Data Platform Foundations Associate",
+ "badge11": "Cisco — Introduction to Cybersecurity",
+ "badge12": "Cisco — Junior Cybersecurity Analyst",
+ "badge13": "Cisco — Network Defense",
+ "badge14": "Fortinet Certified Associate Cybersecurity",
+ "badge15": "Fortinet Certified Fundamentals Cybersecurity",
+ "badge16": "Certified Red Team Operations Management (CRTOM)",
+ "badge17": "Certified Cybersecurity Educator Professional (CCEP)",
+ "eb6": "06 / Let’s talk",
+ "h6t": "Get in touch.",
+ "ct": "Open to opportunities and connections in Information Technology.",
+ "mail": "Send an email ↗",
+ "foot": "Built with a focus on technology, automation and solutions.",
+ "bt": "Certifications",
+ "more": "View all certifications (+10)"
 };
-function setText(selector,value){const el=document.querySelector(selector);if(el)el.textContent=value;}
-function setHTML(selector,value){const el=document.querySelector(selector);if(el)el.innerHTML=value;}
-function setMany(selector,values,html=false){document.querySelectorAll(selector).forEach((el,i)=>{if(values[i]!==undefined){if(html)el.innerHTML=values[i];else el.textContent=values[i];}});}
+const META = {
+  pt:{title:'Gabriel Santos Grans | Portfólio',desc:'Portfólio profissional de Gabriel Santos Grans — ServiceNow, infraestrutura, cloud, IAM e SecOps.'},
+  en:{title:'Gabriel Santos Grans | Portfolio',desc:'Professional portfolio of Gabriel Santos Grans — ServiceNow, infrastructure, cloud, IAM and SecOps.'}
+};
+const nodes=[...document.querySelectorAll('[data-i18n]')];
+nodes.forEach(el=>{el.dataset.pt=el.innerHTML;});
 function setLanguage(lang){
-  const en=lang==='en'; document.documentElement.lang=en?'en':'pt-BR';
-  document.title=en?translations.en.metaTitle:'Gabriel Santos Grans | Portfólio';
-  document.querySelector('meta[name="description"]').content=en?translations.en.metaDescription:'Portfólio profissional de Gabriel Santos Grans — ServiceNow, infraestrutura, cloud, IAM e SecOps.';
-  document.getElementById('ptBtn').classList.toggle('active',!en);document.getElementById('enBtn').classList.toggle('active',en);
-  document.getElementById('ptBtn').setAttribute('aria-pressed',String(!en));document.getElementById('enBtn').setAttribute('aria-pressed',String(en));
-  const t=translations.en;
-  if(en){
-    setMany('[data-nav]',t.nav);
-    setText('.hero .eyebrow',t.heroEyebrow);setText('.role','ServiceNow Developer | Infrastructure | IAM | SecOps');setText('#heroIntro',t.heroIntro);setMany('.actions a', [t.explore,'LinkedIn ↗','GitHub ↗']);setText('#menuBtn',t.menu);
-    setMany('#sobre .eyebrow', [t.sectionEyebrows[0]]);setText('#sobre h2',t.sectionTitles[0]);setText('.profile-lead',t.aboutLead);setMany('.profile-area h3',t.aboutHeads);setMany('.profile-area p',t.aboutTexts,true);
-    setMany('#conhecimentos .eyebrow',[t.sectionEyebrows[1]]);setText('#conhecimentos h2',t.sectionTitles[1]);setText('#conhecimentos .section-head p',t.sectionSubs[0]);setMany('.skillcard h3',t.skillHeads);setMany('.skillcard p',t.skillTexts);
-    setMany('#experiencia .eyebrow',[t.sectionEyebrows[2]]);setText('#experiencia h2',t.sectionTitles[2]);setText('#experiencia .section-head p',t.experienceIntro);setMany('.job h3',['Mid-level Infrastructure Analyst','Junior Analyst']);setMany('.job p',t.jobs);setText('.previous-experience h3',t.previous);setText('.previous-experience p',t.previousText);
-    setMany('#projetos .section-head .eyebrow',[t.sectionEyebrows[3]]);setText('#projetos > .wrap > .section-head h2',t.sectionTitles[3]);setText('#projetos > .wrap > .section-head p',t.sectionSubs[2]);setText('.project-label',t.projectLabel);setText('.project-feature .tag',t.projectTag);setText('.project-feature h3','Flextrix — IT Service Desk');setMany('.project-feature p',[t.projectDesc,t.projectDesc2]);setMany('.project-list h3',t.projectCards);setMany('.project-list p',t.projectCardTexts);
-    setText('#projetos .section-head[style] .eyebrow',t.insideProject);setText('#projetos .section-head[style] h2',t.flextrixTitle);setText('#projetos .section-head[style] p',t.shotsIntro);setMany('.shot figcaption',t.shotCaptions);
-    setMany('#formacao .eyebrow',[t.sectionEyebrows[4]]);setText('#formacao h2',t.sectionTitles[4]);setText('#formacao .section-head p',t.sectionSubs[3]);setText('.edu .card:first-child .project-label',t.educationLabel);setText('.edu .card:first-child h3',t.degree);setText('.edu .card:first-child p',t.institution);setText('.edu .card:nth-child(2) .project-label',t.certLabel);setMany('.certs li',[...t.badgeCaptions.slice(0,0), 'Certified System Administrator (CSA)','Micro-Certification — Flow Designer','Micro-Certification — Automated Test Framework','Delivery Accreditation — Platform Security and Identity',t.cadPrep]);
-    setText('#formacao .card[style] .project-label', 'Badges & credentials');setText('#formacao .card[style] .section-head h3',t.badgeTitle);setText('#formacao .card[style] .section-head p',t.badgeIntro);setMany('.badge-card figcaption',t.badgeCaptions);
-    setMany('#contato .eyebrow',[t.sectionEyebrows[5]]);setText('#contato h2',t.sectionTitles[5]);setText('#contato .contact p',t.contactText);setText('#contato .contact-links .btn.primary',t.email+' ↗');setText('.footer span:last-child',t.footer);
-  }else{location.reload();return;}
-  localStorage.setItem('portfolio-language',lang);
+  const en=lang==='en';
+  nodes.forEach(el=>{
+    const v=en?EN[el.dataset.i18n]:el.dataset.pt;
+    if(v!==undefined) el.innerHTML=v;
+  });
+  document.documentElement.lang=en?'en':'pt-BR';
+  document.title=META[lang].title;
+  document.querySelector('meta[name="description"]').content=META[lang].desc;
+  document.getElementById('ptBtn').classList.toggle('active',!en);
+  document.getElementById('enBtn').classList.toggle('active',en);
+  document.getElementById('ptBtn').setAttribute('aria-pressed',String(!en));
+  document.getElementById('enBtn').setAttribute('aria-pressed',String(en));
+  try{localStorage.setItem('portfolio-language',lang);}catch(e){}
 }
-document.getElementById('ptBtn').addEventListener('click',()=>{localStorage.setItem('portfolio-language','pt');location.reload();});
+document.getElementById('ptBtn').addEventListener('click',()=>setLanguage('pt'));
 document.getElementById('enBtn').addEventListener('click',()=>setLanguage('en'));
-if(localStorage.getItem('portfolio-language')==='en')setLanguage('en');
+let saved=null;try{saved=localStorage.getItem('portfolio-language');}catch(e){}
+if(saved==='en')setLanguage('en');
 </script>
 </body>
 </html>
