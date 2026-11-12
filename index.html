@@ -1,379 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gabriel Grans | ServiceNow Developer, Infraestrutura, IAM & SecOps</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101114" />
+  <meta name="description" content="Portfólio profissional de Gabriel Santos Grans — ServiceNow, infraestrutura, cloud, IAM e SecOps." />
+  <title>Gabriel Santos Grans | Portfólio</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body { font-family: Arial, sans-serif; background: #000000; color: #e2e8f0; line-height: 1.6; }
-    nav { background: #000000; border-bottom: 1px solid #1f1f1f; padding: 14px 20px; text-align: center; position: sticky; top: 0; z-index: 10; }
-    nav a { color: #94a3b8; text-decoration: none; margin: 0 12px; font-size: 0.95rem; }
-    nav a:hover { color: #38bdf8; }
-    header { text-align: center; padding: 70px 20px 30px; }
-    header h1 { font-size: 2.6rem; color: #38bdf8; }
-    header p { margin-top: 10px; font-size: 1.1rem; color: #94a3b8; }
-    section { max-width: 900px; margin: 0 auto; padding: 30px 20px; }
-    h2 { color: #38bdf8; margin-bottom: 15px; }
-    .card { background: #0d0d0d; border: 1px solid #1f1f1f; padding: 20px; border-radius: 10px; margin-bottom: 15px; }
-    .card h3 { margin-bottom: 8px; }
-    .card a { color: #38bdf8; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
-    .tags span { display: inline-block; background: #000000; border: 1px solid #38bdf8; color: #38bdf8; padding: 3px 10px; border-radius: 20px; font-size: 0.85rem; margin: 3px 3px 3px 0; }
-    .data { color: #94a3b8; font-size: 0.9rem; }
-    ul { padding-left: 20px; }
-    .galeria { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 15px; margin-top: 10px; }
-    .galeria figure { background: #000000; border-radius: 8px; overflow: hidden; border: 1px solid #262626; }
-    .galeria img { width: 100%; height: 180px; object-fit: cover; object-position: top; display: block; }
-    .galeria figcaption { padding: 8px 10px; font-size: 0.85rem; color: #94a3b8; text-align: center; }
-    .icones { display: flex; flex-wrap: wrap; gap: 10px; }
-    .icone { display: inline-flex; align-items: center; gap: 8px; background: #000000; border: 1px solid #262626; padding: 6px 12px; border-radius: 8px; font-size: 0.9rem; color: #e2e8f0; }
-    .icone img { display: block; width: 22px; height: 22px; }
-    .badges { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 14px; }
-    .badges img { height: 64px; width: auto; display: block; }
-    .contato-topo a { color: #38bdf8; text-decoration: none; margin: 0 8px; }
-    .contato-topo a:hover { text-decoration: underline; }
-    .contato-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; max-width: 900px; margin: 20px auto 0; text-align: left; }
-    .contato-card { display: block; background: #0d0d0d; border: 1px solid #1f1f1f; border-radius: 10px; padding: 18px 20px; text-decoration: none; margin: 0; }
-    .contato-card:hover { border-color: #38bdf8; }
-    .contato-card small { display: block; color: #94a3b8; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; }
-    .contato-card strong { color: #38bdf8; font-size: 1.05rem; word-break: break-word; }
-    footer { text-align: center; padding: 40px 20px; color: #94a3b8; }
-    footer a { color: #38bdf8; margin: 0 10px; }
+    :root{--bg:#101114;--surface:#17181c;--surface2:#1e2026;--line:#2d2f36;--wine:#8f1018;--burgundy:#4a080d;--red:#ed252e;--text:#f0f0f2;--muted:#a6a7ae;--soft:#d1d1d5;--max:1160px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:radial-gradient(ellipse at 82% 0%,rgba(237,37,46,.24),transparent 36%),radial-gradient(ellipse at 0% 40%,rgba(143,16,24,.16),transparent 35%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}.topbar{position:sticky;top:0;z-index:10;background:rgba(16,17,20,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.07)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:13px;font-weight:800;letter-spacing:.16em}.brand span{color:#ef343b}.navlinks{display:flex;gap:27px;color:var(--muted);font-size:13px}.navlinks a:hover,.textlink:hover{color:#ff555b}.menu{display:none;background:none;border:1px solid var(--line);color:var(--text);padding:8px 11px;border-radius:8px}
+    .hero{padding:104px 0 88px;display:grid;grid-template-columns:1fr 300px;gap:70px;align-items:center}.eyebrow{color:#ef343b;font-size:11px;font-weight:800;letter-spacing:.2em;text-transform:uppercase}.hero h1{font-size:clamp(42px,6vw,72px);line-height:1.04;letter-spacing:-.055em;margin:17px 0 12px}.role{font-size:clamp(17px,2vw,22px);color:#ff555b;font-weight:600;margin:0 0 24px}.intro{max-width:720px;color:#b7b8bf;font-size:16px;line-height:1.9}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 17px;border-radius:8px;font-size:13px;font-weight:700;border:1px solid var(--line);transition:.2s}.btn.primary{background:linear-gradient(115deg,#ed252e,#8f1018);border-color:#c51c25;color:#fff}.btn:hover{transform:translateY(-2px);border-color:#c51c25}.monogram{width:260px;height:260px;margin:auto;border-radius:28px;background:linear-gradient(145deg,#ed252e 0%,#8f1018 42%,#17181c 82%);border:1px solid #651016;display:grid;place-items:center;position:relative;box-shadow:0 24px 80px rgba(0,0,0,.28)}.monogram:before{content:"";position:absolute;inset:13px;border:1px solid rgba(239,52,59,.34);border-radius:19px}.monogram strong{font-size:76px;letter-spacing:-.1em;color:#ffffff}.monogram small{position:absolute;bottom:27px;color:#ef343b;font-size:10px;letter-spacing:.2em}
+    section{padding:76px 0;border-top:1px solid rgba(255,255,255,.06)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:34px}.section-head h2{font-size:30px;letter-spacing:-.04em;margin:7px 0 0}.section-head p{color:var(--muted);font-size:13px;max-width:440px;margin:0}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.card{background:linear-gradient(145deg,rgba(35,35,40,.98),rgba(18,18,21,.98));border:1px solid var(--line);border-radius:13px;padding:24px;transition:.2s}.card:hover{border-color:#a5222a;transform:translateY(-3px)}.card h3{font-size:17px;margin:0 0 8px}.card p{color:var(--muted);font-size:13px;margin:0}.taglist{display:flex;flex-wrap:wrap;gap:8px;margin-top:17px}.tag{font-size:11px;color:#ff777b;border:1px solid #672027;background:rgba(190,18,28,.18);padding:5px 9px;border-radius:99px}.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.skillcard{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px}.skillcard h3{font-size:15px;margin:0 0 12px;color:#ff5a60}.skillcard p{font-size:13px;color:var(--muted);margin:0;line-height:1.9}
+    .timeline{display:grid;gap:14px}.job{display:grid;grid-template-columns:210px 1fr;gap:25px;padding:22px 0;border-bottom:1px solid var(--line)}.job:last-child{border:0}.date{font-size:12px;color:#ef343b;font-weight:700}.job h3{font-size:16px;margin:0}.company{font-size:13px;color:#e5e5e8;margin:2px 0 8px}.job p{font-size:13px;color:var(--muted);margin:0;max-width:780px}.project-feature{border-color:#75151d;background:linear-gradient(120deg,rgba(190,18,28,.24),rgba(23,24,28,.95) 55%)}.project-top{display:flex;justify-content:space-between;gap:20px;align-items:start}.project-label{font-size:10px;letter-spacing:.15em;color:#ff454c;text-transform:uppercase;font-weight:800}.project-feature h3{font-size:22px;margin:8px 0}.project-feature p{max-width:850px;line-height:1.8}.project-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:16px}.project-list .card{min-height:160px}
+    .edu{display:grid;grid-template-columns:1fr 1fr;gap:16px}.edu .card{height:100%}.certs{columns:2;column-gap:36px;padding-left:18px;color:var(--muted);font-size:13px}.certs li{break-inside:avoid;margin:0 0 9px;padding-left:3px}.contact{background:linear-gradient(120deg,rgba(143,16,24,.48),rgba(16,17,20,.1));border:1px solid #68151b;border-radius:16px;padding:34px;display:flex;justify-content:space-between;align-items:center;gap:30px}.contact h2{font-size:28px;margin:6px 0}.contact p{color:var(--muted);font-size:13px;margin:0}.contact-links{display:flex;gap:10px;flex-wrap:wrap}.footer{padding:30px 0;color:#777982;font-size:11px;display:flex;justify-content:space-between;gap:15px}.textlink{color:#ff555b}
+
+    .screenshots{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.shot{margin:0;background:#17181c;border:1px solid var(--line);border-radius:12px;overflow:hidden}.shot img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;object-position:top}.shot figcaption{padding:12px 15px;color:#f0f0f2;font-size:12px;font-weight:700;border-top:1px solid var(--line)}
+    .badge-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.badge-card{margin:0;min-width:0;background:linear-gradient(150deg,#222329,#15161a);border:1px solid var(--line);border-radius:11px;padding:13px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;gap:12px;transition:.2s}.badge-card:hover{transform:translateY(-3px);border-color:#a5222a}.badge-card img{width:100%;height:112px;object-fit:contain}.badge-card figcaption{font-size:11px;line-height:1.45;color:#d8d8dc}
+    .brand img{width:24px;height:24px;object-fit:contain;vertical-align:middle;margin-right:7px}.brand span{color:#ed252e}
+    @media(max-width:800px){.badge-grid{grid-template-columns:repeat(3,1fr)}}@media(max-width:560px){.screenshots{grid-template-columns:1fr}.badge-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;padding:75px 0 65px;gap:38px}.monogram{width:190px;height:190px}.monogram strong{font-size:58px}.skills{grid-template-columns:1fr 1fr}.job{grid-template-columns:1fr;gap:5px}.contact{align-items:flex-start;flex-direction:column}}
+    @media(max-width:560px){.wrap{width:min(100% - 30px,var(--max))}.nav{height:66px}.menu{display:block}.navlinks{display:none;position:absolute;top:65px;left:0;right:0;padding:18px 22px;background:#15161a;border-bottom:1px solid var(--line);flex-direction:column;gap:15px}.navlinks.open{display:flex}.hero h1{font-size:45px}.grid,.skills,.edu,.project-list{grid-template-columns:1fr}.section-head{display:block}.section-head p{margin-top:10px}.certs{columns:1}.contact{padding:25px}.footer{flex-direction:column}}
   </style>
 </head>
 <body>
-  <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#competencias">Competências</a>
-    <a href="#projetos">Projetos</a>
-    <a href="#formacao">Formação</a>
-    <a href="#certificacoes">Certificações</a>
-    <a href="#experiencia">Experiência</a>
-    <a href="#contato">Contato</a>
-  </nav>
+  <header class="topbar"><div class="wrap nav"><a class="brand" href="#inicio">GABRIEL<span>.</span>GRANS</a><button class="menu" id="menuBtn" aria-label="Abrir menu">Menu</button><nav class="navlinks" id="navlinks"><a href="#sobre">Sobre</a><a href="#conhecimentos">Conhecimentos</a><a href="#experiencia">Experiência</a><a href="#projetos">Projetos</a><a href="#formacao">Formação</a><a href="#contato">Contato</a></nav></div></header>
+  <main>
+    <div class="wrap hero" id="inicio"><div><div class="eyebrow">Portfólio profissional · Tecnologia da Informação</div><h1>Gabriel Santos<br>Grans<span style="color:#ed252e">.</span></h1><p class="role">ServiceNow Developer | Infraestrutura | IAM | SecOps</p><p class="intro">Profissional de Tecnologia da Informação com mais de 5 anos de experiência em infraestrutura e suporte a ambientes corporativos. Atuação com Microsoft 365, Intune, redes, servidores, cloud, segurança de endpoints e gestão de acessos. Atualmente direcionando minha carreira para desenvolvimento na plataforma ServiceNow, unindo experiência prática em infraestrutura à construção de soluções e automações.</p><div class="actions"><a class="btn primary" href="#projetos">Explorar projetos</a><a class="btn" href="https://www.linkedin.com/in/gabrielgrans/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a class="btn" href="https://github.com/gabrielgrans" target="_blank" rel="noreferrer">GitHub ↗</a></div></div><div class="monogram" aria-label="Monograma GS"><strong>GS</strong><small>TECHNOLOGY · IT</small></div></div>
 
-  <header>
-    <h1>Gabriel Santos Grans</h1>
-    <p>ServiceNow Developer | Infraestrutura | IAM | SecOps</p>
-    <p>São Paulo, SP</p>
-    <p class="contato-topo">
-      <a href="mailto:gabrielgsti@outlook.com">gabrielgsti@outlook.com</a> ·
-      <a href="https://www.linkedin.com/in/gabrielgrans/" target="_blank" rel="noopener">LinkedIn</a>
-    </p>
-  </header>
+    <section id="sobre"><div class="wrap"><div class="section-head"><div><div class="eyebrow">01 / Apresentação</div><h2>Sobre mim</h2></div><p>Uma trajetória que conecta operação, infraestrutura, segurança e desenvolvimento de soluções.</p></div><div class="card"><p>Minha experiência profissional foi construída em ambientes corporativos, atuando na sustentação e melhoria de serviços de TI, administração de plataformas Microsoft, gerenciamento de dispositivos, redes, servidores e atendimento técnico. Tenho interesse em transformar necessidades operacionais em soluções bem estruturadas, com foco em automação, organização de processos, segurança e experiência do usuário. No ecossistema ServiceNow, venho desenvolvendo projetos práticos em ambiente pessoal de desenvolvimento (PDI), aprofundando conhecimentos em aplicações, tabelas, portal de serviços e Flow Designer.</p></div></div></section>
 
-  <section id="sobre">
-    <h2>Sobre mim</h2>
-    <div class="card">
-      <p>Profissional de TI com mais de 5 anos de experiência, atuando com suporte, sistemas, segurança e infraestrutura.</p>
+    <section id="conhecimentos"><div class="wrap"><div class="section-head"><div><div class="eyebrow">02 / Stack técnica</div><h2>Conhecimentos</h2></div><p>Competências desenvolvidas na experiência profissional, estudos e projetos práticos.</p></div><div class="skills">
+      <article class="skillcard"><h3>ServiceNow</h3><p>Service Catalog · Flow Designer · Business Rules · Client Scripts · UI Policies · Script Includes · Custom Tables · App Engine Studio · ACLs · ATF · GlideRecord · REST APIs</p></article>
+      <article class="skillcard"><h3>Infraestrutura & Cloud</h3><p>Microsoft 365 · Exchange · Teams · SharePoint · Microsoft Intune · Azure · Windows · Administração de servidores · Redes · VLAN · VPN · Troubleshooting</p></article>
+      <article class="skillcard"><h3>IAM & Segurança</h3><p>Gestão de acessos · Entra ID · Microsoft Defender for Endpoint · Políticas de conformidade · Segurança de endpoints · Inventário e gerenciamento de ativos</p></article>
+      <article class="skillcard"><h3>Automação & Desenvolvimento</h3><p>JavaScript · PowerShell · Scripts de administração e auditoria · Automação de processos · Integrações REST · Glide APIs</p></article>
+      <article class="skillcard"><h3>Redes & Comunicação</h3><p>Segmentação de rede · VLANs · Wi-Fi corporativo · VPN · Telefonia IP · PABX · Monitoramento e diagnóstico de conectividade</p></article>
+      <article class="skillcard"><h3>Processos & Operação</h3><p>Gestão de incidentes · Atendimento e suporte · Gestão de ativos · Documentação técnica · Melhoria contínua · Análise e resolução de problemas</p></article>
+    </div></div></section>
 
-      <h3 style="margin-top:18px;">ServiceNow</h3>
-      <p>Desenvolvo soluções na plataforma ServiceNow, com portais e widgets, tabelas personalizadas, automações com Flow Designer, Service Catalog e integrações via REST. Possuo a certificação System Administrator (CSA) e estou estudando para a certificação CAD (Certified Application Developer).</p>
+    <section id="experiencia"><div class="wrap"><div class="section-head"><div><div class="eyebrow">03 / Trajetória</div><h2>Experiência profissional</h2></div><p>Atuação em suporte, infraestrutura e administração de ambientes corporativos.</p></div><div class="timeline">
+      <article class="job"><div class="date">Fev/2026 — Out/2026</div><div><h3>Analista de Infraestrutura Pleno</h3><div class="company">Chaintech</div><p>Administração de Microsoft 365, Exchange, Teams e SharePoint; gerenciamento de dispositivos e políticas pelo Intune; segurança de endpoints; organização de inventário; atuação em redes, segmentação por VLAN e telefonia IP. Participação em melhorias do ambiente corporativo e automações com scripts.</p></div></article>
+      <article class="job"><div class="date">Ago/2023 — Fev/2026</div><div><h3>Analista Júnior</h3><div class="company">Rede D'Or — OncoStar</div><p>Atuação em suporte e infraestrutura de TI, atendimento de chamados, gestão de acessos, acompanhamento de servidores e ambiente de CPD, além de apoio em atividades de rede, telecomunicações e expansão da infraestrutura.</p></div></article>
+      <article class="job"><div class="date">Mai/2023 — Ago/2023</div><div><h3>Analista Júnior</h3><div class="company">HexalT</div><p>Atuação em atividades de suporte e tecnologia da informação em ambiente corporativo.</p></div></article>
+      <article class="job"><div class="date">Fev/2021 — Fev/2022</div><div><h3>Analista Júnior</h3><div class="company">Teleperformance</div><p>Atuação em suporte técnico e atendimento de demandas de tecnologia.</p></div></article>
+      <article class="job"><div class="date">Mar/2019 — Jan/2020</div><div><h3>Analista Júnior</h3><div class="company">Sitel Group</div><p>Atuação em suporte e atendimento técnico em ambiente corporativo.</p></div></article>
+    </div></div></section>
 
-      <h3 style="margin-top:18px;">Infraestrutura</h3>
-      <p>Tenho experiência com Microsoft 365, Intune, redes, servidores e telefonia IP. Fui responsável pelo ambiente de TI de uma filial em São Paulo: implantei VLANs de dados, voz e câmeras, padronizei mais de 300 máquinas com Intune e conduzi a migração para telefonia IP/PABX.</p>
-
-      <h3 style="margin-top:18px;">IAM e SecOps</h3>
-      <p><strong>Identidade (IAM):</strong> trabalho com Microsoft Entra ID e Acesso Condicional (incluindo geoblock), autenticação multifator (MFA) e políticas de senha, controle de acesso por função (RBAC) seguindo o princípio do menor privilégio e gestão do ciclo de vida de usuários, da entrada à saída, passando por mudanças de área.</p>
-      <p style="margin-top:10px;"><strong>Segurança operacional (SecOps):</strong> faço resposta a incidentes e análise de alertas do Defender for Endpoint, análise de logs e SIEM, segurança de rede com Fortinet e Ubiquiti e hardening de estações e servidores, com controle de sessão, restrição de PowerShell para usuários comuns, bloqueio de aplicações não homologadas por script e proteção contra phishing e domínios maliciosos.</p>
-      <p style="margin-top:10px;">Minha base teórica vem de certificações em cibersegurança (SC-900, Fortinet e Cisco, com Defesa de Rede e Analista de Cibersegurança Júnior) e de formações em Red Team (CRTOM e CCEP).</p>
+    <section id="projetos"><div class="wrap"><div class="section-head"><div><div class="eyebrow">04 / Aplicação prática</div><h2>Projetos e iniciativas</h2></div><p>Projetos que demonstram como aplico conhecimentos técnicos para estruturar soluções e resolver necessidades reais.</p></div>
+      <article class="card project-feature"><div class="project-top"><div><div class="project-label"><img src="./servicenow-logo.png" alt="ServiceNow" style="height:20px;width:auto;vertical-align:middle;margin-right:7px;object-fit:contain">Projeto em destaque · ServiceNow PDI</div><h3>Flextrix — IT Service Desk</h3></div><span class="tag">Portfolio project</span></div><p>Desenvolvimento de um portal corporativo de serviços em ambiente ServiceNow Personal Developer Instance. O laboratório reúne experiência de usuário, estrutura de dados e automação: portal personalizado, widgets, tabelas próprias para solicitações e ativos, indicadores e fluxos de atendimento.</p><p style="margin-top:12px">Uma das automações desenvolvidas utiliza o Flow Designer para consultar ativos disponíveis, associar um equipamento ao solicitante e atualizar o status do patrimônio, demonstrando integração entre solicitações, inventário e processos de TI.</p><div class="taglist"><span class="tag">Service Portal</span><span class="tag">Flow Designer</span><span class="tag">Custom Tables</span><span class="tag">IT Asset Management</span><span class="tag">Widgets</span><span class="tag">Dashboards</span></div></article>
+      <div class="project-list"><article class="card"><h3>Gestão de dispositivos e segurança</h3><p>Administração de endpoints com Microsoft Intune, políticas de conformidade, inventário e recursos de segurança para ambientes corporativos.</p><div class="taglist"><span class="tag">Microsoft Intune</span><span class="tag">Defender</span><span class="tag">PowerShell</span></div></article><article class="card"><h3>Modernização de infraestrutura e redes</h3><p>Participação na organização da infraestrutura de rede, segmentação por VLAN, identificação de pontos de rede e evolução de soluções de conectividade e telefonia.</p><div class="taglist"><span class="tag">Networking</span><span class="tag">VLAN</span><span class="tag">Ubiquiti</span><span class="tag">VoIP</span></div></article></div>
     </div>
-  </section>
+      <div class="section-head" style="margin-top:30px;margin-bottom:18px"><div><div class="eyebrow">Por dentro do projeto</div><h2>Conheça o Flextrix</h2></div><p>Capturas reais do portal desenvolvido no ServiceNow PDI.</p></div>
+      <div class="screenshots">
+        <figure class="shot"><img src="./flextrix-home.png" alt="Página inicial do portal Flextrix"><figcaption>Portal e página inicial</figcaption></figure>
+        <figure class="shot"><img src="./flextrix-solicitacoes.png" alt="Página de solicitações do Flextrix"><figcaption>Solicitações de TI</figcaption></figure>
+        <figure class="shot"><img src="./flextrix-equipamentos.png" alt="Gestão de equipamentos do Flextrix"><figcaption>Gestão de equipamentos</figcaption></figure>
+        <figure class="shot"><img src="./flextrix-conhecimento.png" alt="Base de conhecimento do Flextrix"><figcaption>Base de conhecimento</figcaption></figure>
+      </div>
+    </div></section>
 
-  <section id="competencias">
-    <h2>Competências</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>ServiceNow</h3>
-        <div class="tags">
-          <span>Flow Designer</span><span>Business Rules</span><span>Client Scripts</span>
-          <span>UI Policies</span><span>Service Catalog</span>
-          <span>App Engine Studio</span><span>Custom Tables</span><span>IntegrationHub</span>
-          <span>REST APIs</span><span>ACLs</span><span>ATF</span>
-          <span>Dashboards</span><span>Performance Analytics</span>
+    <section id="formacao"><div class="wrap"><div class="section-head"><div><div class="eyebrow">05 / Formação</div><h2>Formação acadêmica</h2></div><p>Base acadêmica e certificações complementares em tecnologia, cloud e segurança.</p></div><div class="edu"><article class="card"><div class="project-label">Formação acadêmica</div><h3 style="margin-top:10px">Tecnologia em Análise e Desenvolvimento de Sistemas</h3><p>Universidade Nove de Julho — UNINOVE</p><p style="margin-top:10px">Mar/2019 — Set/2021</p></article><article class="card"><div class="project-label">Certificações ServiceNow</div><ul class="certs" style="columns:1"><li>Certified System Administrator (CSA)</li><li>Micro-Certification — Flow Designer</li><li>Micro-Certification — Automated Test Framework</li><li>Delivery Accreditation — Platform Security and Identity</li><li>Certified Application Developer (CAD) — em preparação</li></ul></article></div>
+      <div class="card" style="margin-top:16px"><div class="section-head" style="margin-bottom:22px"><div><div class="project-label">Badges e credenciais</div><h3 style="margin-top:8px">Certificações e treinamentos</h3></div><p>Credenciais Microsoft, Oracle, Cisco, Fortinet, ServiceNow e Red Team Leaders.</p></div>
+        <div class="badge-grid">
+          <figure class="badge-card"><img src="./badge-csa.png" alt="ServiceNow Certified System Administrator"><figcaption>ServiceNow Certified System Administrator (CSA)</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-micro-flows.png" alt="ServiceNow Flow Designer Micro-Certification"><figcaption>ServiceNow Micro-Certification — Flow Designer</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-micro-atf.png" alt="ServiceNow Automated Test Framework Micro-Certification"><figcaption>ServiceNow Micro-Certification — Automated Test Framework</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-security-identity.png" alt="ServiceNow Platform Security and Identity"><figcaption>ServiceNow Delivery Accreditation — Platform Security and Identity</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-az900.png" alt="Microsoft Azure Fundamentals AZ-900"><figcaption>Microsoft Azure Fundamentals (AZ-900)</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-sc900.png" alt="Microsoft SC-900"><figcaption>Security, Compliance and Identity Fundamentals (SC-900)</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-oci.png" alt="Oracle Cloud Infrastructure Foundations"><figcaption>Oracle Cloud Infrastructure Foundations Associate</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-oracle-ai.png" alt="Oracle AI Foundations"><figcaption>Oracle AI Foundations Associate</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-oracle-data.png" alt="Oracle Data Platform Foundations"><figcaption>Oracle Data Platform Foundations Associate</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-cisco-intro-ciberseguranca.png" alt="Cisco Introdução à Cibersegurança"><figcaption>Cisco — Introdução à Cibersegurança</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-cisco-analista-junior.png" alt="Cisco Analista de Cibersegurança Júnior"><figcaption>Cisco — Analista de Cibersegurança Júnior</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-cisco-defesa-rede.png" alt="Cisco Defesa de Rede"><figcaption>Cisco — Defesa de Rede</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-fortinet-associate.png" alt="Fortinet Certified Associate Cybersecurity"><figcaption>Fortinet Certified Associate Cybersecurity</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-fortinet-fundamentals.png" alt="Fortinet Certified Fundamentals Cybersecurity"><figcaption>Fortinet Certified Fundamentals Cybersecurity</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-fortigate-operator.png" alt="FortiGate Operator"><figcaption>FortiGate Operator</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-crtom.png" alt="Certified Red Team Operations Management"><figcaption>Certified Red Team Operations Management (CRTOM)</figcaption></figure>
+          <figure class="badge-card"><img src="./badge-ccep.png" alt="Certified Cybersecurity Educator Professional"><figcaption>Certified Cybersecurity Educator Professional (CCEP)</figcaption></figure>
         </div>
       </div>
-      <div class="card">
-        <h3>Desenvolvimento e Interface</h3>
-        <div class="icones">
-          <span class="icone"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBmaWxsPSIjRjBEQjRGIiBkPSJNMS40MDggMS40MDhoMTI1LjE4NHYxMjUuMTg1SDEuNDA4eiIvPjxwYXRoIGZpbGw9IiMzMjMzMzAiIGQ9Ik0xMTYuMzQ3IDk2LjczNmMtLjkxNy01LjcxMS00LjY0MS0xMC41MDgtMTUuNjcyLTE0Ljk4MS0zLjgzMi0xLjc2MS04LjEwNC0zLjAyMi05LjM3Ny01LjkyNi0uNDUyLTEuNjktLjUxMi0yLjY0Mi0uMjI2LTMuNjY1LjgyMS0zLjMyIDQuNzg0LTQuMzU1IDcuOTI1LTMuNDAzIDIuMDIzLjY3OCAzLjkzOCAyLjIzNyA1LjA5MyA0LjcyNCA1LjQwMi0zLjQ5OCA1LjM5MS0zLjQ3NSA5LjE2My01Ljg3OS0xLjM4MS0yLjE0MS0yLjExOC0zLjEyOS0zLjAyMi00LjA0NS0zLjI0OS0zLjYyOS03LjY3Ni01LjQ5OC0xNC43NTYtNS4zNTVsLTMuNjg4LjQ3N2MtMy41MzQuODkzLTYuOTAyIDIuNzQ4LTguODc3IDUuMjM1LTUuOTI2IDYuNzI0LTQuMjM2IDE4LjQ5MiAyLjk3NSAyMy4zMzUgNy4xMDQgNS4zMzIgMTcuNTQgNi41NDUgMTguODczIDExLjUzMSAxLjI5NyA2LjEwNC00LjQ4NiA4LjA4LTEwLjIzNCA3LjM3OC00LjIzNi0uODgxLTYuNTkyLTMuMDM0LTkuMTM5LTYuOTQ5LTQuNjg4IDIuNzEzLTQuNjg4IDIuNzEzLTkuNTA4IDUuNDg1IDEuMTQzIDIuNDk5IDIuMzQ0IDMuNjMgNC4yNiA1Ljc5NSA5LjA2OCA5LjE5OCAzMS43NiA4Ljc0NiAzNS44My01LjE3Ni4xNjUtLjQ3OCAxLjI2MS0zLjY2Ni4zOC04LjU4MXpNNjkuNDYyIDU4Ljk0M0g1Ny43NTNsLS4wNDggMzAuMjcyYzAgNi40MzguMzMzIDEyLjM0LS43MTQgMTQuMTQ5LTEuNzEzIDMuNTU4LTYuMTUyIDMuMTE3LTguMTc1IDIuNDI3LTIuMDU5LTEuMDEyLTMuMTA2LTIuNDUxLTQuMzE5LTQuNDg1LS4zMzMtLjU4NC0uNTgzLTEuMDM2LS42NjctMS4wNzFsLTkuNTIgNS44M2MxLjU4MyAzLjI0OSAzLjkxNSA2LjA2OSA2LjkwMiA3LjkwMSA0LjQ2MiAyLjY3OCAxMC40NTkgMy40OTkgMTYuNzMxIDIuMDU5IDQuMDgyLTEuMTg5IDcuNjA0LTMuNjUyIDkuNDQ4LTcuNDAxIDIuNjY2LTQuOTE1IDIuMDk0LTEwLjg2NCAyLjA3LTE3LjQ0NC4wNi0xMC43MzUuMDAxLTIxLjQ2OC4wMDEtMzIuMjM3eiIvPjwvc3ZnPg==" alt="" width="22" height="22">JavaScript</span>
-          <span class="icone"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBmaWxsPSIjRTQ0RDI2IiBkPSJNMTkuMDM3IDExMy44NzZMOS4wMzIgMS42NjFoMTA5LjkzNmwtMTAuMDE2IDExMi4xOTgtNDUuMDE5IDEyLjQ4eiIvPjxwYXRoIGZpbGw9IiNGMTY1MjkiIGQ9Ik02NCAxMTYuOGwzNi4zNzgtMTAuMDg2IDguNTU5LTk1Ljg3OEg2NHoiLz48cGF0aCBmaWxsPSIjRUJFQkVCIiBkPSJNNjQgNTIuNDU1SDQ1Ljc4OEw0NC41MyAzOC4zNjFINjRWMjQuNTk5SDI5LjQ4OWwuMzMgMy42OTIgMy4zODIgMzcuOTI3SDY0em0wIDM1Ljc0M2wtLjA2MS4wMTctMTUuMzI3LTQuMTQtLjk3OS0xMC45NzVIMzMuODE2bDEuOTI4IDIxLjYwOSAyOC4xOTMgNy44MjYuMDYzLS4wMTd6Ii8+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTYzLjk1MiA1Mi40NTV2MTMuNzYzaDE2Ljk0N2wtMS41OTcgMTcuODQ5LTE1LjM1IDQuMTQzdjE0LjMxOWwyOC4yMTUtNy44Mi4yMDctMi4zMjUgMy4yMzQtMzYuMjMzLjMzNS0zLjY5NmgtMy43MDh6bTAtMjcuODU2djEzLjc2MmgzMy4yNDRsLjI3Ni0zLjA5Mi42MjgtNi45NzguMzI5LTMuNjkyeiIvPjwvc3ZnPg==" alt="" width="22" height="22">HTML</span>
-          <span class="icone"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBmaWxsPSIjMTU3MkI2IiBkPSJNMTguODE0IDExNC4xMjNMOC43NiAxLjM1MmgxMTAuNDhsLTEwLjA2NCAxMTIuNzU0LTQ1LjI0MyAxMi41NDMtNDUuMTE5LTEyLjUyNnoiLz48cGF0aCBmaWxsPSIjMzNBOURDIiBkPSJNNjQuMDAxIDExNy4wNjJsMzYuNTU5LTEwLjEzNiA4LjYwMS05Ni4zNTRoLTQ1LjE2djEwNi40OXoiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNjQuMDAxIDUxLjQyOWgxOC4zMDJsMS4yNjQtMTQuMTYzSDY0LjAwMVYyMy40MzVoMzQuNjgybC0uMzMyIDMuNzExLTMuNCAzOC4xMTRoLTMwLjk1VjUxLjQyOXoiLz48cGF0aCBmaWxsPSIjRUJFQkVCIiBkPSJNNjQuMDgzIDg3LjM0OWwtLjA2MS4wMTgtMTUuNDAzLTQuMTU5LS45ODUtMTEuMDMxSDMzLjc1MmwxLjkzNyAyMS43MTcgMjguMzMxIDcuODYzLjA2My0uMDE4di0xNC4zOXoiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNODEuMTI3IDY0LjY3NWwtMS42NjYgMTguNTIyLTE1LjQyNiA0LjE2NHYxNC4zOWwyOC4zNTQtNy44NTguMjA4LTIuMzM3IDIuNDA2LTI2Ljg4MUg4MS4xMjd6Ii8+PHBhdGggZmlsbD0iI0VCRUJFQiIgZD0iTTY0LjA0OCAyMy40MzV2MTMuODMxSDMwLjY0bC0uMjc3LTMuMTA4LS42My03LjAxMi0uMzMxLTMuNzExaDM0LjY0NnptLS4wNDcgMjcuOTk2djEzLjgzMUg0OC43OTJsLS4yNzctMy4xMDgtLjYzMS03LjAxMi0uMzMtMy43MTFoMTYuNDQ3eiIvPjwvc3ZnPg==" alt="" width="22" height="22">CSS</span>
-          <span class="icone"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBmaWxsPSIjQjNCM0IzIiBkPSJNNjMuODEgMS4wMjZMNC41NTMgMjEuODhsOS4zNjMgNzcuNjM3IDQ5Ljk1NyAyNy40NTcgNTAuMjE0LTI3LjgyOCA5LjM2LTc3LjYzNXoiLz48cGF0aCBmaWxsPSIjQTYxMjBEIiBkPSJNMTE3LjUzNiAyNS45OThMNjMuNjcyIDcuNjI5djExMi43ODVsNDUuMTQxLTI0Ljk4M3oiLz48cGF0aCBmaWxsPSIjREQxQjE2IiBkPSJNMTEuMjAxIDI2LjMyOWw4LjAyNiA2OS40MzQgNDQuNDQ0IDI0LjY1MVY3LjYyN3oiLz48cGF0aCBmaWxsPSIjRjJGMkYyIiBkPSJNNzguNDk5IDY3LjY3bC0xNC44MjcgNi45MzRINDguMDQ0bC03LjM0NyAxOC4zNzQtMTMuNjYzLjI1NCAzNi42MzgtODEuNTA4TDc4LjQ5OSA2Ny42N3ptLTEuNDM0LTMuNDkxTDYzLjc3IDM3Ljg1OCA1Mi44NjQgNjMuNzI2aDEwLjgwN2wxMy4zOTQuNDUzeiIvPjxwYXRoIGZpbGw9IiNCM0IzQjMiIGQ9Ik02My42NzEgMTEuNzI0bC4wOTggMjYuMTM0IDEyLjM3NSAyNS44ODhINjMuNjk4bC0uMDI3IDEwLjg0MSAxNy4yMDkuMDE3IDguMDQyIDE4LjYzIDEzLjA3NC4yNDJ6Ii8+PC9zdmc+" alt="" width="22" height="22">AngularJS</span>
-          <span class="icone"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBmaWxsPSIjMDg2OEFDIiBkPSJNOS42MjUgMzIuMTgxQy0xLjQwNCA0OC4wMzItLjAzMSA2OC42NTcgOC4zOTQgODUuNTAxYy4yLjQwNC40MS44MDEuNjE3IDEuMTk4bC4zOTQuNzU5LjI0Ni40MzcuNDM5Ljc4NmMuMjYyLjQ2MS41My45Mi44MDQgMS4zNzlsLjQ1OS43NTZjLjMwNC40OTEuNjE1Ljk3Ni45MzMgMS40NmwuMzk4LjYxNGMuNDM5LjY1NS44ODggMS4zMDkgMS4zNTIgMS45NTFsLjAzOS4wNS4yMjguMzA4Yy40MDEuNTUzLjgxNCAxLjA5OSAxLjIzMiAxLjYzOWwuNDY0LjU5Yy4zNzMuNDY5Ljc1Mi45MzUgMS4xMzggMS4zOTlsLjQzNS41MmE3NS4yNyA3NS4yNyAwIDAwMS41ODYgMS44MTJsLjAzMy4wMzMuMDYxLjA2OGE4MC40NCA4MC40NCAwIDAwMS42MTIgMS42OTlsLjUxNy41MjFjLjQyMy40MjYuODUzLjg0NSAxLjI4NyAxLjI2MmwuNTI3LjVjLjU4LjU0NyAxLjE2NiAxLjA4MyAxLjc2NCAxLjYwN2wuMDI4LjAyMi4zMDcuMjYyYy41MjcuNDU2IDEuMDYzLjkwOSAxLjYwMyAxLjM1M2wuNjY0LjUyOWMuNDQxLjM1NC44ODcuNzAyIDEuMzM2IDEuMDQ0bC43MTQuNTQzYy40OTYuMzY1Ljk5NS43MjQgMS40OTkgMS4wNzVsLjU0Ni4zODcuMTUuMTA3Yy40NzguMzI5Ljk2Ny42NDYgMS40NTYuOTYzbC42My40MmMuNzUuNDc0IDEuNTEuOTQzIDIuMjc5IDEuMzk2bC42My4zNTVjLjU2NS4zMjYgMS4xMzQuNjQ2IDEuNzEuOTU5LjMxMi4xNjguNjMyLjMyNy45NDYuNDg4LjQwNy4yMTMuODExLjQyOSAxLjIyNS42MzZsLjI4My4xMzcuNTAxLjI0MmMuNjQxLjMwNiAxLjI4Ny42MDcgMS45NC44OTdsLjQxLjE4NGE2Ni45MiA2Ni45MiAwIDAwMi4yNjMuOTQxbC41NTEuMjE3Yy43MDQuMjcxIDEuNDE4LjUzOSAyLjEzNS43OTFsLjI2OC4wOTNjLjc4Ny4yNzUgMS41ODEuNTMgMi4zODEuNzc5bC41NzUuMTcyYy44MTQuMjQ1IDEuNjE5LjUzOCAyLjQ1OC42OTMgNTMuMzM5IDkuNzI3IDY4LjgzMy0zMi4wNTMgNjguODMzLTMyLjA1My0xMy4wMTMgMTYuOTUzLTM2LjExMSAyMS40MjUtNTcuOTk2IDE2LjQ0Ni0uODI5LS4xODctMS42MzMtLjQ0Ni0yLjQ0Mi0uNjg1bC0uNjA5LS4xODVhNzIuNDk4IDcyLjQ5OCAwIDAxLTIuMzUyLS43NjVsLS4zMjMtLjExN2E3Mi4yNDUgNzIuMjQ1IDAgMDEtMi4wNzQtLjc2OWwtLjU4Mi0uMjI5Yy0uNzUyLS4yOTctMS41LS42MDctMi4yMzktLjkzMWwtLjQ0Ny0uMTk4YTkyLjg1NyA5Mi44NTcgMCAwMS0xLjg4OS0uODc5bC0uNTQ2LS4yNjJjLS40OTEtLjIzOS0uOTc3LS40OTMtMS40NjEtLjc0My0uMzI0LS4xNzEtLjY1NC0uMzMyLS45NzUtLjUxYTU4LjU5MSA1OC41OTEgMCAwMS0xLjc1MS0uOTgybC0uNTkxLS4zM2E4MS4yMjEgODEuMjIxIDAgMDEtMi4yOC0xLjM5N2wtLjYxNS0uNDFhNTkuMjgzIDU5LjI4MyAwIDAxLTEuNjIzLTEuMDc5bC0uNTIyLS4zNjdhODkuMjg3IDg5LjI4NyAwIDAxLTEuNTM0LTEuMTA5bC0uNjc5LS41MTRhNjQuNDczIDY0LjQ3MyAwIDAxLTEuMzg0LTEuMDgybC0uNjE3LS40OTVhODIuNjkzIDgyLjY5MyAwIDAxLTEuNzI0LTEuNDUzbC0uMTg5LS4xNTlhODMuNDY2IDgzLjQ2NiAwIDAxLTEuODEyLTEuNjQ3bC0uNTExLS40OTFjLS40NDEtLjQyLS44NzUtLjg0My0xLjMwMi0xLjI3N2wtLjUxLS41MDlhNzAuNTQxIDcwLjU0MSAwIDAxLTEuNTk4LTEuNjlsLS4wNzktLjA4NGE2Ny4zOSA2Ny4zOSAwIDAxLTEuNjIxLTEuODQ0bC0uNDI0LS41MDRhNzAuNjAyIDcwLjYwMiAwIDAxLTEuMTY3LTEuNDQybC0uNDI3LS41MzJhNzguNDA2IDc4LjQwNiAwIDAxLTEuMzQ3LTEuNzk0Yy0xMi4xNS0xNi41NzQtMTYuNTE2LTM5LjQzMi02LjgwNS01OC4yMDRtMjUuNjI5LTIuNDM0Yy03Ljk3NyAxMS40NzgtNy41NDMgMjYuODQ0LTEuMzIxIDM4Ljk4M2E1MC41ODEgNTAuNTgxIDAgMDAzLjUyOCA1Ljg4OWMxLjE5NSAxLjcxMyAyLjUyIDMuNzUxIDQuMTA2IDUuMTI3YTQ4LjExMSA0OC4xMTEgMCAwMDEuNzkgMS44NThsLjQ3Mi40NjVhNTEuNjkgNTEuNjkgMCAwMDEuODI4IDEuNjk4bC4wNzQuMDY0LjAxOC4wMThhNTUuMjY4IDU1LjI2OCAwIDAwMi4xMzUgMS43NjdsLjQ4NS4zNzhhNTQuMDggNTQuMDggMCAwMDIuMjMzIDEuNjMxbC4wNjUuMDQ5Yy4zMzYuMjMyLjY3OC40NDggMS4wMTkuNjcybC40ODMuMzE5Yy41NDQuMzQ5IDEuMDk1LjY4OSAxLjY1NSAxLjAxNWwuMjM1LjEzNmMuNDgzLjI3OC45NzIuNTUyIDEuNDYzLjgxOGwuNTIxLjI3MWMuMzM5LjE3Ny42NzguMzU4IDEuMDIzLjUzbC4xNTUuMDdjLjcwMy4zNDYgMS40MTIuNjggMi4xMzYuOTk1bC40NzIuMTk0Yy41NzkuMjQ2IDEuMTY0LjQ4NiAxLjc1LjcxbC43NS4yNzVjLjUzMy4xOTggMS4wNjguMzc4IDEuNjA3LjU1OWwuNzI3LjIzM2MuNzY3LjIzOCAxLjUyNS41MzkgMi4zMjQuNjcyIDQxLjE4MyA2LjgyMyA1MC42OTEtMjQuODg2IDUwLjY5MS0yNC44ODYtOC41NyAxMi4zNDMtMjUuMTY4IDE4LjIzMy00Mi44NzkgMTMuNjM1YTUwLjM3NiA1MC4zNzYgMCAwMS0yLjMzMy0uNjc0bC0uNzAxLS4yMjdhNDUuNDIzIDQ1LjQyMyAwIDAxLTEuNjMxLS41NjJsLS43MzYtLjI3NGE1Ni40MTggNTYuNDE4IDAgMDEtMS43NTYtLjcwOGwtLjQ3My0uMmE0Ny43MjggNDcuNzI4IDAgMDEtMi4xNDgtLjk5OWMtLjM2My0uMTc3LS43Mi0uMzY0LTEuMDc4LS41NDhsLS42MjItLjMyYTQ0LjUwMiA0NC41MDIgMCAwMS0xLjM2My0uNzdsLS4zMjYtLjE4NWE0Ny44NDQgNDcuODQ0IDAgMDEtMS42NTEtMS4wMDhsLS40OTgtLjMzMmE2MS43NTkgNjEuNzU5IDAgMDEtMS4wNjktLjcwNyA1Ny40NTYgNTcuNDU2IDAgMDEtMi4yMjYtMS42MjhsLS41MDEtLjM5NWMtNy43NTItNi4xMi0xMy44OTgtMTQuNDg2LTE2LjgxOS0yMy45NzEtMy4wNjItOS44MzYtMi40MDItMjAuODc4IDIuOTAzLTI5Ljg0bTIyLjI3OC0uNzc1Yy00LjcwMiA2LjkyLTUuMTY0IDE1LjUxNC0xLjkwMSAyMy4xNTYgMy40NDEgOC4xMTMgMTAuNDkxIDE0LjQ3NiAxOC43MiAxNy40OTUuMzM5LjEyNS42NzkuMjM3IDEuMDIyLjM1NGwuNDUxLjE0M2MuNDg1LjE1Mi45NjYuMzI5IDEuNDY3LjQyNCAyMi43NCA0LjM5NCAyOC45MDgtMTEuNjY5IDMwLjU0OS0xNC4wMzQtNS40MDIgNy43NzktMTQuNDgyIDkuNjQ2LTI1LjYyMyA2Ljk0Mi0uODgtLjIxMy0xLjg0Ny0uNTMxLTIuNjk1LS44MzJhMzMuMjQyIDMzLjI0MiAwIDAxLTMuMjAxLTEuMzI5IDMzLjIxNSAzMy4yMTUgMCAwMS01LjYxMi0zLjQyNGMtOS45NjktNy41NjUtMTYuMTYyLTIxLjk5NC05LjY1Ny0zMy43NDUiLz48L3N2Zz4=" alt="" width="22" height="22">jQuery</span>
-          <span class="icone"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgxPSI5Ni4zMDYiIHgyPSIyNS40NTQiIHkxPSIzNS4xNDQiIHkyPSI5OC40MzEiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMSAwIDAgLTEgMCAxMjgpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjYTljOGZmIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjYzdlNmZmIi8+PC9saW5lYXJHcmFkaWVudD48cGF0aCBmaWxsPSJ1cmwoI2EpIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjIgMTEwLjVjLTEuNyAwLTMuMS0uNy00LjEtMS45LTEtMS4yLTEuMy0yLjktLjktNC42bDE4LjYtODAuNWMuOC0zLjQgNC02IDcuNC02aDkyLjZjMS43IDAgMy4xLjcgNC4xIDEuOSAxIDEuMiAxLjMgMi45LjkgNC42bC0xOC42IDgwLjVjLS44IDMuNC00IDYtNy40IDZINy4yeiIgY2xpcC1ydWxlPSJldmVub2RkIiBvcGFjaXR5PSIuOCIvPjxsaW5lYXJHcmFkaWVudCBpZD0iYiIgeDE9IjI1LjMzNiIgeDI9Ijk0LjU2OSIgeTE9Ijk4LjMzIiB5Mj0iMzYuODQ3IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEgMCAwIC0xIDAgMTI4KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzJkNDY2NCIvPjxzdG9wIG9mZnNldD0iLjE2OSIgc3RvcC1jb2xvcj0iIzI5NDA1YiIvPjxzdG9wIG9mZnNldD0iLjQ0NSIgc3RvcC1jb2xvcj0iIzFlMmY0MyIvPjxzdG9wIG9mZnNldD0iLjc5IiBzdG9wLWNvbG9yPSIjMGMxMzFiIi8+PHN0b3Agb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cGF0aCBmaWxsPSJ1cmwoI2IpIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMjAuMyAxOC41SDI4LjVjLTIuOSAwLTUuNyAyLjMtNi40IDUuMkwzLjcgMTA0LjNjLS43IDIuOSAxLjEgNS4yIDQgNS4yaDkxLjhjMi45IDAgNS43LTIuMyA2LjQtNS4ybDE4LjQtODAuNWMuNy0yLjktMS4xLTUuMy00LTUuM3oiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGZpbGw9IiMyQzU1OTEiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTY0LjIgODguM2gyMi4zYzIuNiAwIDQuNyAyLjIgNC43IDQuOXMtMi4xIDQuOS00LjcgNC45SDY0LjJjLTIuNiAwLTQuNy0yLjItNC43LTQuOXMyLjEtNC45IDQuNy00Ljl6TTc4LjcgNjYuNWMtLjQuOC0xLjIgMS42LTIuNiAyLjZMMzQuNiA5OC45Yy0yLjMgMS42LTUuNSAxLTcuMy0xLjQtMS43LTIuNC0xLjMtNS43LjktNy4zbDM3LjQtMjcuMXYtLjZsLTIzLjUtMjVjLTEuOS0yLTEuNy01LjMuNC03LjQgMi4yLTIgNS41LTIgNy40IDBsMjguMiAzMGMxLjcgMS45IDEuOCA0LjUuNiA2LjR6IiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03Ny42IDY1LjVjLS40LjgtMS4yIDEuNi0yLjYgMi42TDMzLjYgOTcuOWMtMi4zIDEuNi01LjUgMS03LjMtMS40LTEuNy0yLjQtMS4zLTUuNy45LTcuM2wzNy40LTI3LjF2LS42bC0yMy41LTI1Yy0xLjktMi0xLjctNS4zLjQtNy40IDIuMi0yIDUuNS0yIDcuNCAwbDI4LjIgMzBjMS43IDEuOCAxLjggNC40LjUgNi40ek02My41IDg3LjhoMjIuM2MyLjYgMCA0LjcgMi4xIDQuNyA0LjYgMCAyLjYtMi4xIDQuNi00LjcgNC42SDYzLjVjLTIuNiAwLTQuNy0yLjEtNC43LTQuNiAwLTIuNiAyLjEtNC42IDQuNy00LjZ6IiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4K" alt="" width="22" height="22">PowerShell</span>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Infraestrutura e Cloud</h3>
-        <div class="tags">
-          <span>Microsoft 365</span><span>Intune</span><span>Exchange</span>
-          <span>Teams</span><span>SharePoint</span><span>Defender for Endpoint</span>
-          <span>VLANs</span><span>VPN</span><span>Telefonia IP/PABX</span>
-          <span>Azure</span><span>Oracle Cloud</span>
-        </div>
-      </div>
-      <div class="card">
-        <h3>IAM e SecOps</h3>
-        <div class="tags">
-          <span>Microsoft Entra ID</span><span>Acesso Condicional</span><span>MFA</span>
-          <span>Políticas de senha</span><span>RBAC</span><span>Menor privilégio</span>
-          <span>Ciclo de vida de usuários</span><span>Defender for Endpoint</span><span>Resposta a incidentes</span>
-          <span>Análise de logs</span><span>SIEM</span><span>Fortinet</span>
-          <span>Ubiquiti</span><span>Hardening</span><span>PowerShell</span>
-        </div>
-      </div>
-    </div>
-  </section>
+    </div></section>
 
-  <section id="projetos">
-    <h2>Projetos</h2>
-    <div class="card">
-      <h3>Flextrix IT Service Desk | ServiceNow</h3>
-      <p class="data">Projeto de laboratório · em evolução</p>
-      <p style="margin-top:10px;">Aplicação completa desenvolvida na plataforma ServiceNow para uma empresa fictícia, o Flextrix, simulando um portal corporativo de service desk e gestão de ativos de TI. O objetivo foi transformar necessidades de negócio em soluções funcionais, passando por portal de serviços, tabelas personalizadas, automações e experiência do usuário.</p>
-
-      <h3 style="margin-top:15px;">O que foi construído</h3>
-      <ul>
-        <li><strong>Portal de serviços:</strong> página inicial com widgets, cabeçalho personalizado com identidade visual corporativa e navegação entre equipamentos, solicitações e gestão de patrimônio</li>
-        <li><strong>Catálogo de equipamentos</strong> e indicadores de patrimônio</li>
-        <li><strong>Automação de ativos (ITAM) com Flow Designer:</strong> ao solicitar um equipamento pelo portal, o fluxo consulta o estoque disponível, atualiza o status do ativo, vincula o equipamento ao colaborador e automatiza as etapas de atendimento e entrega</li>
-        <li><strong>Central de Conhecimento</strong> na página inicial, com orientações para problemas comuns de TI (conectividade, notebooks, desktops, acessos e softwares)</li>
-        <li><strong>Interface:</strong> personalização da experiência do usuário conectado, padronização de cores, logotipos e responsividade</li>
-      </ul>
-
-      <h3 style="margin-top:15px;">Telas do portal</h3>
-      <p class="data">Clique em uma imagem para ver em tamanho completo.</p>
-      <div class="galeria">
-        <figure>
-          <a href="flextrix-home.png" target="_blank"><img src="flextrix-home.png" alt="Página inicial do portal Flextrix"></a>
-          <figcaption>Home Page</figcaption>
-        </figure>
-        <figure>
-          <a href="flextrix-conhecimento.png" target="_blank"><img src="flextrix-conhecimento.png" alt="Central de Conhecimento do Flextrix"></a>
-          <figcaption>Central de Conhecimento</figcaption>
-        </figure>
-        <figure>
-          <a href="flextrix-equipamentos.png" target="_blank"><img src="flextrix-equipamentos.png" alt="Consulta de equipamentos do Flextrix"></a>
-          <figcaption>Consulta de equipamentos</figcaption>
-        </figure>
-        <figure>
-          <a href="flextrix-solicitacoes.png" target="_blank"><img src="flextrix-solicitacoes.png" alt="Minhas solicitações no Flextrix"></a>
-          <figcaption>Minhas Solicitações</figcaption>
-        </figure>
-      </div>
-
-      <h3 style="margin-top:15px;">Resultado</h3>
-      <p>Redução de tarefas manuais e mais rastreabilidade dos ativos no processo de atendimento.</p>
-
-      <div class="tags" style="margin-top:10px;">
-        <span>Service Portal</span><span>Widgets</span><span>Flow Designer</span>
-        <span>Custom Tables</span><span>Service Catalog</span><span>Knowledge Base</span>
-        <span>ITAM</span><span>HTML/CSS</span>
-      </div>
-      <a href="https://www.linkedin.com/in/gabrielgrans/">Acompanhe as atualizações no LinkedIn</a>
-    </div>
-
-    <div class="card">
-      <h3>Estruturação do ambiente de TI | Filial São Paulo</h3>
-      <p class="data">Infraestrutura · Segurança · Rede · Telefonia</p>
-      <p style="margin-top:10px;">Responsável pelo ambiente de TI de uma filial em São Paulo, atuei na organização, segurança e evolução da infraestrutura, desde a rede e o CPD até o gerenciamento de dispositivos, a telefonia e a experiência dos usuários.</p>
-
-      <h3 style="margin-top:15px;">Rede e infraestrutura física</h3>
-      <ul>
-        <li>Implantação da <strong>Ubiquiti Dream Machine Pro</strong> com criação de <strong>VLANs de dados, voz e câmeras (CFTV)</strong>, segmentação e novas camadas de proteção, separando o tráfego de cada ambiente</li>
-        <li>Identificação de <strong>21 pontos de rede</strong> e reorganização do CPD</li>
-      </ul>
-
-      <h3 style="margin-top:15px;">Segurança</h3>
-      <ul>
-        <li><strong>Geoblock</strong> com Acesso Condicional do Microsoft 365 (Microsoft Entra), restringindo acessos por localização</li>
-        <li>Controle de <strong>tempo de sessão</strong></li>
-        <li><strong>Restrição do PowerShell</strong> para usuários comuns</li>
-        <li>Bloqueio de phishing, domínios maliciosos, conteúdos e aplicações não homologadas</li>
-      </ul>
-
-      <h3 style="margin-top:15px;">Gestão de dispositivos e Microsoft 365</h3>
-      <ul>
-        <li><strong>Padronização e renomeação de mais de 300 máquinas</strong> com Microsoft Intune</li>
-        <li>Personalização da experiência Microsoft (Teams, Outlook e demais aplicações) com a identidade visual da empresa</li>
-        <li>Criação de domínio para a unidade de treinamentos da empresa</li>
-      </ul>
-
-      <h3 style="margin-top:15px;">Telefonia e colaboração</h3>
-      <ul>
-        <li>Condução do projeto de <strong>migração da telefonia analógica para IP/PABX</strong>, incluindo aquisição e configuração dos telefones Grandstream e todo o ambiente junto à operadora, além da instalação da telefonia IP nos notebooks corporativos do administrativo SP</li>
-        <li>Configuração e personalização da <strong>Yealink MeetingBoard</strong> para as aulas da unidade de treinamentos</li>
-      </ul>
-
-      <h3 style="margin-top:15px;">Resultado</h3>
-      <p>Ambiente mais organizado, seguro e preparado para crescer.</p>
-
-      <div class="tags" style="margin-top:10px;">
-        <span>Ubiquiti</span><span>VLANs</span><span>Segmentação de rede</span>
-        <span>Microsoft Intune</span><span>Microsoft 365</span><span>Defender for Endpoint</span>
-        <span>Microsoft Entra ID</span><span>Acesso Condicional</span><span>Geoblock</span><span>PowerShell</span><span>Hardening</span><span>IP/PABX</span>
-        <span>Grandstream</span><span>Yealink</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <h3>Bloqueio de aplicações não homologadas | SecOps</h3>
-      <p class="data">Automação · Endpoint Security</p>
-      <p style="margin-top:10px;">Desenvolvi um script em PowerShell (.ps1) que impede a execução de launchers de jogos, como Steam, EA, Rockstar Launcher e Epic Games Launcher, nos computadores corporativos, reduzindo riscos de segurança e o uso de softwares fora da política de TI.</p>
-
-      <h3 style="margin-top:15px;">Como funciona</h3>
-      <ul>
-        <li>Implantado pelo Microsoft 365 e executado <strong>em segundo plano</strong> nas máquinas ingressadas no Microsoft Entra ID, sem ação do usuário</li>
-        <li>Bloqueia a execução dos executáveis dos launchers (por exemplo steam.exe, ea.exe e epicgames.exe)</li>
-        <li>Faz parte do conjunto de controles de conformidade e segurança com Intune e Defender for Endpoint</li>
-      </ul>
-
-      <div class="tags" style="margin-top:10px;">
-        <span>PowerShell</span><span>Microsoft Entra ID</span><span>Microsoft 365</span>
-        <span>Intune</span><span>Defender for Endpoint</span><span>Controle de aplicações</span>
-      </div>
-    </div>
-  </section>
-
-  <section id="formacao">
-    <h2>Formação</h2>
-    <div class="card">
-      <h3>Tecnologia em Análise e Desenvolvimento de Sistemas</h3>
-      <p class="data">Universidade Nove de Julho (UNINOVE) · 03/2019 – 09/2021</p>
-    </div>
-    <div class="card">
-      <h3>Formação complementar</h3>
-      <div class="tags">
-        <span>Cisco: Conceitos Básicos de Redes</span>
-        <span>FIAP: Cybersecurity</span>
-        <span>FIAP: Gestão de Infraestrutura de TI</span>
-        <span>FIAP: Cloud Fundamentals</span>
-        <span>FIAP: Administration and Solution Architect</span>
-      </div>
-    </div>
-  </section>
-
-    <section id="certificacoes">
-    <h2>Certificações</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>ServiceNow</h3>
-        <ul>
-          <li>Certified System Administrator (CSA)</li>
-          <li>Micro-Certification: Flows</li>
-          <li>Micro-Certification: Automated Test Framework (ATF)</li>
-          <li>Delivery Accreditation: Platform Security and Identity</li>
-        </ul>
-        <div class="badges">
-          <img src="badge-csa.png" alt="ServiceNow Certified System Administrator (CSA)" title="ServiceNow Certified System Administrator (CSA)">
-          <img src="badge-micro-flows.png" alt="ServiceNow Micro-Certification: Flows" title="ServiceNow Micro-Certification: Flows">
-          <img src="badge-micro-atf.png" alt="ServiceNow Micro-Certification: Automated Test Framework (ATF)" title="ServiceNow Micro-Certification: Automated Test Framework (ATF)">
-          <img src="badge-security-identity.png" alt="ServiceNow Delivery Accreditation: Platform Security and Identity" title="ServiceNow Delivery Accreditation: Platform Security and Identity">
-        </div>
-      </div>
-      <div class="card">
-        <h3>Microsoft</h3>
-        <ul>
-          <li>Azure Fundamentals (AZ-900)</li>
-          <li>Security, Compliance, and Identity Fundamentals (SC-900)</li>
-        </ul>
-        <div class="badges">
-          <img src="badge-az900.png" alt="Microsoft Certified: Azure Fundamentals (AZ-900)" title="Microsoft Certified: Azure Fundamentals (AZ-900)">
-          <img src="badge-sc900.png" alt="Microsoft Security, Compliance, and Identity Fundamentals (SC-900)" title="Microsoft Security, Compliance, and Identity Fundamentals (SC-900)">
-        </div>
-      </div>
-      <div class="card">
-        <h3>Oracle</h3>
-        <ul>
-          <li>Data Platform Foundations Associate</li>
-          <li>Cloud Infrastructure Foundations Associate</li>
-          <li>AI Foundations Associate</li>
-        </ul>
-        <div class="badges">
-          <img src="badge-oracle-data.png" alt="Oracle Data Platform Foundations Associate" title="Oracle Data Platform Foundations Associate">
-          <img src="badge-oci.png" alt="Oracle Cloud Infrastructure Foundations Associate" title="Oracle Cloud Infrastructure Foundations Associate">
-          <img src="badge-oracle-ai.png" alt="Oracle AI Foundations Associate" title="Oracle AI Foundations Associate">
-        </div>
-      </div>
-      <div class="card">
-        <h3>Fortinet</h3>
-        <ul>
-          <li>Fortinet Certified Associate Cybersecurity</li>
-          <li>Fortinet Certified Fundamentals Cybersecurity</li>
-          <li>Fortinet: FortiGate 7.6 Operator</li>
-        </ul>
-        <div class="badges">
-          <img src="badge-fortinet-associate.png" alt="Fortinet Certified Associate Cybersecurity" title="Fortinet Certified Associate Cybersecurity">
-          <img src="badge-fortinet-fundamentals.png" alt="Fortinet Certified Fundamentals Cybersecurity" title="Fortinet Certified Fundamentals Cybersecurity">
-          <img src="badge-fortigate-operator.png" alt="Fortinet FortiGate 7.6 Operator" title="Fortinet FortiGate 7.6 Operator">
-        </div>
-      </div>
-      <div class="card">
-        <h3>Cisco e Red Team</h3>
-        <ul>
-          <li>Cisco: Introdução à Cibersegurança</li>
-          <li>Cisco: Analista de Cibersegurança Júnior</li>
-          <li>Cisco: Defesa de Rede</li>
-          <li>Red Team Leaders: Certified Red Team Operations Management (CRTOM)</li>
-          <li>Red Team Leaders: Certified Cybersecurity Educator Professional (CCEP)</li>
-        </ul>
-        <div class="badges">
-          <img src="badge-cisco-intro-ciberseguranca.png" alt="Cisco: Introdução à Cibersegurança" title="Cisco: Introdução à Cibersegurança">
-          <img src="badge-cisco-analista-junior.png" alt="Cisco: Analista de Cibersegurança Júnior" title="Cisco: Analista de Cibersegurança Júnior">
-          <img src="badge-cisco-defesa-rede.png" alt="Cisco: Defesa de Rede" title="Cisco: Defesa de Rede">
-          <img src="badge-crtom.png" alt="Red Team Leaders: Certified Red Team Operations Management (CRTOM)" title="Red Team Leaders: Certified Red Team Operations Management (CRTOM)">
-          <img src="badge-ccep.png" alt="Red Team Leaders: Certified Cybersecurity Educator Professional (CCEP)" title="Red Team Leaders: Certified Cybersecurity Educator Professional (CCEP)">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="experiencia">
-    <h2>Experiência</h2>
-    <div class="card">
-      <h3>Analista de Infraestrutura Pleno | Chaintech</h3>
-      <p class="data">02/2026 - 10/2026</p>
-      <ul>
-        <li>Administração do Microsoft 365 (Admin Center, Exchange, Teams e SharePoint)</li>
-        <li>Gestão de dispositivos e políticas de conformidade com Intune</li>
-        <li>Segurança com Defender for Endpoint e scripts de auditoria e bloqueio de aplicações não homologadas</li>
-        <li>Evolução da rede local, com segmentação de VLANs para dados, Wi-Fi e CFTV</li>
-        <li>Gestão de telefonia corporativa IP/PABX</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Analista JR | Rede D'Or - OncoStar</h3>
-      <p class="data">08/2023 - 02/2026</p>
-      <ul>
-        <li>Atendimento e suporte a colaboradores, incluindo abertura e acompanhamento de chamados, acessos internos e resolução de incidentes</li>
-        <li>Monitoramento do Centro de Processamento de Dados (CPD), acompanhando servidores e desempenho da infraestrutura</li>
-        <li>Identificação e correção de falhas em computadores, sistemas e acessos</li>
-        <li>Participação em instalações e planejamento de expansão da infraestrutura de telecomunicações, rede, dados e servidores</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Experiências anteriores</h3>
-      <p>HexalT (2023), Teleperformance (2021-2022) e Sitel Group (2019-2020), em suporte técnico e infraestrutura.</p>
-    </div>
-  </section>
-
-  <footer id="contato">
-    <h2>Contato</h2>
-    <p>Aberto a oportunidades em ServiceNow, infraestrutura e segurança.</p>
-    <div class="contato-grid">
-      <a class="contato-card" href="mailto:gabrielgsti@outlook.com">
-        <small>E-mail</small>
-        <strong>gabrielgsti@outlook.com</strong>
-      </a>
-      <a class="contato-card" href="https://www.linkedin.com/in/gabrielgrans/" target="_blank" rel="noopener">
-        <small>LinkedIn</small>
-        <strong>linkedin.com/in/gabrielgrans</strong>
-      </a>
-    </div>
-    <p style="margin-top:25px;"><a href="https://github.com/GabrielGrans" target="_blank" rel="noopener">GitHub</a></p>
-  </footer>
+    <section id="contato"><div class="wrap"><div class="contact"><div><div class="eyebrow">06 / Vamos conversar</div><h2>Entre em contato.</h2><p>Aberto a oportunidades e conexões na área de Tecnologia da Informação.</p></div><div class="contact-links"><a class="btn primary" href="mailto:gabrielgsti@outlook.com">Enviar e-mail ↗</a><a class="btn" href="https://www.linkedin.com/in/gabrielgrans/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a class="btn" href="https://github.com/gabrielgrans" target="_blank" rel="noreferrer">GitHub ↗</a></div></div><footer class="footer"><span>© 2026 Gabriel Santos Grans</span><span>Desenvolvido com foco em tecnologia, automação e soluções.</span></footer></div></section>
+  </main>
+  <script>const menuBtn=document.getElementById('menuBtn');const nav=document.getElementById('navlinks');menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));</script>
 </body>
 </html>
