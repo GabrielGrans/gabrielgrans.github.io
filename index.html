@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gabriel Grans | ServiceNow Developer & Infraestrutura</title>
+  <title>Gabriel Grans | ServiceNow Developer, Infraestrutura, IAM & SecOps</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    body { font-family: Arial, sans-serif; background: #0f172a; color: #e2e8f0; line-height: 1.6; }
-    nav { background: #1e293b; padding: 14px 20px; text-align: center; position: sticky; top: 0; }
+    body { font-family: Arial, sans-serif; background: #000000; color: #e2e8f0; line-height: 1.6; }
+    nav { background: #000000; border-bottom: 1px solid #1f1f1f; padding: 14px 20px; text-align: center; position: sticky; top: 0; z-index: 10; }
     nav a { color: #94a3b8; text-decoration: none; margin: 0 12px; font-size: 0.95rem; }
     nav a:hover { color: #38bdf8; }
     header { text-align: center; padding: 70px 20px 30px; }
@@ -16,17 +16,24 @@
     header p { margin-top: 10px; font-size: 1.1rem; color: #94a3b8; }
     section { max-width: 900px; margin: 0 auto; padding: 30px 20px; }
     h2 { color: #38bdf8; margin-bottom: 15px; }
-    .card { background: #1e293b; padding: 20px; border-radius: 10px; margin-bottom: 15px; }
+    .card { background: #0d0d0d; border: 1px solid #1f1f1f; padding: 20px; border-radius: 10px; margin-bottom: 15px; }
     .card h3 { margin-bottom: 8px; }
     .card a { color: #38bdf8; }
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
-    .tags span { display: inline-block; background: #0f172a; border: 1px solid #38bdf8; color: #38bdf8; padding: 3px 10px; border-radius: 20px; font-size: 0.85rem; margin: 3px 3px 3px 0; }
+    .tags span { display: inline-block; background: #000000; border: 1px solid #38bdf8; color: #38bdf8; padding: 3px 10px; border-radius: 20px; font-size: 0.85rem; margin: 3px 3px 3px 0; }
     .data { color: #94a3b8; font-size: 0.9rem; }
     ul { padding-left: 20px; }
     .galeria { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 15px; margin-top: 10px; }
-    .galeria figure { background: #0f172a; border-radius: 8px; overflow: hidden; border: 1px solid #334155; }
+    .galeria figure { background: #000000; border-radius: 8px; overflow: hidden; border: 1px solid #262626; }
     .galeria img { width: 100%; height: 180px; object-fit: cover; object-position: top; display: block; }
     .galeria figcaption { padding: 8px 10px; font-size: 0.85rem; color: #94a3b8; text-align: center; }
+    .icones { display: flex; flex-wrap: wrap; gap: 10px; }
+    .icone { display: inline-flex; align-items: center; gap: 8px; background: #000000; border: 1px solid #262626; padding: 6px 12px; border-radius: 8px; font-size: 0.9rem; color: #e2e8f0; }
+    .icone img { display: block; width: 22px; height: 22px; }
+    .badges { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; margin-bottom: 20px; }
+    .badges img { height: 84px; width: auto; display: block; }
+    .titulo-logo { display: flex; align-items: center; gap: 10px; }
+    .titulo-logo img { height: 22px; width: auto; display: block; }
     footer { text-align: center; padding: 40px 20px; color: #94a3b8; }
     footer a { color: #38bdf8; margin: 0 10px; }
   </style>
@@ -36,6 +43,7 @@
     <a href="#sobre">Sobre</a>
     <a href="#competencias">Competências</a>
     <a href="#projetos">Projetos</a>
+    <a href="#formacao">Formação</a>
     <a href="#certificacoes">Certificações</a>
     <a href="#experiencia">Experiência</a>
     <a href="#contato">Contato</a>
@@ -50,8 +58,18 @@
   <section id="sobre">
     <h2>Sobre mim</h2>
     <div class="card">
-      <p>Profissional de TI com 5 anos de experiência em infraestrutura, administração de ambientes corporativos e suporte técnico, e com atuação no desenvolvimento de soluções na plataforma ServiceNow. Trabalho com Microsoft 365, Intune, redes, servidores, cloud e segurança, e também com automação de processos, scripting, integrações via REST e construção de interfaces na plataforma.</p>
-      <p style="margin-top:10px;">Tenho um perfil de aprendizado constante: todas as minhas certificações vieram de muito estudo, e continuo evoluindo todos os dias.</p>
+      <p>Profissional de TI com mais de 5 anos de experiência, atuando com suporte, sistemas, segurança e infraestrutura.</p>
+
+      <h3 style="margin-top:18px;">ServiceNow</h3>
+      <p>Desenvolvo soluções na plataforma ServiceNow, com portais e widgets, tabelas personalizadas, automações com Flow Designer, Service Catalog e integrações via REST. Possuo a certificação System Administrator (CSA) e estou estudando para a certificação CAD (Certified Application Developer).</p>
+
+      <h3 style="margin-top:18px;">Infraestrutura</h3>
+      <p>Tenho experiência com Microsoft 365, Intune, redes, servidores e telefonia IP. Fui responsável pelo ambiente de TI de uma filial em São Paulo: implantei VLANs de dados, voz e câmeras, padronizei mais de 300 máquinas com Intune e conduzi a migração para telefonia IP/PABX.</p>
+
+      <h3 style="margin-top:18px;">IAM e SecOps</h3>
+      <p><strong>Identidade (IAM):</strong> trabalho com Microsoft Entra ID e Acesso Condicional (incluindo geoblock), autenticação multifator (MFA) e políticas de senha, controle de acesso por função (RBAC) seguindo o princípio do menor privilégio e gestão do ciclo de vida de usuários, da entrada à saída, passando por mudanças de área.</p>
+      <p style="margin-top:10px;"><strong>Segurança operacional (SecOps):</strong> faço resposta a incidentes e análise de alertas do Defender for Endpoint, análise de logs e SIEM, segurança de rede com Fortinet e Ubiquiti e hardening de estações e servidores, com controle de sessão, restrição de PowerShell para usuários comuns, bloqueio de aplicações não homologadas por script e proteção contra phishing e domínios maliciosos.</p>
+      <p style="margin-top:10px;">Minha base teórica vem de certificações em cibersegurança (SC-900, Fortinet e Cisco, com Defesa de Rede e Analista de Cibersegurança Júnior) e de formações em Red Team (CRTOM e CCEP).</p>
     </div>
   </section>
 
@@ -62,7 +80,7 @@
         <h3>ServiceNow</h3>
         <div class="tags">
           <span>Flow Designer</span><span>Business Rules</span><span>Client Scripts</span>
-          <span>Script Includes</span><span>UI Policies</span><span>Service Catalog</span>
+          <span>Script Includes</span><span>GlideRecord</span><span>GlideAjax</span><span>UI Policies</span><span>Service Catalog</span>
           <span>App Engine Studio</span><span>Custom Tables</span><span>IntegrationHub</span>
           <span>REST APIs</span><span>ACLs</span><span>ATF</span>
           <span>Dashboards</span><span>Performance Analytics</span>
@@ -70,10 +88,13 @@
       </div>
       <div class="card">
         <h3>Desenvolvimento e Interface</h3>
-        <div class="tags">
-          <span>JavaScript</span><span>GlideRecord</span><span>GlideAjax</span>
-          <span>HTML</span><span>CSS</span><span>AngularJS</span>
-          <span>Jelly Script</span><span>AJAX</span><span>jQuery</span>
+        <div class="icones">
+          <span class="icone"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBmaWxsPSIjRjBEQjRGIiBkPSJNMS40MDggMS40MDhoMTI1LjE4NHYxMjUuMTg1SDEuNDA4eiIvPjxwYXRoIGZpbGw9IiMzMjMzMzAiIGQ9Ik0xMTYuMzQ3IDk2LjczNmMtLjkxNy01LjcxMS00LjY0MS0xMC41MDgtMTUuNjcyLTE0Ljk4MS0zLjgzMi0xLjc2MS04LjEwNC0zLjAyMi05LjM3Ny01LjkyNi0uNDUyLTEuNjktLjUxMi0yLjY0Mi0uMjI2LTMuNjY1LjgyMS0zLjMyIDQuNzg0LTQuMzU1IDcuOTI1LTMuNDAzIDIuMDIzLjY3OCAzLjkzOCAyLjIzNyA1LjA5MyA0LjcyNCA1LjQwMi0zLjQ5OCA1LjM5MS0zLjQ3NSA5LjE2My01Ljg3OS0xLjM4MS0yLjE0MS0yLjExOC0zLjEyOS0zLjAyMi00LjA0NS0zLjI0OS0zLjYyOS03LjY3Ni01LjQ5OC0xNC43NTYtNS4zNTVsLTMuNjg4LjQ3N2MtMy41MzQuODkzLTYuOTAyIDIuNzQ4LTguODc3IDUuMjM1LTUuOTI2IDYuNzI0LTQuMjM2IDE4LjQ5MiAyLjk3NSAyMy4zMzUgNy4xMDQgNS4zMzIgMTcuNTQgNi41NDUgMTguODczIDExLjUzMSAxLjI5NyA2LjEwNC00LjQ4NiA4LjA4LTEwLjIzNCA3LjM3OC00LjIzNi0uODgxLTYuNTkyLTMuMDM0LTkuMTM5LTYuOTQ5LTQuNjg4IDIuNzEzLTQuNjg4IDIuNzEzLTkuNTA4IDUuNDg1IDEuMTQzIDIuNDk5IDIuMzQ0IDMuNjMgNC4yNiA1Ljc5NSA5LjA2OCA5LjE5OCAzMS43NiA4Ljc0NiAzNS44My01LjE3Ni4xNjUtLjQ3OCAxLjI2MS0zLjY2Ni4zOC04LjU4MXpNNjkuNDYyIDU4Ljk0M0g1Ny43NTNsLS4wNDggMzAuMjcyYzAgNi40MzguMzMzIDEyLjM0LS43MTQgMTQuMTQ5LTEuNzEzIDMuNTU4LTYuMTUyIDMuMTE3LTguMTc1IDIuNDI3LTIuMDU5LTEuMDEyLTMuMTA2LTIuNDUxLTQuMzE5LTQuNDg1LS4zMzMtLjU4NC0uNTgzLTEuMDM2LS42NjctMS4wNzFsLTkuNTIgNS44M2MxLjU4MyAzLjI0OSAzLjkxNSA2LjA2OSA2LjkwMiA3LjkwMSA0LjQ2MiAyLjY3OCAxMC40NTkgMy40OTkgMTYuNzMxIDIuMDU5IDQuMDgyLTEuMTg5IDcuNjA0LTMuNjUyIDkuNDQ4LTcuNDAxIDIuNjY2LTQuOTE1IDIuMDk0LTEwLjg2NCAyLjA3LTE3LjQ0NC4wNi0xMC43MzUuMDAxLTIxLjQ2OC4wMDEtMzIuMjM3eiIvPjwvc3ZnPg==" alt="" width="22" height="22">JavaScript</span>
+          <span class="icone"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBmaWxsPSIjRTQ0RDI2IiBkPSJNMTkuMDM3IDExMy44NzZMOS4wMzIgMS42NjFoMTA5LjkzNmwtMTAuMDE2IDExMi4xOTgtNDUuMDE5IDEyLjQ4eiIvPjxwYXRoIGZpbGw9IiNGMTY1MjkiIGQ9Ik02NCAxMTYuOGwzNi4zNzgtMTAuMDg2IDguNTU5LTk1Ljg3OEg2NHoiLz48cGF0aCBmaWxsPSIjRUJFQkVCIiBkPSJNNjQgNTIuNDU1SDQ1Ljc4OEw0NC41MyAzOC4zNjFINjRWMjQuNTk5SDI5LjQ4OWwuMzMgMy42OTIgMy4zODIgMzcuOTI3SDY0em0wIDM1Ljc0M2wtLjA2MS4wMTctMTUuMzI3LTQuMTQtLjk3OS0xMC45NzVIMzMuODE2bDEuOTI4IDIxLjYwOSAyOC4xOTMgNy44MjYuMDYzLS4wMTd6Ii8+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTYzLjk1MiA1Mi40NTV2MTMuNzYzaDE2Ljk0N2wtMS41OTcgMTcuODQ5LTE1LjM1IDQuMTQzdjE0LjMxOWwyOC4yMTUtNy44Mi4yMDctMi4zMjUgMy4yMzQtMzYuMjMzLjMzNS0zLjY5NmgtMy43MDh6bTAtMjcuODU2djEzLjc2MmgzMy4yNDRsLjI3Ni0zLjA5Mi42MjgtNi45NzguMzI5LTMuNjkyeiIvPjwvc3ZnPg==" alt="" width="22" height="22">HTML</span>
+          <span class="icone"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBmaWxsPSIjMTU3MkI2IiBkPSJNMTguODE0IDExNC4xMjNMOC43NiAxLjM1MmgxMTAuNDhsLTEwLjA2NCAxMTIuNzU0LTQ1LjI0MyAxMi41NDMtNDUuMTE5LTEyLjUyNnoiLz48cGF0aCBmaWxsPSIjMzNBOURDIiBkPSJNNjQuMDAxIDExNy4wNjJsMzYuNTU5LTEwLjEzNiA4LjYwMS05Ni4zNTRoLTQ1LjE2djEwNi40OXoiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNjQuMDAxIDUxLjQyOWgxOC4zMDJsMS4yNjQtMTQuMTYzSDY0LjAwMVYyMy40MzVoMzQuNjgybC0uMzMyIDMuNzExLTMuNCAzOC4xMTRoLTMwLjk1VjUxLjQyOXoiLz48cGF0aCBmaWxsPSIjRUJFQkVCIiBkPSJNNjQuMDgzIDg3LjM0OWwtLjA2MS4wMTgtMTUuNDAzLTQuMTU5LS45ODUtMTEuMDMxSDMzLjc1MmwxLjkzNyAyMS43MTcgMjguMzMxIDcuODYzLjA2My0uMDE4di0xNC4zOXoiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNODEuMTI3IDY0LjY3NWwtMS42NjYgMTguNTIyLTE1LjQyNiA0LjE2NHYxNC4zOWwyOC4zNTQtNy44NTguMjA4LTIuMzM3IDIuNDA2LTI2Ljg4MUg4MS4xMjd6Ii8+PHBhdGggZmlsbD0iI0VCRUJFQiIgZD0iTTY0LjA0OCAyMy40MzV2MTMuODMxSDMwLjY0bC0uMjc3LTMuMTA4LS42My03LjAxMi0uMzMxLTMuNzExaDM0LjY0NnptLS4wNDcgMjcuOTk2djEzLjgzMUg0OC43OTJsLS4yNzctMy4xMDgtLjYzMS03LjAxMi0uMzMtMy43MTFoMTYuNDQ3eiIvPjwvc3ZnPg==" alt="" width="22" height="22">CSS</span>
+          <span class="icone"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBmaWxsPSIjQjNCM0IzIiBkPSJNNjMuODEgMS4wMjZMNC41NTMgMjEuODhsOS4zNjMgNzcuNjM3IDQ5Ljk1NyAyNy40NTcgNTAuMjE0LTI3LjgyOCA5LjM2LTc3LjYzNXoiLz48cGF0aCBmaWxsPSIjQTYxMjBEIiBkPSJNMTE3LjUzNiAyNS45OThMNjMuNjcyIDcuNjI5djExMi43ODVsNDUuMTQxLTI0Ljk4M3oiLz48cGF0aCBmaWxsPSIjREQxQjE2IiBkPSJNMTEuMjAxIDI2LjMyOWw4LjAyNiA2OS40MzQgNDQuNDQ0IDI0LjY1MVY3LjYyN3oiLz48cGF0aCBmaWxsPSIjRjJGMkYyIiBkPSJNNzguNDk5IDY3LjY3bC0xNC44MjcgNi45MzRINDguMDQ0bC03LjM0NyAxOC4zNzQtMTMuNjYzLjI1NCAzNi42MzgtODEuNTA4TDc4LjQ5OSA2Ny42N3ptLTEuNDM0LTMuNDkxTDYzLjc3IDM3Ljg1OCA1Mi44NjQgNjMuNzI2aDEwLjgwN2wxMy4zOTQuNDUzeiIvPjxwYXRoIGZpbGw9IiNCM0IzQjMiIGQ9Ik02My42NzEgMTEuNzI0bC4wOTggMjYuMTM0IDEyLjM3NSAyNS44ODhINjMuNjk4bC0uMDI3IDEwLjg0MSAxNy4yMDkuMDE3IDguMDQyIDE4LjYzIDEzLjA3NC4yNDJ6Ii8+PC9zdmc+" alt="" width="22" height="22">AngularJS</span>
+          <span class="icone"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBmaWxsPSIjMDg2OEFDIiBkPSJNOS42MjUgMzIuMTgxQy0xLjQwNCA0OC4wMzItLjAzMSA2OC42NTcgOC4zOTQgODUuNTAxYy4yLjQwNC40MS44MDEuNjE3IDEuMTk4bC4zOTQuNzU5LjI0Ni40MzcuNDM5Ljc4NmMuMjYyLjQ2MS41My45Mi44MDQgMS4zNzlsLjQ1OS43NTZjLjMwNC40OTEuNjE1Ljk3Ni45MzMgMS40NmwuMzk4LjYxNGMuNDM5LjY1NS44ODggMS4zMDkgMS4zNTIgMS45NTFsLjAzOS4wNS4yMjguMzA4Yy40MDEuNTUzLjgxNCAxLjA5OSAxLjIzMiAxLjYzOWwuNDY0LjU5Yy4zNzMuNDY5Ljc1Mi45MzUgMS4xMzggMS4zOTlsLjQzNS41MmE3NS4yNyA3NS4yNyAwIDAwMS41ODYgMS44MTJsLjAzMy4wMzMuMDYxLjA2OGE4MC40NCA4MC40NCAwIDAwMS42MTIgMS42OTlsLjUxNy41MjFjLjQyMy40MjYuODUzLjg0NSAxLjI4NyAxLjI2MmwuNTI3LjVjLjU4LjU0NyAxLjE2NiAxLjA4MyAxLjc2NCAxLjYwN2wuMDI4LjAyMi4zMDcuMjYyYy41MjcuNDU2IDEuMDYzLjkwOSAxLjYwMyAxLjM1M2wuNjY0LjUyOWMuNDQxLjM1NC44ODcuNzAyIDEuMzM2IDEuMDQ0bC43MTQuNTQzYy40OTYuMzY1Ljk5NS43MjQgMS40OTkgMS4wNzVsLjU0Ni4zODcuMTUuMTA3Yy40NzguMzI5Ljk2Ny42NDYgMS40NTYuOTYzbC42My40MmMuNzUuNDc0IDEuNTEuOTQzIDIuMjc5IDEuMzk2bC42My4zNTVjLjU2NS4zMjYgMS4xMzQuNjQ2IDEuNzEuOTU5LjMxMi4xNjguNjMyLjMyNy45NDYuNDg4LjQwNy4yMTMuODExLjQyOSAxLjIyNS42MzZsLjI4My4xMzcuNTAxLjI0MmMuNjQxLjMwNiAxLjI4Ny42MDcgMS45NC44OTdsLjQxLjE4NGE2Ni45MiA2Ni45MiAwIDAwMi4yNjMuOTQxbC41NTEuMjE3Yy43MDQuMjcxIDEuNDE4LjUzOSAyLjEzNS43OTFsLjI2OC4wOTNjLjc4Ny4yNzUgMS41ODEuNTMgMi4zODEuNzc5bC41NzUuMTcyYy44MTQuMjQ1IDEuNjE5LjUzOCAyLjQ1OC42OTMgNTMuMzM5IDkuNzI3IDY4LjgzMy0zMi4wNTMgNjguODMzLTMyLjA1My0xMy4wMTMgMTYuOTUzLTM2LjExMSAyMS40MjUtNTcuOTk2IDE2LjQ0Ni0uODI5LS4xODctMS42MzMtLjQ0Ni0yLjQ0Mi0uNjg1bC0uNjA5LS4xODVhNzIuNDk4IDcyLjQ5OCAwIDAxLTIuMzUyLS43NjVsLS4zMjMtLjExN2E3Mi4yNDUgNzIuMjQ1IDAgMDEtMi4wNzQtLjc2OWwtLjU4Mi0uMjI5Yy0uNzUyLS4yOTctMS41LS42MDctMi4yMzktLjkzMWwtLjQ0Ny0uMTk4YTkyLjg1NyA5Mi44NTcgMCAwMS0xLjg4OS0uODc5bC0uNTQ2LS4yNjJjLS40OTEtLjIzOS0uOTc3LS40OTMtMS40NjEtLjc0My0uMzI0LS4xNzEtLjY1NC0uMzMyLS45NzUtLjUxYTU4LjU5MSA1OC41OTEgMCAwMS0xLjc1MS0uOTgybC0uNTkxLS4zM2E4MS4yMjEgODEuMjIxIDAgMDEtMi4yOC0xLjM5N2wtLjYxNS0uNDFhNTkuMjgzIDU5LjI4MyAwIDAxLTEuNjIzLTEuMDc5bC0uNTIyLS4zNjdhODkuMjg3IDg5LjI4NyAwIDAxLTEuNTM0LTEuMTA5bC0uNjc5LS41MTRhNjQuNDczIDY0LjQ3MyAwIDAxLTEuMzg0LTEuMDgybC0uNjE3LS40OTVhODIuNjkzIDgyLjY5MyAwIDAxLTEuNzI0LTEuNDUzbC0uMTg5LS4xNTlhODMuNDY2IDgzLjQ2NiAwIDAxLTEuODEyLTEuNjQ3bC0uNTExLS40OTFjLS40NDEtLjQyLS44NzUtLjg0My0xLjMwMi0xLjI3N2wtLjUxLS41MDlhNzAuNTQxIDcwLjU0MSAwIDAxLTEuNTk4LTEuNjlsLS4wNzktLjA4NGE2Ny4zOSA2Ny4zOSAwIDAxLTEuNjIxLTEuODQ0bC0uNDI0LS41MDRhNzAuNjAyIDcwLjYwMiAwIDAxLTEuMTY3LTEuNDQybC0uNDI3LS41MzJhNzguNDA2IDc4LjQwNiAwIDAxLTEuMzQ3LTEuNzk0Yy0xMi4xNS0xNi41NzQtMTYuNTE2LTM5LjQzMi02LjgwNS01OC4yMDRtMjUuNjI5LTIuNDM0Yy03Ljk3NyAxMS40NzgtNy41NDMgMjYuODQ0LTEuMzIxIDM4Ljk4M2E1MC41ODEgNTAuNTgxIDAgMDAzLjUyOCA1Ljg4OWMxLjE5NSAxLjcxMyAyLjUyIDMuNzUxIDQuMTA2IDUuMTI3YTQ4LjExMSA0OC4xMTEgMCAwMDEuNzkgMS44NThsLjQ3Mi40NjVhNTEuNjkgNTEuNjkgMCAwMDEuODI4IDEuNjk4bC4wNzQuMDY0LjAxOC4wMThhNTUuMjY4IDU1LjI2OCAwIDAwMi4xMzUgMS43NjdsLjQ4NS4zNzhhNTQuMDggNTQuMDggMCAwMDIuMjMzIDEuNjMxbC4wNjUuMDQ5Yy4zMzYuMjMyLjY3OC40NDggMS4wMTkuNjcybC40ODMuMzE5Yy41NDQuMzQ5IDEuMDk1LjY4OSAxLjY1NSAxLjAxNWwuMjM1LjEzNmMuNDgzLjI3OC45NzIuNTUyIDEuNDYzLjgxOGwuNTIxLjI3MWMuMzM5LjE3Ny42NzguMzU4IDEuMDIzLjUzbC4xNTUuMDdjLjcwMy4zNDYgMS40MTIuNjggMi4xMzYuOTk1bC40NzIuMTk0Yy41NzkuMjQ2IDEuMTY0LjQ4NiAxLjc1LjcxbC43NS4yNzVjLjUzMy4xOTggMS4wNjguMzc4IDEuNjA3LjU1OWwuNzI3LjIzM2MuNzY3LjIzOCAxLjUyNS41MzkgMi4zMjQuNjcyIDQxLjE4MyA2LjgyMyA1MC42OTEtMjQuODg2IDUwLjY5MS0yNC44ODYtOC41NyAxMi4zNDMtMjUuMTY4IDE4LjIzMy00Mi44NzkgMTMuNjM1YTUwLjM3NiA1MC4zNzYgMCAwMS0yLjMzMy0uNjc0bC0uNzAxLS4yMjdhNDUuNDIzIDQ1LjQyMyAwIDAxLTEuNjMxLS41NjJsLS43MzYtLjI3NGE1Ni40MTggNTYuNDE4IDAgMDEtMS43NTYtLjcwOGwtLjQ3My0uMmE0Ny43MjggNDcuNzI4IDAgMDEtMi4xNDgtLjk5OWMtLjM2My0uMTc3LS43Mi0uMzY0LTEuMDc4LS41NDhsLS42MjItLjMyYTQ0LjUwMiA0NC41MDIgMCAwMS0xLjM2My0uNzdsLS4zMjYtLjE4NWE0Ny44NDQgNDcuODQ0IDAgMDEtMS42NTEtMS4wMDhsLS40OTgtLjMzMmE2MS43NTkgNjEuNzU5IDAgMDEtMS4wNjktLjcwNyA1Ny40NTYgNTcuNDU2IDAgMDEtMi4yMjYtMS42MjhsLS41MDEtLjM5NWMtNy43NTItNi4xMi0xMy44OTgtMTQuNDg2LTE2LjgxOS0yMy45NzEtMy4wNjItOS44MzYtMi40MDItMjAuODc4IDIuOTAzLTI5Ljg0bTIyLjI3OC0uNzc1Yy00LjcwMiA2LjkyLTUuMTY0IDE1LjUxNC0xLjkwMSAyMy4xNTYgMy40NDEgOC4xMTMgMTAuNDkxIDE0LjQ3NiAxOC43MiAxNy40OTUuMzM5LjEyNS42NzkuMjM3IDEuMDIyLjM1NGwuNDUxLjE0M2MuNDg1LjE1Mi45NjYuMzI5IDEuNDY3LjQyNCAyMi43NCA0LjM5NCAyOC45MDgtMTEuNjY5IDMwLjU0OS0xNC4wMzQtNS40MDIgNy43NzktMTQuNDgyIDkuNjQ2LTI1LjYyMyA2Ljk0Mi0uODgtLjIxMy0xLjg0Ny0uNTMxLTIuNjk1LS44MzJhMzMuMjQyIDMzLjI0MiAwIDAxLTMuMjAxLTEuMzI5IDMzLjIxNSAzMy4yMTUgMCAwMS01LjYxMi0zLjQyNGMtOS45NjktNy41NjUtMTYuMTYyLTIxLjk5NC05LjY1Ny0zMy43NDUiLz48L3N2Zz4=" alt="" width="22" height="22">jQuery</span>
+          <span class="icone"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48bGluZWFyR3JhZGllbnQgaWQ9ImEiIHgxPSI5Ni4zMDYiIHgyPSIyNS40NTQiIHkxPSIzNS4xNDQiIHkyPSI5OC40MzEiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMSAwIDAgLTEgMCAxMjgpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjYTljOGZmIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjYzdlNmZmIi8+PC9saW5lYXJHcmFkaWVudD48cGF0aCBmaWxsPSJ1cmwoI2EpIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjIgMTEwLjVjLTEuNyAwLTMuMS0uNy00LjEtMS45LTEtMS4yLTEuMy0yLjktLjktNC42bDE4LjYtODAuNWMuOC0zLjQgNC02IDcuNC02aDkyLjZjMS43IDAgMy4xLjcgNC4xIDEuOSAxIDEuMiAxLjMgMi45LjkgNC42bC0xOC42IDgwLjVjLS44IDMuNC00IDYtNy40IDZINy4yeiIgY2xpcC1ydWxlPSJldmVub2RkIiBvcGFjaXR5PSIuOCIvPjxsaW5lYXJHcmFkaWVudCBpZD0iYiIgeDE9IjI1LjMzNiIgeDI9Ijk0LjU2OSIgeTE9Ijk4LjMzIiB5Mj0iMzYuODQ3IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEgMCAwIC0xIDAgMTI4KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzJkNDY2NCIvPjxzdG9wIG9mZnNldD0iLjE2OSIgc3RvcC1jb2xvcj0iIzI5NDA1YiIvPjxzdG9wIG9mZnNldD0iLjQ0NSIgc3RvcC1jb2xvcj0iIzFlMmY0MyIvPjxzdG9wIG9mZnNldD0iLjc5IiBzdG9wLWNvbG9yPSIjMGMxMzFiIi8+PHN0b3Agb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cGF0aCBmaWxsPSJ1cmwoI2IpIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMjAuMyAxOC41SDI4LjVjLTIuOSAwLTUuNyAyLjMtNi40IDUuMkwzLjcgMTA0LjNjLS43IDIuOSAxLjEgNS4yIDQgNS4yaDkxLjhjMi45IDAgNS43LTIuMyA2LjQtNS4ybDE4LjQtODAuNWMuNy0yLjktMS4xLTUuMy00LTUuM3oiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjxwYXRoIGZpbGw9IiMyQzU1OTEiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTY0LjIgODguM2gyMi4zYzIuNiAwIDQuNyAyLjIgNC43IDQuOXMtMi4xIDQuOS00LjcgNC45SDY0LjJjLTIuNiAwLTQuNy0yLjItNC43LTQuOXMyLjEtNC45IDQuNy00Ljl6TTc4LjcgNjYuNWMtLjQuOC0xLjIgMS42LTIuNiAyLjZMMzQuNiA5OC45Yy0yLjMgMS42LTUuNSAxLTcuMy0xLjQtMS43LTIuNC0xLjMtNS43LjktNy4zbDM3LjQtMjcuMXYtLjZsLTIzLjUtMjVjLTEuOS0yLTEuNy01LjMuNC03LjQgMi4yLTIgNS41LTIgNy40IDBsMjguMiAzMGMxLjcgMS45IDEuOCA0LjUuNiA2LjR6IiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03Ny42IDY1LjVjLS40LjgtMS4yIDEuNi0yLjYgMi42TDMzLjYgOTcuOWMtMi4zIDEuNi01LjUgMS03LjMtMS40LTEuNy0yLjQtMS4zLTUuNy45LTcuM2wzNy40LTI3LjF2LS42bC0yMy41LTI1Yy0xLjktMi0xLjctNS4zLjQtNy40IDIuMi0yIDUuNS0yIDcuNCAwbDI4LjIgMzBjMS43IDEuOCAxLjggNC40LjUgNi40ek02My41IDg3LjhoMjIuM2MyLjYgMCA0LjcgMi4xIDQuNyA0LjYgMCAyLjYtMi4xIDQuNi00LjcgNC42SDYzLjVjLTIuNiAwLTQuNy0yLjEtNC43LTQuNiAwLTIuNiAyLjEtNC42IDQuNy00LjZ6IiBjbGlwLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4K" alt="" width="22" height="22">PowerShell</span>
         </div>
       </div>
       <div class="card">
@@ -83,6 +104,16 @@
           <span>Teams</span><span>SharePoint</span><span>Defender for Endpoint</span>
           <span>VLANs</span><span>VPN</span><span>Telefonia IP/PABX</span>
           <span>Azure</span><span>Oracle Cloud</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>IAM e SecOps</h3>
+        <div class="tags">
+          <span>Microsoft Entra ID</span><span>Acesso Condicional</span><span>MFA</span>
+          <span>Políticas de senha</span><span>RBAC</span><span>Menor privilégio</span>
+          <span>Ciclo de vida de usuários</span><span>Defender for Endpoint</span><span>Resposta a incidentes</span>
+          <span>Análise de logs</span><span>SIEM</span><span>Fortinet</span>
+          <span>Ubiquiti</span><span>Hardening</span><span>PowerShell</span>
         </div>
       </div>
     </div>
@@ -135,13 +166,87 @@
       </div>
       <a href="https://www.linkedin.com/in/gabrielgrans/">Acompanhe as atualizações no LinkedIn</a>
     </div>
+
+    <div class="card">
+      <h3>Estruturação do ambiente de TI | Filial São Paulo</h3>
+      <p class="data">Infraestrutura · Segurança · Rede · Telefonia</p>
+      <p style="margin-top:10px;">Responsável pelo ambiente de TI de uma filial em São Paulo, atuei na organização, segurança e evolução da infraestrutura, desde a rede e o CPD até o gerenciamento de dispositivos, a telefonia e a experiência dos usuários.</p>
+
+      <h3 style="margin-top:15px;">Rede e infraestrutura física</h3>
+      <ul>
+        <li>Implantação da <strong>Ubiquiti Dream Machine Pro</strong> com criação de <strong>VLANs de dados, voz e câmeras (CFTV)</strong>, segmentação e novas camadas de proteção, separando o tráfego de cada ambiente</li>
+        <li>Identificação de <strong>21 pontos de rede</strong> e reorganização do CPD</li>
+      </ul>
+
+      <h3 style="margin-top:15px;">Segurança</h3>
+      <ul>
+        <li><strong>Geoblock</strong> com Acesso Condicional do Microsoft 365 (Microsoft Entra), restringindo acessos por localização</li>
+        <li>Controle de <strong>tempo de sessão</strong></li>
+        <li><strong>Restrição do PowerShell</strong> para usuários comuns</li>
+        <li>Bloqueio de phishing, domínios maliciosos, conteúdos e aplicações não homologadas</li>
+      </ul>
+
+      <h3 style="margin-top:15px;">Gestão de dispositivos e Microsoft 365</h3>
+      <ul>
+        <li><strong>Padronização e renomeação de mais de 300 máquinas</strong> com Microsoft Intune</li>
+        <li>Personalização da experiência Microsoft (Teams, Outlook e demais aplicações) com a identidade visual da empresa</li>
+        <li>Criação de domínio para a unidade de treinamentos da empresa</li>
+      </ul>
+
+      <h3 style="margin-top:15px;">Telefonia e colaboração</h3>
+      <ul>
+        <li>Condução do projeto de <strong>migração da telefonia analógica para IP/PABX</strong>, incluindo aquisição e configuração dos telefones Grandstream e todo o ambiente junto à operadora, além da instalação da telefonia IP nos notebooks corporativos do administrativo SP</li>
+        <li>Configuração e personalização da <strong>Yealink MeetingBoard</strong> para as aulas da unidade de treinamentos</li>
+      </ul>
+
+      <h3 style="margin-top:15px;">Resultado</h3>
+      <p>Ambiente mais organizado, seguro e preparado para crescer.</p>
+
+      <div class="tags" style="margin-top:10px;">
+        <span>Ubiquiti</span><span>VLANs</span><span>Segmentação de rede</span>
+        <span>Microsoft Intune</span><span>Microsoft 365</span><span>Defender for Endpoint</span>
+        <span>Microsoft Entra ID</span><span>Acesso Condicional</span><span>Geoblock</span><span>PowerShell</span><span>Hardening</span><span>IP/PABX</span>
+        <span>Grandstream</span><span>Yealink</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Bloqueio de aplicações não homologadas | SecOps</h3>
+      <p class="data">Automação · Endpoint Security</p>
+      <p style="margin-top:10px;">Desenvolvi um script em PowerShell (.ps1) que impede a execução de launchers de jogos, como Steam, EA, Rockstar Launcher e Epic Games Launcher, nos computadores corporativos, reduzindo riscos de segurança e o uso de softwares fora da política de TI.</p>
+
+      <h3 style="margin-top:15px;">Como funciona</h3>
+      <ul>
+        <li>Implantado pelo Microsoft 365 e executado <strong>em segundo plano</strong> nas máquinas ingressadas no Microsoft Entra ID, sem ação do usuário</li>
+        <li>Bloqueia a execução dos executáveis dos launchers (por exemplo steam.exe, ea.exe e epicgames.exe)</li>
+        <li>Faz parte do conjunto de controles de conformidade e segurança com Intune e Defender for Endpoint</li>
+      </ul>
+
+      <div class="tags" style="margin-top:10px;">
+        <span>PowerShell</span><span>Microsoft Entra ID</span><span>Microsoft 365</span>
+        <span>Intune</span><span>Defender for Endpoint</span><span>Controle de aplicações</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="formacao">
+    <h2>Formação</h2>
+    <div class="card">
+      <h3>Tecnologia em Análise e Desenvolvimento de Sistemas</h3>
+      <p class="data">Universidade Nove de Julho (UNINOVE) · 03/2019 – 09/2021</p>
+    </div>
   </section>
 
   <section id="certificacoes">
     <h2>Certificações</h2>
+    <div class="badges">
+      <img src="badge-csa.png" alt="ServiceNow Certified System Administrator (CSA)" title="ServiceNow Certified System Administrator (CSA)">
+      <img src="badge-az900.png" alt="Microsoft Certified: Azure Fundamentals (AZ-900)" title="Microsoft Certified: Azure Fundamentals (AZ-900)">
+      <img src="badge-sc900.png" alt="Microsoft Security, Compliance, and Identity Fundamentals (SC-900)" title="Microsoft Security, Compliance, and Identity Fundamentals (SC-900)">
+    </div>
     <div class="grid">
       <div class="card">
-        <h3>ServiceNow</h3>
+        <h3 class="titulo-logo"><img src="servicenow-logo.png" alt="">ServiceNow</h3>
         <ul>
           <li>Certified System Administrator (CSA)</li>
           <li>Micro-Certification: Flows</li>
@@ -194,18 +299,15 @@
       <h3>Analista JR | Rede D'Or - OncoStar</h3>
       <p class="data">08/2023 - 02/2026</p>
       <ul>
-        <li>Suporte a colaboradores e resolução de incidentes</li>
-        <li>Monitoramento do CPD, servidores e desempenho da infraestrutura</li>
-        <li>Participação em planejamento e expansão de rede, dados e servidores</li>
+        <li>Atendimento e suporte a colaboradores, incluindo abertura e acompanhamento de chamados, acessos internos e resolução de incidentes</li>
+        <li>Monitoramento do Centro de Processamento de Dados (CPD), acompanhando servidores e desempenho da infraestrutura</li>
+        <li>Identificação e correção de falhas em computadores, sistemas e acessos</li>
+        <li>Participação em instalações e planejamento de expansão da infraestrutura de telecomunicações, rede, dados e servidores</li>
       </ul>
     </div>
     <div class="card">
       <h3>Experiências anteriores</h3>
       <p>HexalT (2023), Teleperformance (2021-2022) e Sitel Group (2019-2020), em suporte técnico e infraestrutura.</p>
-    </div>
-    <div class="card">
-      <h3>Formação</h3>
-      <p>Tecnologia em Análise e Desenvolvimento de Sistemas | UNINOVE</p>
     </div>
   </section>
 
