@@ -123,9 +123,10 @@ let activeScreenshot=0;
 let lastFocusedElement=null;
 function showScreenshot(index){
   activeScreenshot=(index+galleryButtons.length)%galleryButtons.length;
-  const source=galleryButtons[activeScreenshot].querySelector('img');
-  const caption=galleryButtons[activeScreenshot].querySelector('figcaption');
-  lightboxImage.src=source.src;
+  const activeButton=galleryButtons[activeScreenshot];
+  const source=activeButton.querySelector('img');
+  const caption=activeButton.closest('.shot').querySelector('figcaption');
+  lightboxImage.src=source.currentSrc || source.src;
   lightboxImage.alt=source.alt;
   lightboxCaption.textContent=caption.textContent;
   lightboxCounter.textContent=`${activeScreenshot+1} / ${galleryButtons.length}`;
@@ -141,6 +142,7 @@ function openLightbox(index){
 function closeLightbox(){
   lightbox.classList.remove('open');
   lightbox.setAttribute('aria-hidden','true');
+  document.body.style.overflow='';
   lightboxImage.src='';
   document.body.style.overflow='';
   if(lastFocusedElement)lastFocusedElement.focus();
