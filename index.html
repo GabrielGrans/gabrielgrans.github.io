@@ -15,7 +15,7 @@
     .timeline{display:grid;gap:14px}.job{display:grid;grid-template-columns:210px 1fr;gap:25px;padding:22px 0;border-bottom:1px solid var(--line)}.job:last-child{border:0}.date{font-size:12px;color:#ef343b;font-weight:700}.job h3{font-size:16px;margin:0}.company{font-size:13px;color:#e5e5e8;margin:2px 0 8px}.job p{font-size:13px;color:var(--muted);margin:0;max-width:780px}.previous-experience{padding:20px 22px;background:linear-gradient(120deg,rgba(143,16,24,.13),rgba(23,24,28,.92));border:1px solid var(--line);border-radius:12px}.previous-experience h3{font-size:15px;margin:0 0 7px;color:#f0f0f2}.previous-experience p{font-size:13px;color:var(--muted);line-height:1.8;margin:0}.project-feature{border-color:#75151d;background:linear-gradient(120deg,rgba(190,18,28,.24),rgba(23,24,28,.95) 55%)}.project-top{display:flex;justify-content:space-between;gap:20px;align-items:start}.project-label{font-size:10px;letter-spacing:.15em;color:#ff3038;text-transform:uppercase;font-weight:800}.project-feature h3{font-size:22px;margin:8px 0}.project-feature p{max-width:850px;line-height:1.8}.project-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:16px}.project-list .card{min-height:160px}
     .edu{display:grid;grid-template-columns:1fr 1fr;gap:16px}.edu .card{height:100%}.certs{columns:2;column-gap:36px;padding-left:18px;color:var(--muted);font-size:13px}.certs li{break-inside:avoid;margin:0 0 9px;padding-left:3px}.contact{background:linear-gradient(120deg,rgba(143,16,24,.48),rgba(16,17,20,.1));border:1px solid #68151b;border-radius:16px;padding:34px;display:flex;justify-content:space-between;align-items:center;gap:30px}.contact h2{font-size:28px;margin:6px 0}.contact p{color:var(--muted);font-size:13px;margin:0}.contact-links{display:flex;gap:10px;flex-wrap:wrap}.footer{padding:30px 0;color:#777982;font-size:11px;display:flex;justify-content:space-between;gap:15px}.textlink{color:#ff3038}
 
-    .screenshots{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.shot{margin:0;background:#17181c;border:1px solid var(--line);border-radius:12px;overflow:hidden}.shot img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;object-position:top}.shot figcaption{padding:12px 15px;color:#f0f0f2;font-size:12px;font-weight:700;border-top:1px solid var(--line)}
+    .screenshots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.shot{margin:0;background:#111216;border:1px solid var(--line);border-radius:13px;overflow:hidden;transition:border-color .2s,transform .2s}.shot:hover{border-color:#a5222a;transform:translateY(-2px)}.shot button{display:block;width:100%;padding:0;border:0;background:#0b0c0f;cursor:zoom-in}.shot img{display:block;width:100%;height:auto;max-height:470px;aspect-ratio:16/9;object-fit:contain;object-position:center;background:#0b0c0f}.shot figcaption{padding:13px 15px;color:#f0f0f2;font-size:12px;font-weight:700;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:10px}.shot figcaption::after{content:'↗';color:#ff424a;font-size:16px}.gallery-hint{color:var(--muted);font-size:12px;margin:0 0 13px}.lightbox{position:fixed;inset:0;z-index:1000;display:none;align-items:center;justify-content:center;padding:28px;background:rgba(5,6,8,.94);backdrop-filter:blur(10px)}.lightbox.open{display:flex}.lightbox-panel{width:min(1500px,100%);max-height:100%;display:flex;flex-direction:column;gap:12px}.lightbox-toolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;color:#fff}.lightbox-caption{font-size:13px;font-weight:700}.lightbox-actions{display:flex;gap:8px}.lightbox-control{width:42px;height:42px;border:1px solid #45464d;border-radius:9px;background:#1a1b20;color:#fff;font-size:22px;cursor:pointer}.lightbox-control:hover{border-color:#ed252e;background:#2a171a}.lightbox-image-wrap{min-height:0;display:flex;align-items:center;justify-content:center;flex:1}.lightbox-image{display:block;max-width:100%;max-height:calc(100vh - 125px);width:auto;height:auto;object-fit:contain;box-shadow:0 15px 60px rgba(0,0,0,.4)}.lightbox-counter{font-size:11px;color:#aaa}.lightbox-control:focus-visible,.shot button:focus-visible{outline:2px solid #ff424a;outline-offset:3px}
     .badge-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.badge-card{margin:0;min-width:0;background:linear-gradient(150deg,#222329,#15161a);border:1px solid var(--line);border-radius:11px;padding:13px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;gap:12px;transition:.2s}.badge-card:hover{transform:translateY(-3px);border-color:#a5222a}.badge-card img{width:100%;height:84px;object-fit:contain}.badge-card figcaption{font-size:11px;line-height:1.45;color:#d8d8dc}
     .brand img{width:24px;height:24px;object-fit:contain;vertical-align:middle;margin-right:7px}.brand span{color:#ed252e}
     @media(max-width:800px){.badge-grid{grid-template-columns:repeat(3,1fr)}}@media(max-width:560px){.screenshots{grid-template-columns:1fr}.badge-grid{grid-template-columns:repeat(2,1fr)}}
@@ -55,11 +55,12 @@
 
     <section id="projetos"><div class="wrap"><div class="section-head"><div><div class="eyebrow" data-i18n="eb4">04 / Aplicação prática</div><h2 data-i18n="h4t">Projetos</h2></div></div>
       <article class="card project-feature"><div class="project-top"><div><div class="project-label" data-i18n="pl">Projeto em destaque · ServiceNow PDI</div><h3>Flextrix — IT Service Desk</h3></div><span class="tag" data-i18n="ptag">Projeto de portfólio</span></div><p data-i18n="fx">Portal corporativo de service desk e gestão de ativos de TI criado em uma ServiceNow Personal Developer Instance: portal personalizado, widgets, tabelas próprias e indicadores. Uma automação com Flow Designer consulta os ativos disponíveis, vincula o equipamento ao solicitante e atualiza o status do patrimônio.</p><div class="taglist"><span class="tag">Service Portal</span><span class="tag">Flow Designer</span><span class="tag">Custom Tables</span><span class="tag">IT Asset Management</span><span class="tag">Widgets</span></div></article>
+      <p class="gallery-hint" data-i18n="galleryHint">Clique em uma captura para ampliar e navegar pelas telas.</p>
       <div class="screenshots" style="margin-top:16px">
-        <figure class="shot"><img src="./flextrix-home.png" alt="Flextrix" loading="lazy"><figcaption data-i18n="s1">Portal e página inicial</figcaption></figure>
-        <figure class="shot"><img src="./flextrix-solicitacoes.png" alt="Flextrix" loading="lazy"><figcaption data-i18n="s2">Solicitações de TI</figcaption></figure>
-        <figure class="shot"><img src="./flextrix-equipamentos.png" alt="Flextrix" loading="lazy"><figcaption data-i18n="s3">Gestão de equipamentos</figcaption></figure>
-        <figure class="shot"><img src="./flextrix-conhecimento.png" alt="Flextrix" loading="lazy"><figcaption data-i18n="s4">Base de conhecimento</figcaption></figure>
+        <figure class="shot"><button type="button" aria-label="Ampliar tela inicial da Flextrix"><img src="./flextrix-home.png" alt="Flextrix — portal e página inicial" loading="lazy"></button><figcaption data-i18n="s1">Portal e página inicial</figcaption></figure>
+        <figure class="shot"><button type="button" aria-label="Ampliar tela de solicitações"><img src="./flextrix-solicitacoes.png" alt="Flextrix — solicitações de TI" loading="lazy"></button><figcaption data-i18n="s2">Solicitações de TI</figcaption></figure>
+        <figure class="shot"><button type="button" aria-label="Ampliar tela de equipamentos"><img src="./flextrix-equipamentos.png" alt="Flextrix — gestão de equipamentos" loading="lazy"></button><figcaption data-i18n="s3">Gestão de equipamentos</figcaption></figure>
+        <figure class="shot"><button type="button" aria-label="Ampliar base de conhecimento"><img src="./flextrix-conhecimento.png" alt="Flextrix — base de conhecimento" loading="lazy"></button><figcaption data-i18n="s4">Base de conhecimento</figcaption></figure>
       </div>
       <div class="project-list">
         <article class="card project-feature"><div class="project-top"><div><div class="project-label" data-i18n="idlabel">Projeto em desenvolvimento · Python</div><h3>IdentityOps Platform</h3></div><span class="tag" data-i18n="idtag">Projeto autoral</span></div><p data-i18n="identityops">Plataforma de Identity and Access Management (IAM) desenvolvida com Python e FastAPI no backend e React com TypeScript no frontend. O projeto já conta com autenticação JWT, hash de senhas com Argon2, gerenciamento de funcionários, departamentos, grupos e permissões, associações entre usuários e grupos, controle de acesso baseado em funções (RBAC), dashboard e diretório de colaboradores. A versão atual é a 0.6.1.</p><div class="taglist"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">SQLAlchemy</span><span class="tag">PostgreSQL</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">RBAC</span><span class="tag">JWT</span></div><div class="actions"><a class="btn primary" href="https://github.com/GabrielGrans/identityops-platform" target="_blank" rel="noreferrer" data-i18n="idlink">Ver projeto no GitHub ↗</a></div></article>
@@ -100,11 +101,61 @@
 
     <section id="contato"><div class="wrap"><div class="contact"><div><div class="eyebrow" data-i18n="eb6">06 / Vamos conversar</div><h2 data-i18n="h6t">Entre em contato.</h2><p data-i18n="ct">Aberto a oportunidades e conexões na área de Tecnologia da Informação.</p></div><div class="contact-links"><a class="btn primary" data-i18n="mail" href="mailto:gabrielgsti@outlook.com">Enviar e-mail ↗</a><a class="btn" href="https://www.linkedin.com/in/gabrielgrans/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a class="btn" href="https://github.com/gabrielgrans" target="_blank" rel="noreferrer">GitHub ↗</a></div></div><footer class="footer"><span>© 2026 Gabriel Santos Grans</span><span data-i18n="foot">Desenvolvido com foco em tecnologia, automação e soluções.</span></footer></div></section>
   </main>
+  <div class="lightbox" id="flextrixLightbox" role="dialog" aria-modal="true" aria-label="Visualização das capturas da Flextrix" aria-hidden="true">
+    <div class="lightbox-panel">
+      <div class="lightbox-toolbar"><div><div class="lightbox-caption" id="lightboxCaption"></div><div class="lightbox-counter" id="lightboxCounter"></div></div><div class="lightbox-actions"><button class="lightbox-control" id="lightboxPrev" type="button" aria-label="Imagem anterior">‹</button><button class="lightbox-control" id="lightboxNext" type="button" aria-label="Próxima imagem">›</button><button class="lightbox-control" id="lightboxClose" type="button" aria-label="Fechar visualização">×</button></div></div>
+      <div class="lightbox-image-wrap"><img class="lightbox-image" id="lightboxImage" src="" alt=""></div>
+    </div>
+  </div>
 <script>
 const menuBtn=document.getElementById('menuBtn');
 const nav=document.getElementById('navlinks');
 menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
 nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+
+/* ===== FLEXTRIX SCREENSHOT GALLERY ===== */
+const galleryButtons=[...document.querySelectorAll('.shot button')];
+const lightbox=document.getElementById('flextrixLightbox');
+const lightboxImage=document.getElementById('lightboxImage');
+const lightboxCaption=document.getElementById('lightboxCaption');
+const lightboxCounter=document.getElementById('lightboxCounter');
+let activeScreenshot=0;
+let lastFocusedElement=null;
+function showScreenshot(index){
+  activeScreenshot=(index+galleryButtons.length)%galleryButtons.length;
+  const source=galleryButtons[activeScreenshot].querySelector('img');
+  const caption=galleryButtons[activeScreenshot].querySelector('figcaption');
+  lightboxImage.src=source.src;
+  lightboxImage.alt=source.alt;
+  lightboxCaption.textContent=caption.textContent;
+  lightboxCounter.textContent=`${activeScreenshot+1} / ${galleryButtons.length}`;
+}
+function openLightbox(index){
+  lastFocusedElement=document.activeElement;
+  showScreenshot(index);
+  lightbox.classList.add('open');
+  lightbox.setAttribute('aria-hidden','false');
+  document.body.style.overflow='hidden';
+  document.getElementById('lightboxClose').focus();
+}
+function closeLightbox(){
+  lightbox.classList.remove('open');
+  lightbox.setAttribute('aria-hidden','true');
+  lightboxImage.src='';
+  document.body.style.overflow='';
+  if(lastFocusedElement)lastFocusedElement.focus();
+}
+galleryButtons.forEach((button,index)=>button.addEventListener('click',()=>openLightbox(index)));
+document.getElementById('lightboxPrev').addEventListener('click',()=>showScreenshot(activeScreenshot-1));
+document.getElementById('lightboxNext').addEventListener('click',()=>showScreenshot(activeScreenshot+1));
+document.getElementById('lightboxClose').addEventListener('click',closeLightbox);
+lightbox.addEventListener('click',event=>{if(event.target===lightbox)closeLightbox();});
+document.addEventListener('keydown',event=>{
+  if(!lightbox.classList.contains('open'))return;
+  if(event.key==='Escape')closeLightbox();
+  if(event.key==='ArrowLeft')showScreenshot(activeScreenshot-1);
+  if(event.key==='ArrowRight')showScreenshot(activeScreenshot+1);
+});
 
 /* ===== IDIOMAS =====
    PT-BR: o texto fica direto no HTML (cada item tem data-i18n="chave").
@@ -159,6 +210,7 @@ const EN = {
  "s2": "IT requests",
  "s3": "Asset management",
  "s4": "Knowledge base",
+ "galleryHint": "Click a screenshot to enlarge it and navigate through the screens.",
  "pc1h": "IT environment build-out — São Paulo branch",
  "pc1": "Data, voice and camera VLANs on Ubiquiti, 21 network points identified, data center reorganized, 300+ machines standardized with Intune and a migration to IP/PABX telephony.",
  "pc2h": "Endpoint and access security",
