@@ -31,6 +31,18 @@
     .note{color:var(--muted);font-size:12px;margin:16px 0 0}.job ul{margin:0;padding-left:18px;color:var(--muted);font-size:13px;max-width:780px}.job li{margin:0 0 4px}
     details.more{margin-top:16px}details.more summary{cursor:pointer;list-style:none;display:inline-flex;align-items:center;padding:10px 16px;border:1px solid var(--line);border-radius:8px;font-size:13px;font-weight:700;color:var(--soft);transition:.2s}details.more summary::-webkit-details-marker{display:none}details.more summary:hover{border-color:#c51c25;color:#fff}details.more[open] summary{margin-bottom:16px}
     .subhead{font-size:12px;letter-spacing:.15em;color:#ff3038;text-transform:uppercase;font-weight:800;margin:0 0 14px}
+
+    /* Galeria de capturas completas: prévias horizontais e visualizador rolável */
+    .shot img{height:390px;max-height:none;aspect-ratio:auto;object-fit:cover;object-position:top center}
+    .gallery-thumb img{object-position:top center}
+    .lightbox-panel{height:100%;max-height:100%;gap:10px}
+    .lightbox-toolbar{flex:0 0 auto;flex-wrap:wrap}
+    .lightbox-image-wrap{display:block;overflow:auto;min-height:0;flex:1;background:#0b0c0f;border:1px solid #34363d;border-radius:12px;text-align:center;overscroll-behavior:contain}
+    .lightbox-image{display:block;max-width:none;max-height:none;width:auto;height:auto;margin:0 auto;object-fit:initial;box-shadow:none}
+    .lightbox-control{flex:0 0 auto}
+    .lightbox-control.zoom-action{font-size:17px;font-weight:800}
+    .lightbox-zoom-level{font-size:11px;color:#c4c5cb;min-width:42px;text-align:center;align-self:center}
+    @media(max-width:560px){.shot img{height:245px;max-height:none}.lightbox{padding:10px}.lightbox-toolbar{align-items:flex-start}.lightbox-actions{flex-wrap:wrap;justify-content:flex-end;gap:5px}.lightbox-control{width:34px;height:34px;font-size:18px}.lightbox-caption{font-size:12px}}
   </style>
 </head>
 <body>
@@ -60,9 +72,9 @@
     </div></div></section>
 
     <section id="projetos"><div class="wrap"><div class="section-head"><div><div class="eyebrow" data-i18n="eb4">04 / Aplicação prática</div><h2 data-i18n="h4t">Projetos</h2></div></div>
-      <article class="card project-feature"><div class="project-top"><div><div class="project-label" data-i18n="pl">Projeto em destaque · ServiceNow PDI</div><h3>Flextrix — IT Service Desk</h3></div><span class="tag" data-i18n="ptag">Projeto de portfólio</span></div><p data-i18n="fx">Portal corporativo de service desk e gestão de ativos de TI criado em uma ServiceNow Personal Developer Instance: portal personalizado, widgets, tabelas próprias e indicadores. Uma automação com Flow Designer consulta os ativos disponíveis, vincula o equipamento ao solicitante e atualiza o status do patrimônio.</p><div class="taglist"><span class="tag">Service Portal</span><span class="tag">Flow Designer</span><span class="tag">Custom Tables</span><span class="tag">IT Asset Management</span><span class="tag">Widgets</span></div></article>
+      <article class="card project-feature"><div class="project-top"><div><div class="project-label" data-i18n="pl">Projeto em destaque · ServiceNow PDI</div><h3>Flextrix — IT Service Desk</h3></div><span class="tag" data-i18n="ptag">Projeto de portfólio</span></div><p data-i18n="fx">Plataforma de operações de TI desenvolvida em uma ServiceNow Personal Developer Instance, com portal personalizado, solicitações, inventário, base de conhecimento e Central de Operações. O dashboard apresenta indicadores de incidentes por prioridade, categoria e status, além de conformidade e desempenho dos SLAs. Uma automação com Flow Designer identifica equipamentos disponíveis, vincula o ativo ao solicitante e atualiza o patrimônio.</p><div class="taglist"><span class="tag">Service Portal</span><span class="tag">Flow Designer</span><span class="tag">Custom Tables</span><span class="tag">IT Asset Management</span><span class="tag">Widgets</span><span class="tag">Incident Management</span><span class="tag">SLA Monitoring</span><span class="tag">AngularJS</span><span class="tag">GlideRecordSecure</span></div></article>
       <figure class="flextrix-cover"><img src="./flextrix-capa.png" alt="Flextrix — capa de apresentação do projeto" loading="lazy"><figcaption><span class="flextrix-cover-title" data-i18n="coverTitle">Flextrix | Plataforma corporativa de IT Service Desk</span><span class="flextrix-cover-description" data-i18n="coverDescription">Uma visão geral da solução desenvolvida na ServiceNow, reunindo atendimento de TI, gestão de ativos e automação de processos.</span></figcaption></figure>
-      <p class="gallery-hint" data-i18n="galleryHint">Explore as telas pelas setas ou miniaturas. Clique na imagem para ampliar.</p>
+      <p class="gallery-hint" data-i18n="galleryHint">Explore as páginas completas pelas setas ou miniaturas. Clique para abrir, rolar e ampliar cada imagem.</p>
       <div class="gallery-widget" aria-label="Galeria de telas da Flextrix">
         <div class="screenshots" id="flextrixScreenshots">
           <figure class="shot active"><button type="button" aria-label="Ampliar tela inicial da Flextrix"><img src="./flextrix-home.png" alt="Flextrix — portal e página inicial" loading="lazy"></button><figcaption data-i18n="s1">Portal e página inicial</figcaption></figure>
@@ -70,12 +82,13 @@
           <figure class="shot"><button type="button" aria-label="Ampliar tela de equipamentos"><img src="./flextrix-equipamentos.png" alt="Flextrix — gestão de equipamentos" loading="lazy"></button><figcaption data-i18n="s3">Gestão de equipamentos</figcaption></figure>
           <figure class="shot"><button type="button" aria-label="Ampliar base de conhecimento"><img src="./flextrix-conhecimento.png" alt="Flextrix — base de conhecimento" loading="lazy"></button><figcaption data-i18n="s4">Base de conhecimento</figcaption></figure>
           <figure class="shot"><button type="button" aria-label="Ampliar automação no Flow Designer"><img src="./flextrix-flow.png" alt="Flextrix — fluxo de automação de atendimento e atribuição de notebook no ServiceNow Flow Designer" loading="lazy"></button><figcaption data-i18n="s5">Automação de atribuição de notebook — Flow Designer</figcaption></figure>
+          <figure class="shot"><button type="button" aria-label="Ampliar Dashboard Executivo"><img src="./flextrix-dashboard.png" alt="Flextrix — Dashboard Executivo com indicadores de incidentes e SLAs" loading="lazy"></button><figcaption data-i18n="s6">Central de Operações — Dashboard Executivo</figcaption></figure>
         </div>
         <div class="gallery-navigation">
           <button class="gallery-arrow" id="galleryPrev" type="button" aria-label="Tela anterior">‹</button>
           <div class="gallery-thumbnails" id="galleryThumbnails" aria-label="Escolher tela"></div>
           <button class="gallery-arrow" id="galleryNext" type="button" aria-label="Próxima tela">›</button>
-          <span class="gallery-count" id="galleryCount" aria-live="polite">1 / 4</span>
+          <span class="gallery-count" id="galleryCount" aria-live="polite">1 / 6</span>
         </div>
       </div>
       <div class="project-list">
@@ -119,8 +132,8 @@
   </main>
   <div class="lightbox" id="flextrixLightbox" role="dialog" aria-modal="true" aria-label="Visualização das imagens da Flextrix" aria-hidden="true">
     <div class="lightbox-panel">
-      <div class="lightbox-toolbar"><div><div class="lightbox-caption" id="lightboxCaption"></div><div class="lightbox-counter" id="lightboxCounter"></div></div><div class="lightbox-actions"><button class="lightbox-control" id="lightboxPrev" type="button" aria-label="Imagem anterior">‹</button><button class="lightbox-control" id="lightboxNext" type="button" aria-label="Próxima imagem">›</button><button class="lightbox-control" id="lightboxClose" type="button" aria-label="Fechar visualização">×</button></div></div>
-      <div class="lightbox-image-wrap"><img class="lightbox-image" id="lightboxImage" src="" alt=""></div>
+      <div class="lightbox-toolbar"><div><div class="lightbox-caption" id="lightboxCaption"></div><div class="lightbox-counter" id="lightboxCounter"></div></div><div class="lightbox-actions"><button class="lightbox-control" id="lightboxPrev" type="button" aria-label="Imagem anterior">‹</button><button class="lightbox-control" id="lightboxNext" type="button" aria-label="Próxima imagem">›</button><button class="lightbox-control zoom-action" id="lightboxZoomOut" type="button" aria-label="Reduzir zoom" title="Reduzir zoom">−</button><span class="lightbox-zoom-level" id="lightboxZoomLevel" aria-live="polite">100%</span><button class="lightbox-control zoom-action" id="lightboxZoomIn" type="button" aria-label="Ampliar zoom" title="Ampliar zoom">+</button><button class="lightbox-control zoom-action" id="lightboxFit" type="button" aria-label="Ajustar à largura" title="Ajustar à largura">↔</button><button class="lightbox-control" id="lightboxClose" type="button" aria-label="Fechar visualização">×</button></div></div>
+      <div class="lightbox-image-wrap" id="lightboxScrollArea" tabindex="0" aria-label="Imagem completa com rolagem"><img class="lightbox-image" id="lightboxImage" src="" alt=""></div>
     </div>
   </div>
 <script>
@@ -138,6 +151,30 @@ const lightbox=document.getElementById('flextrixLightbox');
 const lightboxImage=document.getElementById('lightboxImage');
 const lightboxCaption=document.getElementById('lightboxCaption');
 const lightboxCounter=document.getElementById('lightboxCounter');
+const lightboxScrollArea=document.getElementById('lightboxScrollArea');
+const lightboxZoomLevel=document.getElementById('lightboxZoomLevel');
+let zoomScale=1;
+let zoomMode='fit';
+function setZoom(scale,mode){
+  const natural=lightboxImage.naturalWidth;
+  if(!natural)return;
+  zoomScale=Math.max(.2,Math.min(3,scale));
+  zoomMode=mode||'manual';
+  lightboxImage.style.width=Math.round(natural*zoomScale)+'px';
+  lightboxImage.style.height='auto';
+  lightboxZoomLevel.textContent=Math.round(zoomScale*100)+'%';
+}
+function fitImage(){
+  if(!lightboxImage.naturalWidth)return;
+  setZoom(Math.min(1,Math.max(.2,(lightboxScrollArea.clientWidth-4)/lightboxImage.naturalWidth)),'fit');
+  lightboxScrollArea.scrollTop=0;
+  lightboxScrollArea.scrollLeft=0;
+}
+lightboxImage.addEventListener('load',()=>{if(lightbox.classList.contains('open'))fitImage();});
+document.getElementById('lightboxZoomIn').addEventListener('click',()=>setZoom(zoomScale*1.25));
+document.getElementById('lightboxZoomOut').addEventListener('click',()=>setZoom(zoomScale/1.25));
+document.getElementById('lightboxFit').addEventListener('click',fitImage);
+window.addEventListener('resize',()=>{if(lightbox.classList.contains('open')&&zoomMode==='fit')fitImage();});
 let activeScreenshot=0;
 let lastFocusedElement=null;
 
@@ -180,6 +217,9 @@ function showScreenshot(index){
   lightboxImage.alt=source.alt;
   lightboxCaption.textContent=caption.textContent;
   lightboxCounter.textContent=`${activeScreenshot+1} / ${galleryButtons.length}`;
+  lightboxScrollArea.scrollTop=0;
+  lightboxScrollArea.scrollLeft=0;
+  if(lightboxImage.complete&&lightboxImage.naturalWidth)fitImage();
 }
 function openLightbox(index){
   lastFocusedElement=document.activeElement;
@@ -188,6 +228,7 @@ function openLightbox(index){
   lightbox.setAttribute('aria-hidden','false');
   document.body.style.overflow='hidden';
   document.getElementById('lightboxClose').focus();
+  if(lightboxImage.complete&&lightboxImage.naturalWidth)fitImage();
 }
 function closeLightbox(){
   lightbox.classList.remove('open');
@@ -208,6 +249,8 @@ document.addEventListener('keydown',event=>{
   if(event.key==='Escape')closeLightbox();
   if(event.key==='ArrowLeft')showScreenshot(activeScreenshot-1);
   if(event.key==='ArrowRight')showScreenshot(activeScreenshot+1);
+  if(event.key==='+'||event.key==='=')setZoom(zoomScale*1.25);
+  if(event.key==='-')setZoom(zoomScale/1.25);
 });
 setGallerySlide(0);
 
