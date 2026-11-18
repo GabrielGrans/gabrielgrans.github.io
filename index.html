@@ -93,8 +93,23 @@
         </div>
       </div>
       <div class="project-list">
-        <article class="card project-feature"><div class="project-top"><div><div class="project-label" data-i18n="idlabel">Projeto em desenvolvimento · Python</div><h3>IdentityOps Platform</h3></div><span class="tag" data-i18n="idtag">Projeto autoral</span></div><p data-i18n="identityops">Plataforma de Identity and Access Management (IAM) desenvolvida com Python e FastAPI no backend e React com TypeScript no frontend. O projeto já conta com autenticação JWT, hash de senhas com Argon2, gerenciamento de funcionários, departamentos, grupos e permissões, associações entre usuários e grupos, controle de acesso baseado em funções (RBAC), dashboard e diretório de colaboradores. A versão atual é a 0.6.1.</p><div class="taglist"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">SQLAlchemy</span><span class="tag">PostgreSQL</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">RBAC</span><span class="tag">JWT</span></div><div class="actions"><a class="btn primary" href="https://github.com/GabrielGrans/identityops-platform" target="_blank" rel="noreferrer" data-i18n="idlink">Ver projeto no GitHub ↗</a></div></article>
-        <article class="card"><h3 data-i18n="pc1h">Estruturação do ambiente de TI — filial São Paulo</h3><p data-i18n="pc1">VLANs de dados, voz e câmeras com Ubiquiti, 21 pontos de rede identificados, CPD reorganizado, mais de 300 máquinas padronizadas com Intune e migração para telefonia IP/PABX.</p><div class="taglist"><span class="tag">Ubiquiti</span><span class="tag">VLAN</span><span class="tag">Intune</span><span class="tag">IP/PABX</span></div></article>
+        <article class="card project-feature"><div class="project-top"><div><div class="project-label" data-i18n="idlabel">Projeto em desenvolvimento · Python</div><h3>IdentityOps Platform</h3></div><span class="tag" data-i18n="idtag">Projeto autoral</span></div><p data-i18n="identityops">Plataforma de Identity and Access Management (IAM) desenvolvida com Python/FastAPI, PostgreSQL e React/TypeScript. A versão 1.1.0 reúne autenticação JWT, RBAC, gestão de identidades, grupos e permissões, solicitações e revisões de acesso, certificação de acessos, trilhas de auditoria, dashboard de governança e integração somente leitura com Microsoft Entra ID, incluindo recursos de reconciliação de identidades.</p>
+        <p class="gallery-hint" data-i18n="idGalleryHint">Explore as telas do IdentityOps pelas setas ou miniaturas. Clique para ampliar e rolar o dashboard completo.</p>
+        <div class="gallery-widget" aria-label="Galeria de telas do IdentityOps">
+          <div class="screenshots" id="identityopsScreenshots">
+            <figure class="shot active"><button type="button" aria-label="Ampliar capa do IdentityOps"><img src="./identityops-capa.png" alt="IdentityOps — capa do projeto" loading="lazy"></button><figcaption data-i18n="idShot1">IdentityOps — Capa do projeto</figcaption></figure>
+            <figure class="shot"><button type="button" aria-label="Ampliar tela de login do IdentityOps"><img src="./identityops-login.png" alt="IdentityOps — tela de login" loading="lazy"></button><figcaption data-i18n="idShot2">IdentityOps — Login</figcaption></figure>
+            <figure class="shot"><button type="button" aria-label="Ampliar dashboard de governança IAM"><img src="./identityops-dashboard.png" alt="IdentityOps — dashboard de governança IAM" loading="lazy"></button><figcaption data-i18n="idShot3">IdentityOps — IAM Governance Dashboard</figcaption></figure>
+          </div>
+          <div class="gallery-navigation">
+            <button class="gallery-arrow" id="identityopsPrev" type="button" aria-label="Tela anterior">‹</button>
+            <div class="gallery-thumbnails" id="identityopsThumbnails" aria-label="Escolher tela"></div>
+            <button class="gallery-arrow" id="identityopsNext" type="button" aria-label="Próxima tela">›</button>
+            <span class="gallery-count" id="identityopsCount" aria-live="polite">1 / 3</span>
+          </div>
+        </div>
+<div class="taglist"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">SQLAlchemy</span><span class="tag">PostgreSQL</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">RBAC</span><span class="tag">JWT</span></div><div class="actions"><a class="btn primary" href="https://github.com/GabrielGrans/identityops-platform" target="_blank" rel="noreferrer" data-i18n="idlink">Ver projeto no GitHub ↗</a></div></article>
+        <article class="card"><h3 data-i18n="pc1h">Estruturação do ambiente de TI — Filial São Paulo</h3><p data-i18n="pc1">Modernização da infraestrutura de TI com implantação do Ubiquiti Dream Machine Pro, segmentação de rede por VLANs (dados, voz e câmeras), mapeamento de 21 pontos de rede e reorganização do CPD. Padronização de mais de 300 dispositivos via Microsoft Intune, migração para telefonia IP/PABX e implementação de melhorias em segurança, conectividade e gestão do ambiente corporativo.</p><div class="taglist"><span class="tag">Ubiquiti</span><span class="tag">VLAN</span><span class="tag">Intune</span><span class="tag">IP/PABX</span></div></article>
         <article class="card"><h3 data-i18n="pc2h">Segurança de endpoints e acessos</h3><p data-i18n="pc2">Geoblock e controle de sessão com Acesso Condicional, restrição de PowerShell para usuários comuns e um script .ps1 que bloqueia launchers de jogos (Steam, EA, Epic, Rockstar) nas máquinas ingressadas no Entra ID.</p><div class="taglist"><span class="tag">Entra ID</span><span class="tag">Conditional Access</span><span class="tag">PowerShell</span><span class="tag">Defender</span></div></article>
       </div>
     </div></section>
@@ -144,11 +159,7 @@ const nav=document.getElementById('navlinks');
 menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
 nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
 
-/* ===== FLEXTRIX SCREENSHOT GALLERY ===== */
-const galleryButtons=[...document.querySelectorAll('.shot button')];
-const gallerySlides=[...document.querySelectorAll('.shot')];
-const galleryThumbnails=document.getElementById('galleryThumbnails');
-const galleryCount=document.getElementById('galleryCount');
+/* ===== GALERIAS FLEXTRIX E IDENTITYOPS ===== */
 const lightbox=document.getElementById('flextrixLightbox');
 const lightboxImage=document.getElementById('lightboxImage');
 const lightboxCaption=document.getElementById('lightboxCaption');
@@ -157,7 +168,8 @@ const lightboxScrollArea=document.getElementById('lightboxScrollArea');
 const lightboxZoomLevel=document.getElementById('lightboxZoomLevel');
 const lightboxScrollHint=document.getElementById('lightboxScrollHint');
 const lightboxScrollHintText=document.getElementById('lightboxScrollHintText');
-let hintDismissed=false;
+let hintDismissed=false, zoomScale=1, zoomMode='fit', lastFocusedElement=null, openGallery=null;
+
 function refreshScrollHint(){
   const scrollable=lightboxScrollArea.scrollHeight>lightboxScrollArea.clientHeight+20;
   lightboxScrollHint.classList.toggle('visible',lightbox.classList.contains('open')&&scrollable&&!hintDismissed);
@@ -166,8 +178,6 @@ function resetScrollHint(){hintDismissed=false;requestAnimationFrame(refreshScro
 lightboxScrollArea.addEventListener('scroll',()=>{
   if(lightboxScrollArea.scrollTop>12){hintDismissed=true;refreshScrollHint();}
 },{passive:true});
-let zoomScale=1;
-let zoomMode='fit';
 function setZoom(scale,mode){
   const natural=lightboxImage.naturalWidth;
   if(!natural)return;
@@ -190,55 +200,72 @@ document.getElementById('lightboxZoomIn').addEventListener('click',()=>setZoom(z
 document.getElementById('lightboxZoomOut').addEventListener('click',()=>setZoom(zoomScale/1.25));
 document.getElementById('lightboxFit').addEventListener('click',fitImage);
 window.addEventListener('resize',()=>{if(lightbox.classList.contains('open')&&zoomMode==='fit')fitImage();});
-let activeScreenshot=0;
-let lastFocusedElement=null;
 
-gallerySlides.forEach((slide,index)=>{
-  const image=slide.querySelector('img');
-  const caption=slide.querySelector('figcaption');
-  const thumb=document.createElement('button');
-  thumb.type='button';
-  thumb.className='gallery-thumb'+(index===0?' active':'');
-  thumb.setAttribute('aria-label',`Mostrar ${caption.textContent}`);
-  thumb.setAttribute('aria-pressed',String(index===0));
-  const thumbImage=document.createElement('img');
-  thumbImage.src=image.getAttribute('src');
-  thumbImage.alt='';
-  thumbImage.loading='lazy';
-  thumb.appendChild(thumbImage);
-  thumb.addEventListener('click',()=>setGallerySlide(index));
-  galleryThumbnails.appendChild(thumb);
-});
-
-const galleryThumbButtons=[...galleryThumbnails.querySelectorAll('.gallery-thumb')];
-
-function setGallerySlide(index){
-  activeScreenshot=(index+gallerySlides.length)%gallerySlides.length;
-  gallerySlides.forEach((slide,i)=>slide.classList.toggle('active',i===activeScreenshot));
-  galleryThumbButtons.forEach((thumb,i)=>{
-    const active=i===activeScreenshot;
-    thumb.classList.toggle('active',active);
-    thumb.setAttribute('aria-pressed',String(active));
+function makeGallery(slidesId,thumbsId,countId,prevId,nextId){
+  const slides=[...document.querySelectorAll('#'+slidesId+' .shot')];
+  const thumbsContainer=document.getElementById(thumbsId);
+  const count=document.getElementById(countId);
+  let active=0;
+  const gallery={slides,thumbs:[],get active(){return active;},setSlide,refreshLabels};
+  slides.forEach((slide,index)=>{
+    const img=slide.querySelector('img');
+    const thumb=document.createElement('button');
+    thumb.type='button';
+    thumb.className='gallery-thumb';
+    thumb.setAttribute('aria-pressed','false');
+    const thumbImage=document.createElement('img');
+    thumbImage.src=img.getAttribute('src');
+    thumbImage.alt='';
+    thumbImage.loading='lazy';
+    thumb.appendChild(thumbImage);
+    thumb.addEventListener('click',()=>setSlide(index));
+    thumbsContainer.appendChild(thumb);
+    gallery.thumbs.push(thumb);
+    slide.querySelector('button').addEventListener('click',()=>openLightbox(gallery,index));
   });
-  galleryCount.textContent=`${activeScreenshot+1} / ${gallerySlides.length}`;
+  function setSlide(index){
+    active=(index+slides.length)%slides.length;
+    slides.forEach((slide,i)=>slide.classList.toggle('active',i===active));
+    gallery.thumbs.forEach((thumb,i)=>{
+      thumb.classList.toggle('active',i===active);
+      thumb.setAttribute('aria-pressed',String(i===active));
+    });
+    count.textContent=`${active+1} / ${slides.length}`;
+  }
+  function refreshLabels(){
+    const en=document.documentElement.lang==='en';
+    gallery.thumbs.forEach((thumb,i)=>{
+      const caption=slides[i].querySelector('figcaption').textContent.trim();
+      thumb.setAttribute('aria-label',(en?'Show ':'Mostrar ')+caption);
+    });
+  }
+  document.getElementById(prevId).addEventListener('click',()=>setSlide(active-1));
+  document.getElementById(nextId).addEventListener('click',()=>setSlide(active+1));
+  setSlide(0);
+  refreshLabels();
+  return gallery;
 }
-
+const galleries=[
+  makeGallery('flextrixScreenshots','galleryThumbnails','galleryCount','galleryPrev','galleryNext'),
+  makeGallery('identityopsScreenshots','identityopsThumbnails','identityopsCount','identityopsPrev','identityopsNext')
+];
 function showScreenshot(index){
-  setGallerySlide(index);
-  const activeButton=galleryButtons[activeScreenshot];
-  const source=activeButton.querySelector('img');
-  const caption=activeButton.closest('.shot').querySelector('figcaption');
-  lightboxImage.src=source.currentSrc || source.src;
+  if(!openGallery)return;
+  openGallery.setSlide(index);
+  const slide=openGallery.slides[openGallery.active];
+  const source=slide.querySelector('img');
+  lightboxImage.src=source.currentSrc||source.src;
   lightboxImage.alt=source.alt;
-  lightboxCaption.textContent=caption.textContent;
-  lightboxCounter.textContent=`${activeScreenshot+1} / ${galleryButtons.length}`;
+  lightboxCaption.textContent=slide.querySelector('figcaption').textContent.trim();
+  lightboxCounter.textContent=`${openGallery.active+1} / ${openGallery.slides.length}`;
   lightboxScrollArea.scrollTop=0;
   lightboxScrollArea.scrollLeft=0;
   if(lightboxImage.complete&&lightboxImage.naturalWidth)fitImage();
   resetScrollHint();
 }
-function openLightbox(index){
+function openLightbox(gallery,index){
   lastFocusedElement=document.activeElement;
+  openGallery=gallery;
   showScreenshot(index);
   lightbox.classList.add('open');
   lightbox.setAttribute('aria-hidden','false');
@@ -253,24 +280,21 @@ function closeLightbox(){
   document.body.style.overflow='';
   lightboxImage.src='';
   lightboxScrollHint.classList.remove('visible');
+  openGallery=null;
   if(lastFocusedElement)lastFocusedElement.focus();
 }
-galleryButtons.forEach((button,index)=>button.addEventListener('click',()=>openLightbox(index)));
-document.getElementById('galleryPrev').addEventListener('click',()=>setGallerySlide(activeScreenshot-1));
-document.getElementById('galleryNext').addEventListener('click',()=>setGallerySlide(activeScreenshot+1));
-document.getElementById('lightboxPrev').addEventListener('click',()=>showScreenshot(activeScreenshot-1));
-document.getElementById('lightboxNext').addEventListener('click',()=>showScreenshot(activeScreenshot+1));
+document.getElementById('lightboxPrev').addEventListener('click',()=>showScreenshot(openGallery.active-1));
+document.getElementById('lightboxNext').addEventListener('click',()=>showScreenshot(openGallery.active+1));
 document.getElementById('lightboxClose').addEventListener('click',closeLightbox);
 lightbox.addEventListener('click',event=>{if(event.target===lightbox)closeLightbox();});
 document.addEventListener('keydown',event=>{
-  if(!lightbox.classList.contains('open'))return;
+  if(!lightbox.classList.contains('open')||!openGallery)return;
   if(event.key==='Escape')closeLightbox();
-  if(event.key==='ArrowLeft')showScreenshot(activeScreenshot-1);
-  if(event.key==='ArrowRight')showScreenshot(activeScreenshot+1);
+  if(event.key==='ArrowLeft')showScreenshot(openGallery.active-1);
+  if(event.key==='ArrowRight')showScreenshot(openGallery.active+1);
   if(event.key==='+'||event.key==='=')setZoom(zoomScale*1.25);
   if(event.key==='-')setZoom(zoomScale/1.25);
 });
-setGallerySlide(0);
 
 /* ===== IDIOMAS =====
    PT-BR: o texto fica direto no HTML (cada item tem data-i18n="chave").
@@ -317,7 +341,7 @@ const EN = {
  "pl": "Featured project · ServiceNow PDI",
  "idlabel": "Project in development · Python",
  "idtag": "Personal project",
- "identityops": "An Identity and Access Management (IAM) platform built with Python and FastAPI on the backend and React with TypeScript on the frontend. The project already includes JWT authentication, Argon2 password hashing, employee, department, group and permission management, user-group associations, role-based access control (RBAC), a dashboard and employee directory. Current version: 0.6.1.",
+ "identityops": "Identity and Access Management (IAM) platform built with Python/FastAPI, PostgreSQL and React/TypeScript. Version 1.1.0 includes JWT authentication, RBAC, identity, group and permission management, access requests and reviews, access certification, audit trails, a governance dashboard, and read-only Microsoft Entra ID integration with identity reconciliation capabilities.",
  "idlink": "View project on GitHub ↗",
  "ptag": "Portfolio project",
  "fx": "IT operations platform built in a ServiceNow Personal Developer Instance, featuring a corporate portal with custom widgets, IT requests, equipment and inventory management, a Knowledge Base, and an incident management application with a custom table created in App Engine Studio. The Operations Center includes an Executive Dashboard with incidents by priority, category and status, plus SLA monitoring. In Flow Designer, I built automations to assign available notebooks to requesters, update asset records, and automatically route new incidents to the responsible assignment group based on category (Hardware, Network or Access), with a fallback path for other categories.",
@@ -330,8 +354,12 @@ const EN = {
  "coverDescription": "An overview of the solution built on ServiceNow, bringing together IT service management, asset management and process automation.",
  "s5": "Flow Designer — Automatic notebook assignment",
   "s6": "Flow Designer — Automatic assignment group routing",
+ "idGalleryHint": "Browse IdentityOps screenshots with the arrows or thumbnails. Click to zoom and scroll through the full dashboard.",
+ "idShot1": "IdentityOps — Project cover",
+ "idShot2": "IdentityOps — Login",
+ "idShot3": "IdentityOps — IAM Governance Dashboard",
  "pc1h": "IT environment build-out — São Paulo branch",
- "pc1": "Data, voice and camera VLANs on Ubiquiti, 21 network points identified, data center reorganized, 300+ machines standardized with Intune and a migration to IP/PABX telephony.",
+ "pc1": "Modernized the IT infrastructure by deploying Ubiquiti Dream Machine Pro, segmenting data, voice and camera networks into VLANs, mapping 21 network points and reorganizing the server room. Standardized more than 300 devices with Microsoft Intune, migrated to IP/PABX telephony and improved security, connectivity and corporate IT management.",
  "pc2h": "Endpoint and access security",
  "pc2": "Geoblocking and session control with Conditional Access, PowerShell restriction for standard users, and a .ps1 script that blocks game launchers (Steam, EA, Epic, Rockstar) on Entra ID–joined machines.",
  "eb5": "05 / Education",
@@ -378,12 +406,9 @@ function setLanguage(lang){
     const v=en?EN[el.dataset.i18n]:el.dataset.pt;
     if(v!==undefined) el.innerHTML=v;
   });
-  galleryThumbButtons.forEach((thumb,i)=>{
-    const caption=gallerySlides[i].querySelector('figcaption').textContent.trim();
-    thumb.setAttribute('aria-label',(en?'Show ':'Mostrar ')+caption);
-  });
+  galleries.forEach(gallery=>gallery.refreshLabels());
   if(lightbox.classList.contains('open')){
-    lightboxCaption.textContent=gallerySlides[activeScreenshot].querySelector('figcaption').textContent.trim();
+    if(openGallery)lightboxCaption.textContent=openGallery.slides[openGallery.active].querySelector('figcaption').textContent.trim();
   }
   lightboxScrollHintText.textContent=en?'Scroll down to explore the full page':'Role para baixo para explorar a página completa';
   document.documentElement.lang=en?'en':'pt-BR';
