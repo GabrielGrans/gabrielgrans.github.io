@@ -44,6 +44,10 @@
     .lightbox-control{flex:0 0 auto}
     .lightbox-control.zoom-action{font-size:17px;font-weight:800}
     .lightbox-zoom-level{font-size:11px;color:#c4c5cb;min-width:42px;text-align:center;align-self:center}
+    @media (max-width: 560px) {
+      .project-list { grid-template-columns: minmax(0, 1fr); }
+      .project-list .identityops-feature { grid-column: auto; min-width: 0; }
+    }
     @media(max-width:560px){.shot img{height:245px;max-height:none}.lightbox{padding:10px}.lightbox-toolbar{align-items:flex-start}.lightbox-actions{flex-wrap:wrap;justify-content:flex-end;gap:5px}.lightbox-control{width:34px;height:34px;font-size:18px}.lightbox-caption{font-size:12px}}
   </style>
 </head>
@@ -68,8 +72,8 @@
     </div></div></section>
 
     <section id="experiencia"><div class="wrap"><div class="section-head"><div><div class="eyebrow" data-i18n="eb3">03 / Trajetória</div><h2 data-i18n="h3t">Experiência profissional</h2></div></div><div class="timeline">
-      <article class="job"><div class="date" data-i18n="d1">Fev/2026 — Out/2026</div><div><h3 data-i18n="j1t">Analista de Infraestrutura Pleno</h3><div class="company">Chaintech</div><p data-i18n="j1">Responsável pelo ambiente de TI da filial de São Paulo: Microsoft 365, Intune, segurança de endpoints, redes e telefonia IP. As entregas estão detalhadas em Projetos.</p></div></article>
-      <article class="job"><div class="date" data-i18n="d2">Ago/2023 — Fev/2026</div><div><h3 data-i18n="j2t">Analista Júnior</h3><div class="company">Rede D'Or — OncoStar</div><p data-i18n="j2">Suporte e infraestrutura de TI: chamados e acessos, monitoramento do CPD e dos servidores, correção de falhas e apoio à expansão da infraestrutura de rede e telecomunicações.</p></div></article>
+      <article class="job"><div class="date" data-i18n="d1">Fev/2026 — Out/2026</div><div><h3 data-i18n="j1t">Analista de Infraestrutura Pleno</h3><div class="company">Chaintech</div><p data-i18n="j1">Administração de ambientes Microsoft 365, incluindo Admin Center, Exchange, Teams e SharePoint.<br>Gestão de dispositivos e políticas por meio do Microsoft Intune, com inventário de ativos e aplicação de políticas de conformidade.<br>Atuação em segurança e automação, utilizando Microsoft Defender for Endpoint e scripts para auditoria e bloqueio de aplicações não homologadas.<br>Administração e evolução da infraestrutura de rede local, incluindo segmentação de VLANs para dados, Wi-Fi e CFTV.<br>Configuração, monitoramento e gestão de telefonia corporativa IP/PABX.</p></div></article>
+      <article class="job"><div class="date" data-i18n="d2">Ago/2023 — Fev/2026</div><div><h3 data-i18n="j2t">Analista Júnior</h3><div class="company">Rede D'Or — OncoStar</div><p data-i18n="j2">Atendimento e suporte a colaboradores, incluindo abertura e acompanhamento de chamados, acessos internos e resolução de incidentes.<br>Monitoramento do Centro de Processamento de Dados (CPD), acompanhando servidores e desempenho da infraestrutura.<br>Identificação e correção de falhas em computadores, sistemas e acessos.<br>Participação em instalações e planejamento de expansão de infraestrutura de telecomunicações, rede, dados e servidores.</p></div></article>
       <article class="previous-experience"><h3 data-i18n="prevh">Experiências anteriores</h3><p data-i18n="prev">HexalT (Mai/2023 — Ago/2023), Teleperformance (Fev/2021 — Fev/2022) e Sitel Group (Mar/2019 — Jan/2020), em suporte técnico e infraestrutura de TI.</p></article>
     </div></div></section>
 
@@ -330,9 +334,9 @@ const EN = {
  "eb3": "03 / Career",
  "h3t": "Professional experience",
  "j1t": "Mid-level Infrastructure Analyst",
- "j1": "Responsible for the IT environment of the São Paulo branch: Microsoft 365, Intune, endpoint security, networking and IP telephony. Deliverables are detailed in Projects.",
+ "j1": "Administration of Microsoft 365 environments, including Admin Center, Exchange, Teams, and SharePoint.<br>Device and policy management through Microsoft Intune, including asset inventory and enforcement of compliance policies.<br>Security and automation using Microsoft Defender for Endpoint and scripts to audit and block unapproved applications.<br>Administration and improvement of local network infrastructure, including VLAN segmentation for data, Wi-Fi, and CCTV.<br>Configuration, monitoring, and management of corporate IP telephony and PBX systems.",
  "j2t": "Junior Analyst",
- "j2": "IT support and infrastructure: tickets and access, data center and server monitoring, troubleshooting, and support for network and telecom infrastructure expansion.",
+ "j2": "Employee support, including opening and tracking tickets, assisting with internal access, and resolving incidents.<br>Data center monitoring, including tracking server and infrastructure performance.<br>Identifying and resolving computer, system, and access issues.<br>Participation in installations and expansion planning for telecommunications, network, data, and server infrastructure.",
  "prevh": "Previous experience",
  "prev": "HexalT (May/2023 — Aug/2023), Teleperformance (Feb/2021 — Feb/2022) and Sitel Group (Mar/2019 — Jan/2020), in technical support and IT infrastructure.",
  "eb4": "04 / Hands-on experience",
