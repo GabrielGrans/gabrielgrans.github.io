@@ -51,6 +51,8 @@
     @media(max-width:560px){.shot img{height:245px;max-height:none}.lightbox{padding:10px}.lightbox-toolbar{align-items:flex-start}.lightbox-actions{flex-wrap:wrap;justify-content:flex-end;gap:5px}.lightbox-control{width:34px;height:34px;font-size:18px}.lightbox-caption{font-size:12px}}
       .project-page{width:min(1480px,calc(100% - 44px));padding:46px 0}
     .project-page .shot img{height:clamp(440px,52vw,780px)}
+    .project-page .shot.cover-slide img{height:auto;aspect-ratio:16/9;object-fit:contain}
+    .project-page .project-feature p + p{margin-top:12px}
     @media(max-width:560px){.project-page{width:calc(100% - 30px)}.project-page .shot img{height:clamp(270px,72vw,400px)}}
     .project-page h1{font-size:clamp(32px,6vw,62px);line-height:1.12;margin:18px 0 22px}
     .project-page h2{font-size:20px;margin:22px 0 8px}
@@ -67,13 +69,15 @@
     <h1>IdentityOps Platform</h1>
     <div class="card project-feature">
       <h2 data-i18n="objective">Objetivo</h2>
-      <p data-i18n="summary">Monitora o Microsoft Entra ID em modo somente leitura e reúne mudanças observadas em grupos de segurança, achados, saúde da sincronização e logs de auditoria.</p>
-      <p data-i18n="detail0">O painel e as análises mostram inclusões, remoções e grupos com mais mudanças. O diretório exibe identidades e associações atuais. Achados e logs ajudam a investigar riscos e falhas de sincronização.</p><p data-i18n="detail1">A primeira coleta estabelece a referência. As seguintes comparam associações diretas de usuários em grupos de segurança. O horário registrado indica quando a coleta observou a alteração. A comparação de snapshots não identifica o autor nem detecta alterações revertidas entre coletas.</p><h2 data-i18n="technologies">Tecnologias</h2><div class="taglist"><span class="tag">Microsoft Entra ID</span><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">React</span><span class="tag">TypeScript</span></div>
+      <p data-i18n="summary">Criei o IdentityOps Platform para centralizar o monitoramento de identidades e acessos no Microsoft Entra ID (antigo Azure Active Directory). A plataforma reúne dashboards, análises, indicadores de sincronização e logs de auditoria para equipes de IAM e SecOps.</p>
+      <p data-i18n="detail0">A sincronização usa o Microsoft Graph em modo somente leitura. O diretório permite consultar usuários, grupos e associações atuais. Os dashboards mostram inclusões e remoções de membros diretos observadas em grupos de segurança e destacam os grupos com mais mudanças.</p>
+      <p data-i18n="detail1">A plataforma compara coletas do diretório e registra quando cada mudança foi observada. O histórico cobre as diferenças visíveis entre coletas. Alterações feitas e revertidas nesse intervalo ficam fora desse histórico.</p>
+      <h2 data-i18n="technologies">Tecnologias</h2><div class="taglist"><span class="tag">Microsoft Entra ID</span><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">React</span><span class="tag">TypeScript</span></div>
     </div>
     <h2 data-i18n="galleryTitle">Capturas de tela</h2>
       <div class="gallery-widget" aria-label="Galeria de telas">
         <div class="screenshots" id="flextrixScreenshots">
-          <figure class="shot active"><button type="button" aria-label="Ampliar Capa do projeto"><img src="../../identityops-capa.png" alt="Capa do projeto" loading="lazy"></button><figcaption data-i18n="shot0">Capa do projeto</figcaption></figure>
+          <figure class="shot active cover-slide"><button type="button" aria-label="Ampliar Capa do projeto"><img src="../../identityops-capa.png" alt="Capa do projeto" loading="lazy"></button><figcaption data-i18n="shot0">Capa do projeto</figcaption></figure>
           <figure class="shot"><button type="button" aria-label="Ampliar Login"><img src="../../identityops-login.png" alt="Login" loading="lazy"></button><figcaption data-i18n="shot1">Login</figcaption></figure>
           <figure class="shot"><button type="button" aria-label="Ampliar Página inicial"><img src="../../Identity-Ops-Home.png" alt="Página inicial" loading="lazy"></button><figcaption data-i18n="shot2">Página inicial</figcaption></figure>
           <figure class="shot"><button type="button" aria-label="Ampliar Painel de monitoramento"><img src="../../identityops-dashboard.png" alt="Painel de monitoramento" loading="lazy"></button><figcaption data-i18n="shot3">Painel de monitoramento</figcaption></figure>
@@ -236,8 +240,8 @@ document.addEventListener('keydown',event=>{
 
 const EN = {
   "backProjects": "← Back to projects",
-  "detail0": "The dashboard and analytics show additions, removals and the groups with the most changes. The directory shows current identities and memberships. Findings and logs help investigate risks and sync failures.",
-  "detail1": "The first collection establishes a baseline. Later collections compare direct user memberships in security groups. The timestamp indicates when the collection observed the change. Snapshot comparison cannot identify the actor or detect changes reversed between collections.",
+  "detail0": "Synchronization uses Microsoft Graph in read-only mode. The directory shows current users, groups and memberships. Dashboards show observed additions and removals of direct security group members and highlight the groups with the most changes.",
+  "detail1": "The platform compares directory snapshots and records when each change was observed. The history covers differences visible between collections. Changes made and reversed between collections fall outside that history.",
   "foot": "Built with a focus on technology, automation and solutions.",
   "galleryTitle": "Screenshots",
   "objective": "Objective",
@@ -249,7 +253,7 @@ const EN = {
   "shot5": "Access group analytics",
   "shot6": "Microsoft Entra ID sync",
   "shot7": "Audit logs",
-  "summary": "Monitors Microsoft Entra ID in read-only mode and surfaces observed security group changes, findings, sync health and audit logs.",
+  "summary": "I built IdentityOps Platform to centralize identity and access monitoring in Microsoft Entra ID (formerly Azure Active Directory). It brings dashboards, analytics, sync health and audit logs together for IAM and SecOps teams.",
   "technologies": "Technologies"
 };
 const META = {"pt": {"title": "IdentityOps Platform | Gabriel Santos Grans", "desc": "Monitora o Microsoft Entra ID em modo somente leitura e reúne mudanças observadas em grupos de segurança, achados, saúde da sincronização e logs de auditoria."}, "en": {"title": "IdentityOps Platform | Gabriel Santos Grans", "desc": "Monitors Microsoft Entra ID in read-only mode and surfaces observed security group changes, findings, sync health and audit logs."}};

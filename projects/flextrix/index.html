@@ -51,8 +51,9 @@
     @media(max-width:560px){.shot img{height:245px;max-height:none}.lightbox{padding:10px}.lightbox-toolbar{align-items:flex-start}.lightbox-actions{flex-wrap:wrap;justify-content:flex-end;gap:5px}.lightbox-control{width:34px;height:34px;font-size:18px}.lightbox-caption{font-size:12px}}
       .project-page{width:min(1480px,calc(100% - 44px));padding:46px 0}
     .project-page .shot img{height:clamp(440px,52vw,780px)}
+    .project-page .shot.cover-slide img{height:auto;aspect-ratio:16/9;object-fit:contain}
+    .project-page .project-feature p + p{margin-top:12px}
     @media(max-width:560px){.project-page{width:calc(100% - 30px)}.project-page .shot img{height:clamp(270px,72vw,400px)}}
-    .project-page .project-hero-cover{display:block;width:min(100%,960px);height:auto;margin:0 auto 24px;border:1px solid var(--line);border-radius:12px}
     .project-page h1{font-size:clamp(32px,6vw,62px);line-height:1.12;margin:18px 0 22px}
     .project-page h2{font-size:20px;margin:22px 0 8px}
     .project-page .project-feature h2:first-child{margin-top:0}
@@ -64,17 +65,18 @@
   <main class="wrap project-page">
     <div class="actions"><a class="btn" href="../../#projetos" data-i18n="backProjects">← Voltar aos projetos</a></div>
     <h1>Flextrix — IT Service Desk</h1>
-    <img class="project-hero-cover" src="../../flextrix-it-service-desk-capa.png" width="1920" height="1080" alt="">
     <div class="card project-feature">
       <h2 data-i18n="objective">Objetivo</h2>
       <p data-i18n="summary">Centraliza solicitações, incidentes, equipamentos e conhecimento em um portal ServiceNow. Automatiza a atribuição de notebooks e o encaminhamento de incidentes.</p>
-      <p data-i18n="fx">Plataforma de operações de TI desenvolvida em uma ServiceNow Personal Developer Instance, com portal corporativo e widgets personalizados, solicitações de TI, gestão de equipamentos e inventário, Base de Conhecimento e aplicação de incidentes com tabela própria no App Engine Studio. A Central de Operações reúne um Dashboard Executivo com indicadores por prioridade, categoria e status, além do acompanhamento de SLAs. No Flow Designer, desenvolvi automações para atribuir notebooks disponíveis aos solicitantes, atualizar os registros de ativos e direcionar automaticamente novos incidentes ao grupo responsável conforme a categoria (Hardware, Network ou Access), com tratamento para outras categorias.</p><h2 data-i18n="technologies">Tecnologias</h2><div class="taglist"><span class="tag">Service Portal</span><span class="tag">Flow Designer</span><span class="tag">Custom Tables</span><span class="tag">IT Asset Management</span><span class="tag">Widgets</span><span class="tag">Incident Management</span><span class="tag">SLA Monitoring</span><span class="tag">App Engine Studio</span><span class="tag">AngularJS</span><span class="tag">GlideRecordSecure</span></div>
+      <p data-i18n="fx">Plataforma de operações de TI desenvolvida em uma ServiceNow Personal Developer Instance, com portal corporativo e widgets personalizados, solicitações de TI, gestão de equipamentos e inventário, Base de Conhecimento e aplicação de incidentes com tabela própria no App Engine Studio. A Central de Operações reúne um Dashboard Executivo com indicadores por prioridade, categoria e status, além do acompanhamento de SLAs. No Flow Designer, desenvolvi automações para atribuir notebooks disponíveis aos solicitantes, atualizar os registros de ativos e direcionar automaticamente novos incidentes ao grupo responsável conforme a categoria (Hardware, Network ou Access), com tratamento para outras categorias.</p>
+      <h2 data-i18n="technologies">Tecnologias</h2><div class="taglist"><span class="tag">Service Portal</span><span class="tag">Flow Designer</span><span class="tag">Custom Tables</span><span class="tag">IT Asset Management</span><span class="tag">Widgets</span><span class="tag">Incident Management</span><span class="tag">SLA Monitoring</span><span class="tag">App Engine Studio</span><span class="tag">AngularJS</span><span class="tag">GlideRecordSecure</span></div>
 
     </div>
     <h2 data-i18n="galleryTitle">Capturas de tela</h2>
       <div class="gallery-widget" aria-label="Galeria de telas da Flextrix">
         <div class="screenshots" id="flextrixScreenshots">
-          <figure class="shot active"><button type="button" aria-label="Ampliar portal inicial e Base de Conhecimento"><img src="../../flextrix-home.png" alt="Flextrix — portal inicial e Base de Conhecimento" loading="lazy"></button><figcaption data-i18n="s1">Portal inicial e Base de Conhecimento</figcaption></figure>
+          <figure class="shot active cover-slide"><button type="button" aria-label="Ampliar capa do projeto"><img src="../../flextrix-it-service-desk-capa.png" alt="Capa do projeto" width="1920" height="1080"></button><figcaption data-i18n="projectCover">Capa do projeto</figcaption></figure>
+          <figure class="shot"><button type="button" aria-label="Ampliar portal inicial e Base de Conhecimento"><img src="../../flextrix-home.png" alt="Flextrix — portal inicial e Base de Conhecimento" loading="lazy"></button><figcaption data-i18n="s1">Portal inicial e Base de Conhecimento</figcaption></figure>
           <figure class="shot"><button type="button" aria-label="Ampliar tela de solicitações"><img src="../../flextrix-solicitacoes.png" alt="Flextrix — solicitações de TI" loading="lazy"></button><figcaption data-i18n="s2">Solicitações de TI</figcaption></figure>
           <figure class="shot"><button type="button" aria-label="Ampliar tela de equipamentos"><img src="../../flextrix-equipamentos.png" alt="Flextrix — gestão de equipamentos" loading="lazy"></button><figcaption data-i18n="s3">Gestão de equipamentos</figcaption></figure>
           <figure class="shot"><button type="button" aria-label="Ampliar Dashboard Executivo"><img src="../../flextrix-dashboard.png" alt="Flextrix — Dashboard Executivo com indicadores de incidentes e SLAs" loading="lazy"></button><figcaption data-i18n="s4">Central de Operações — Dashboard Executivo</figcaption></figure>
@@ -85,7 +87,7 @@
           <button class="gallery-arrow" id="galleryPrev" type="button" aria-label="Tela anterior">‹</button>
           <div class="gallery-thumbnails" id="galleryThumbnails" aria-label="Escolher tela"></div>
           <button class="gallery-arrow" id="galleryNext" type="button" aria-label="Próxima tela">›</button>
-          <span class="gallery-count" id="galleryCount" aria-live="polite">1 / 6</span>
+          <span class="gallery-count" id="galleryCount" aria-live="polite">1 / 7</span>
         </div>
       </div>
 
@@ -239,6 +241,7 @@ const EN = {
   "fx": "IT operations platform built in a ServiceNow Personal Developer Instance, featuring a corporate portal with custom widgets, IT requests, equipment and inventory management, a Knowledge Base, and an incident management application with a custom table created in App Engine Studio. The Operations Center includes an Executive Dashboard with incidents by priority, category and status, plus SLA monitoring. In Flow Designer, I built automations to assign available notebooks to requesters, update asset records, and automatically route new incidents to the responsible assignment group based on category (Hardware, Network or Access), with a fallback path for other categories.",
   "galleryTitle": "Screenshots",
   "objective": "Objective",
+  "projectCover": "Project cover",
   "s1": "Portal home page and Knowledge Base",
   "s2": "IT requests",
   "s3": "Asset management",

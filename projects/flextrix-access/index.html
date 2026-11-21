@@ -51,8 +51,9 @@
     @media(max-width:560px){.shot img{height:245px;max-height:none}.lightbox{padding:10px}.lightbox-toolbar{align-items:flex-start}.lightbox-actions{flex-wrap:wrap;justify-content:flex-end;gap:5px}.lightbox-control{width:34px;height:34px;font-size:18px}.lightbox-caption{font-size:12px}}
       .project-page{width:min(1480px,calc(100% - 44px));padding:46px 0}
     .project-page .shot img{height:clamp(440px,52vw,780px)}
+    .project-page .shot.cover-slide img{height:auto;aspect-ratio:16/9;object-fit:contain}
+    .project-page .project-feature p + p{margin-top:12px}
     @media(max-width:560px){.project-page{width:calc(100% - 30px)}.project-page .shot img{height:clamp(270px,72vw,400px)}}
-    .project-page .project-hero-cover{display:block;width:min(100%,960px);height:auto;margin:0 auto 24px;border:1px solid var(--line);border-radius:12px}
     .project-page h1{font-size:clamp(32px,6vw,62px);line-height:1.12;margin:18px 0 22px}
     .project-page h2{font-size:20px;margin:22px 0 8px}
     .project-page .project-feature h2:first-child{margin-top:0}
@@ -66,16 +67,18 @@
   <main class="wrap project-page">
     <div class="actions"><a class="btn" href="../../#projetos" data-i18n="backProjects">← Voltar aos projetos</a><a class="btn" href="https://github.com/GabrielGrans/flextrix-access-project" target="_blank" rel="noreferrer">GitHub ↗</a></div>
     <h1>Flextrix Identity &amp; Access</h1>
-    <img class="project-hero-cover" src="../../flextrix-identity-access-capa.png" width="1920" height="1080" alt="">
     <div class="card project-feature">
       <h2 data-i18n="objective">Objetivo</h2>
-      <p data-i18n="summary">Reúne identidades e grupos do Microsoft Entra ID, chamados aprovados do ServiceNow e registros de simulação em um fluxo de operações de acesso.</p>
-      <p data-i18n="detail0">A interface consulta usuários, grupos e associações a partir de um snapshot do Entra ID. O cadastro demonstrativo em quatro etapas inclui domínio configurável, senha temporária e revisão dos grupos selecionados.</p><p data-i18n="detail1">No laboratório, um envio autenticado iniciado manualmente pelo MID Server encaminhou um RITM aprovado à API. A aplicação validou a evidência, registrou a simulação em PostgreSQL e exibiu o chamado e os logs. O reenvio retornou a mesma simulação. O disparo automático após a aprovação está pendente.</p><p data-i18n="detail2">Cadastro de usuários, redefinição de senha, recadastro de MFA e criação de grupos são demonstrações. A configuração do laboratório mantém a escrita no Microsoft Entra ID desativada.</p><h2 data-i18n="technologies">Tecnologias</h2><div class="taglist"><span class="tag">Microsoft Entra ID</span><span class="tag">ServiceNow MID Server</span><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">React</span><span class="tag">TypeScript</span></div>
+      <p data-i18n="summary">A ferramenta foi desenvolvida para facilitar a rotina das equipes de IAM e SecOps. Nela, os analistas recebem itens de solicitação aprovados no ServiceNow (RITMs) e podem simular, diretamente na aplicação, ações como atribuição de acesso a grupos, redefinição de senhas, criação de usuários e recadastro de MFA.</p>
+      <p data-i18n="detail0">A aplicação consulta usuários, grupos e associações no Microsoft Entra ID (antigo Azure Active Directory) por meio da API do Microsoft Graph. No laboratório, o MID Server do ServiceNow encaminhou manualmente uma RITM aprovada à API da aplicação. A solução exibe os chamados, as evidências de aprovação e os logs das simulações de acesso.</p>
+      <p data-i18n="detail1">O projeto envolveu a criação de automações no Flow Designer e o desenvolvimento da interface web em TypeScript, JavaScript, HTML e CSS.</p>
+      <h2 data-i18n="technologies">Tecnologias</h2><div class="taglist"><span class="tag">Microsoft Entra ID</span><span class="tag">ServiceNow MID Server</span><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">React</span><span class="tag">TypeScript</span></div>
     </div>
     <h2 data-i18n="galleryTitle">Capturas de tela</h2>
       <div class="gallery-widget" aria-label="Galeria de telas">
         <div class="screenshots" id="flextrixScreenshots">
-          <figure class="shot active"><button type="button" aria-label="Ampliar Página inicial"><img src="../../Flextrix-Identity-Acess-Home.png" alt="Página inicial" loading="lazy"></button><figcaption data-i18n="shot0">Página inicial</figcaption></figure>
+          <figure class="shot active cover-slide"><button type="button" aria-label="Ampliar capa do projeto"><img src="../../flextrix-identity-access-capa.png" alt="Capa do projeto" width="1920" height="1080"></button><figcaption data-i18n="projectCover">Capa do projeto</figcaption></figure>
+          <figure class="shot"><button type="button" aria-label="Ampliar Página inicial"><img src="../../Flextrix-Identity-Acess-Home.png" alt="Página inicial" loading="lazy"></button><figcaption data-i18n="shot0">Página inicial</figcaption></figure>
           <figure class="shot"><button type="button" aria-label="Ampliar Login"><img src="../../Flextrix-Identity-Acess-Login.png" alt="Login" loading="lazy"></button><figcaption data-i18n="shot1">Login</figcaption></figure>
           <figure class="shot"><button type="button" aria-label="Ampliar Acessos"><img src="../../Flextrix-Identity-Acess-Acessos.png" alt="Acessos" loading="lazy"></button><figcaption data-i18n="shot2">Acessos</figcaption></figure>
           <figure class="shot"><button type="button" aria-label="Ampliar Grupos do Microsoft Entra ID"><img src="../../Flextrix-Identity-Acess-Grupos-ENTRAID.png" alt="Grupos do Microsoft Entra ID" loading="lazy"></button><figcaption data-i18n="shot3">Grupos do Microsoft Entra ID</figcaption></figure>
@@ -90,7 +93,7 @@
           <button class="gallery-arrow" id="galleryPrev" type="button" aria-label="Tela anterior">‹</button>
           <div class="gallery-thumbnails" id="galleryThumbnails" aria-label="Escolher tela"></div>
           <button class="gallery-arrow" id="galleryNext" type="button" aria-label="Próxima tela">›</button>
-          <span class="gallery-count" id="galleryCount" aria-live="polite">1 / 10</span>
+          <span class="gallery-count" id="galleryCount" aria-live="polite">1 / 11</span>
         </div>
       </div>
 
@@ -240,12 +243,12 @@ document.addEventListener('keydown',event=>{
 
 const EN = {
   "backProjects": "← Back to projects",
-  "detail0": "The interface reads users, groups and memberships from an Entra ID snapshot. The four-step demo wizard includes a configurable domain, a temporary password and a review of selected groups.",
-  "detail1": "In the lab, a manually initiated, authenticated MID Server submission sent an approved RITM to the API. The app validated the evidence, stored the simulation in PostgreSQL and displayed the request and logs. Resubmission returned the same simulation. Automatic submission after approval is pending.",
-  "detail2": "User creation, password resets, MFA re-registration and group creation are demonstrations. The lab configuration keeps Microsoft Entra ID writes disabled.",
+  "detail0": "The application reads users, groups and memberships from Microsoft Entra ID (formerly Azure Active Directory) through the Microsoft Graph API. In the lab, the ServiceNow MID Server forwarded an approved RITM to the application API in a manually triggered submission. The app displays requests, approval evidence and access simulation logs.",
+  "detail1": "The project involved building automations in Flow Designer and developing the web interface with TypeScript, JavaScript, HTML and CSS.",
   "foot": "Built with a focus on technology, automation and solutions.",
   "galleryTitle": "Screenshots",
   "objective": "Objective",
+  "projectCover": "Project cover",
   "shot0": "Home",
   "shot1": "Sign-in",
   "shot2": "Access",
@@ -256,7 +259,7 @@ const EN = {
   "shot7": "Operations logs",
   "shot8": "Process flow",
   "shot9": "ServiceNow MID Server",
-  "summary": "Brings Microsoft Entra ID identities and groups, approved ServiceNow requests and simulation records into an access operations workflow.",
+  "summary": "The tool was built to support IAM and SecOps teams in their day-to-day work. Analysts receive approved ServiceNow request items (RITMs) and can simulate group access assignment, password resets, user creation and MFA re-registration directly in the app.",
   "technologies": "Technologies"
 };
 const META = {"pt": {"title": "Flextrix Identity & Access | Gabriel Santos Grans", "desc": "Reúne identidades e grupos do Microsoft Entra ID, chamados aprovados do ServiceNow e registros de simulação em um fluxo de operações de acesso."}, "en": {"title": "Flextrix Identity & Access | Gabriel Santos Grans", "desc": "Brings Microsoft Entra ID identities and groups, approved ServiceNow requests and simulation records into an access operations workflow."}};
