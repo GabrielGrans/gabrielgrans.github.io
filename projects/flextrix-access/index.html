@@ -49,7 +49,10 @@
       .project-list .identityops-feature { grid-column: auto; min-width: 0; }
     }
     @media(max-width:560px){.shot img{height:245px;max-height:none}.lightbox{padding:10px}.lightbox-toolbar{align-items:flex-start}.lightbox-actions{flex-wrap:wrap;justify-content:flex-end;gap:5px}.lightbox-control{width:34px;height:34px;font-size:18px}.lightbox-caption{font-size:12px}}
-      .project-page{padding:46px 0}
+      .project-page{width:min(1480px,calc(100% - 44px));padding:46px 0}
+    .project-page .shot img{height:clamp(440px,52vw,780px)}
+    @media(max-width:560px){.project-page{width:calc(100% - 30px)}.project-page .shot img{height:clamp(270px,72vw,400px)}}
+    .project-page .project-hero-cover{display:block;width:min(100%,960px);height:auto;margin:0 auto 24px;border:1px solid var(--line);border-radius:12px}
     .project-page h1{font-size:clamp(32px,6vw,62px);line-height:1.12;margin:18px 0 22px}
     .project-page h2{font-size:20px;margin:22px 0 8px}
     .project-page .project-feature h2:first-child{margin-top:0}
@@ -63,6 +66,7 @@
   <main class="wrap project-page">
     <div class="actions"><a class="btn" href="../../#projetos" data-i18n="backProjects">← Voltar aos projetos</a><a class="btn" href="https://github.com/GabrielGrans/flextrix-access-project" target="_blank" rel="noreferrer">GitHub ↗</a></div>
     <h1>Flextrix Identity &amp; Access</h1>
+    <img class="project-hero-cover" src="../../flextrix-identity-access-capa.png" width="1920" height="1080" alt="">
     <div class="card project-feature">
       <h2 data-i18n="objective">Objetivo</h2>
       <p data-i18n="summary">Reúne identidades e grupos do Microsoft Entra ID, chamados aprovados do ServiceNow e registros de simulação em um fluxo de operações de acesso.</p>
