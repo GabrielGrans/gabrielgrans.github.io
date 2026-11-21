@@ -49,6 +49,13 @@
       .project-list .identityops-feature { grid-column: auto; min-width: 0; }
     }
     @media(max-width:560px){.shot img{height:245px;max-height:none}.lightbox{padding:10px}.lightbox-toolbar{align-items:flex-start}.lightbox-actions{flex-wrap:wrap;justify-content:flex-end;gap:5px}.lightbox-control{width:34px;height:34px;font-size:18px}.lightbox-caption{font-size:12px}}
+      .portfolio-projects{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .portfolio-card{display:flex;flex-direction:column;align-items:flex-start}
+    .project-cover{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:top;border:1px solid var(--line);border-radius:9px;margin-bottom:16px}
+    .portfolio-card .actions{margin-top:auto;padding-top:20px}
+    .corporate-heading{margin:32px 0 0}
+    @media(max-width:850px){.portfolio-projects{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:560px){.portfolio-projects{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -78,39 +85,34 @@
     </div></div></section>
 
     <section id="projetos"><div class="wrap"><div class="section-head"><div><div class="eyebrow" data-i18n="eb4">04 / Aplicação prática</div><h2 data-i18n="h4t">Projetos</h2></div></div>
-      <article class="card project-feature"><div class="project-top"><div><div class="project-label" data-i18n="pl">Projeto em destaque · ServiceNow PDI</div><h3>Flextrix — IT Service Desk</h3></div><span class="tag" data-i18n="ptag">Projeto de portfólio</span></div><p data-i18n="fx">Plataforma de operações de TI desenvolvida em uma ServiceNow Personal Developer Instance, com portal corporativo e widgets personalizados, solicitações de TI, gestão de equipamentos e inventário, Base de Conhecimento e aplicação de incidentes com tabela própria no App Engine Studio. A Central de Operações reúne um Dashboard Executivo com indicadores por prioridade, categoria e status, além do acompanhamento de SLAs. No Flow Designer, desenvolvi automações para atribuir notebooks disponíveis aos solicitantes, atualizar os registros de ativos e direcionar automaticamente novos incidentes ao grupo responsável conforme a categoria (Hardware, Network ou Access), com tratamento para outras categorias.</p><div class="taglist"><span class="tag">Service Portal</span><span class="tag">Flow Designer</span><span class="tag">Custom Tables</span><span class="tag">IT Asset Management</span><span class="tag">Widgets</span><span class="tag">Incident Management</span><span class="tag">SLA Monitoring</span><span class="tag">App Engine Studio</span><span class="tag">AngularJS</span><span class="tag">GlideRecordSecure</span></div></article>
-      <div class="gallery-widget" aria-label="Galeria de telas da Flextrix">
-        <div class="screenshots" id="flextrixScreenshots">
-          <figure class="shot active"><button type="button" aria-label="Ampliar portal inicial e Base de Conhecimento"><img src="./flextrix-home.png" alt="Flextrix — portal inicial e Base de Conhecimento" loading="lazy"></button><figcaption data-i18n="s1">Portal inicial e Base de Conhecimento</figcaption></figure>
-          <figure class="shot"><button type="button" aria-label="Ampliar tela de solicitações"><img src="./flextrix-solicitacoes.png" alt="Flextrix — solicitações de TI" loading="lazy"></button><figcaption data-i18n="s2">Solicitações de TI</figcaption></figure>
-          <figure class="shot"><button type="button" aria-label="Ampliar tela de equipamentos"><img src="./flextrix-equipamentos.png" alt="Flextrix — gestão de equipamentos" loading="lazy"></button><figcaption data-i18n="s3">Gestão de equipamentos</figcaption></figure>
-          <figure class="shot"><button type="button" aria-label="Ampliar Dashboard Executivo"><img src="./flextrix-dashboard.png" alt="Flextrix — Dashboard Executivo com indicadores de incidentes e SLAs" loading="lazy"></button><figcaption data-i18n="s4">Central de Operações — Dashboard Executivo</figcaption></figure>
-          <figure class="shot"><button type="button" aria-label="Ampliar automação de atribuição de notebook"><img src="./flextrix-flow.png" alt="Flextrix — automação de atribuição de notebook no Flow Designer" loading="lazy"></button><figcaption data-i18n="s5">Flow Designer — Atribuição automática de notebook</figcaption></figure>
-          <figure class="shot"><button type="button" aria-label="Ampliar automação de grupo responsável"><img src="./flextrix-flow-assignment.png" alt="Flextrix — Flow Designer com atribuição automática de grupo por categoria de incidente" loading="lazy"></button><figcaption data-i18n="s6">Flow Designer — Atribuição automática do Assignment Group</figcaption></figure>
-        </div>
-        <div class="gallery-navigation">
-          <button class="gallery-arrow" id="galleryPrev" type="button" aria-label="Tela anterior">‹</button>
-          <div class="gallery-thumbnails" id="galleryThumbnails" aria-label="Escolher tela"></div>
-          <button class="gallery-arrow" id="galleryNext" type="button" aria-label="Próxima tela">›</button>
-          <span class="gallery-count" id="galleryCount" aria-live="polite">1 / 6</span>
-        </div>
+      <div class="portfolio-projects">
+        <article class="card project-feature portfolio-card">
+          <img class="project-cover" src="./flextrix-home.png" alt="" loading="lazy">
+          <div class="project-label" data-i18n="flextrix-label">Service Desk e gestão de ativos</div>
+          <h3>Flextrix — IT Service Desk</h3>
+          <p data-i18n="flextrix-summary">Centraliza solicitações, incidentes, equipamentos e conhecimento em um portal ServiceNow. Automatiza a atribuição de notebooks e o encaminhamento de incidentes.</p>
+          <div class="taglist"><span class="tag">ServiceNow PDI</span><span class="tag">Service Portal</span><span class="tag">Flow Designer</span></div>
+          <div class="actions"><a class="btn primary" href="./projects/flextrix/" data-i18n="explore">Explorar projeto</a></div>
+        </article>
+        <article class="card project-feature portfolio-card">
+          <img class="project-cover" src="./Flextrix-Identity-Acess-Home.png" alt="" loading="lazy">
+          <div class="project-label" data-i18n="flextrix-access-label">Operações de acesso e ServiceNow</div>
+          <h3>Flextrix Identity &amp; Access</h3>
+          <p data-i18n="flextrix-access-summary">Reúne identidades e grupos do Microsoft Entra ID, chamados aprovados do ServiceNow e registros de simulação em um fluxo de operações de acesso.</p>
+          <div class="taglist"><span class="tag">Microsoft Entra ID</span><span class="tag">ServiceNow MID Server</span><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">React</span><span class="tag">TypeScript</span></div>
+          <div class="actions"><a class="btn primary" href="./projects/flextrix-access/" data-i18n="explore">Explorar projeto</a><a class="btn" href="https://github.com/GabrielGrans/flextrix-access-project" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+        </article>
+        <article class="card project-feature portfolio-card">
+          <img class="project-cover" src="./identityops-capa.png" alt="" loading="lazy">
+          <div class="project-label" data-i18n="identityops-label">Monitoramento de IAM e SecOps</div>
+          <h3>IdentityOps Platform</h3>
+          <p data-i18n="identityops-summary">Monitora o Microsoft Entra ID em modo somente leitura e reúne mudanças observadas em grupos de segurança, achados, saúde da sincronização e logs de auditoria.</p>
+          <div class="taglist"><span class="tag">Microsoft Entra ID</span><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span><span class="tag">React</span><span class="tag">TypeScript</span></div>
+          <div class="actions"><a class="btn primary" href="./projects/identityops/" data-i18n="explore">Explorar projeto</a><a class="btn" href="https://github.com/GabrielGrans/identityops-platform" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+        </article>
       </div>
+      <h3 class="corporate-heading" data-i18n="corporate">Projetos corporativos</h3>
       <div class="project-list">
-        <article class="card project-feature identityops-feature"><div class="project-top"><div><div class="project-label" data-i18n="idlabel">Monitoramento de IAM e SecOps</div><h3>IdentityOps Platform</h3></div><span class="tag" data-i18n="idtag">Projeto autoral</span></div><p data-i18n="identityops">Ferramenta de monitoramento de IAM e SecOps com integração de leitura ao Microsoft Entra ID. Compara coletas do diretório para detectar inclusões e remoções de membros em grupos de segurança. O painel mostra tendências, grupos mais afetados, saúde da sincronização e achados de segurança. Os logs registram quando cada mudança foi observada e ajudam a investigar acessos.</p>
-        <div class="gallery-widget" aria-label="Galeria de telas do IdentityOps">
-          <div class="screenshots" id="identityopsScreenshots">
-            <figure class="shot active"><button type="button" aria-label="Ampliar capa do IdentityOps"><img src="./identityops-capa.png" alt="IdentityOps — capa do projeto" loading="lazy"></button><figcaption data-i18n="idShot1">IdentityOps — Capa do projeto</figcaption></figure>
-            <figure class="shot"><button type="button" aria-label="Ampliar tela de login do IdentityOps"><img src="./identityops-login.png" alt="IdentityOps — tela de login" loading="lazy"></button><figcaption data-i18n="idShot2">IdentityOps — Login</figcaption></figure>
-            <figure class="shot"><button type="button" aria-label="Ampliar dashboard de monitoramento IAM e SecOps"><img src="./identityops-monitoring.jpg" alt="IdentityOps — dashboard de IAM e SecOps com dados fictícios" loading="lazy"></button><figcaption data-i18n="idShot3">IdentityOps — Dashboard de IAM e SecOps (dados fictícios)</figcaption></figure>
-          </div>
-          <div class="gallery-navigation">
-            <button class="gallery-arrow" id="identityopsPrev" type="button" aria-label="Tela anterior">‹</button>
-            <div class="gallery-thumbnails" id="identityopsThumbnails" aria-label="Escolher tela"></div>
-            <button class="gallery-arrow" id="identityopsNext" type="button" aria-label="Próxima tela">›</button>
-            <span class="gallery-count" id="identityopsCount" aria-live="polite">1 / 3</span>
-          </div>
-        </div>
-<div class="taglist"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">SQLAlchemy</span><span class="tag">PostgreSQL</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">RBAC</span><span class="tag">JWT</span></div><div class="actions"><a class="btn primary" href="https://github.com/GabrielGrans/identityops-platform" target="_blank" rel="noreferrer" data-i18n="idlink">Ver projeto no GitHub ↗</a></div></article>
         <article class="card"><h3 data-i18n="pc1h">Estruturação do ambiente de TI — Filial São Paulo</h3><p data-i18n="pc1">Modernização da infraestrutura de TI com implantação do Ubiquiti Dream Machine Pro, segmentação de rede por VLANs (dados, voz e câmeras), mapeamento de 21 pontos de rede e reorganização do CPD. Padronização de mais de 300 dispositivos via Microsoft Intune, migração para telefonia IP/PABX e implementação de melhorias em segurança, conectividade e gestão do ambiente corporativo.</p><div class="taglist"><span class="tag">Ubiquiti</span><span class="tag">VLAN</span><span class="tag">Intune</span><span class="tag">IP/PABX</span></div></article>
         <article class="card"><h3 data-i18n="pc2h">Segurança de endpoints e acessos</h3><p data-i18n="pc2">Geoblock e controle de sessão com Acesso Condicional, restrição de PowerShell para usuários comuns e um script .ps1 que bloqueia launchers de jogos (Steam, EA, Epic, Rockstar) nas máquinas ingressadas no Entra ID.</p><div class="taglist"><span class="tag">Entra ID</span><span class="tag">Conditional Access</span><span class="tag">PowerShell</span><span class="tag">Defender</span></div></article>
       </div>
@@ -148,251 +150,98 @@
 
     <section id="contato"><div class="wrap"><div class="contact"><div><div class="eyebrow" data-i18n="eb6">06 / Vamos conversar</div><h2 data-i18n="h6t">Entre em contato.</h2><p data-i18n="ct">Aberto a oportunidades e conexões na área de Tecnologia da Informação.</p></div><div class="contact-links"><a class="btn primary" data-i18n="mail" href="mailto:gabrielgsti@outlook.com">Enviar e-mail ↗</a><a class="btn" href="https://www.linkedin.com/in/gabrielgrans/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a class="btn" href="https://github.com/gabrielgrans" target="_blank" rel="noreferrer">GitHub ↗</a></div></div><footer class="footer"><span>© 2026 Gabriel Santos Grans</span><span data-i18n="foot">Desenvolvido com foco em tecnologia, automação e soluções.</span></footer></div></section>
   </main>
-  <div class="lightbox" id="flextrixLightbox" role="dialog" aria-modal="true" aria-label="Visualização das imagens da Flextrix" aria-hidden="true">
-    <div class="lightbox-panel">
-      <div class="lightbox-toolbar"><div><div class="lightbox-caption" id="lightboxCaption"></div><div class="lightbox-counter" id="lightboxCounter"></div></div><div class="lightbox-actions"><button class="lightbox-control" id="lightboxPrev" type="button" aria-label="Imagem anterior">‹</button><button class="lightbox-control" id="lightboxNext" type="button" aria-label="Próxima imagem">›</button><button class="lightbox-control zoom-action" id="lightboxZoomOut" type="button" aria-label="Reduzir zoom" title="Reduzir zoom">−</button><span class="lightbox-zoom-level" id="lightboxZoomLevel" aria-live="polite">100%</span><button class="lightbox-control zoom-action" id="lightboxZoomIn" type="button" aria-label="Ampliar zoom" title="Ampliar zoom">+</button><button class="lightbox-control zoom-action" id="lightboxFit" type="button" aria-label="Ajustar à largura" title="Ajustar à largura">↔</button><button class="lightbox-control" id="lightboxClose" type="button" aria-label="Fechar visualização">×</button></div></div>
-      <div class="lightbox-image-wrap" id="lightboxScrollArea" tabindex="0" aria-label="Imagem completa com rolagem"><img class="lightbox-image" id="lightboxImage" src="" alt=""></div>
-      <div class="lightbox-scroll-hint" id="lightboxScrollHint" role="status" aria-live="polite"><span aria-hidden="true">↓</span><span id="lightboxScrollHintText">Role para baixo para explorar a página completa</span></div>
-    </div>
-  </div>
 <script>
+
 const menuBtn=document.getElementById('menuBtn');
 const nav=document.getElementById('navlinks');
 menuBtn.addEventListener('click',()=>nav.classList.toggle('open'));
 nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
 
-/* ===== GALERIAS FLEXTRIX E IDENTITYOPS ===== */
-const lightbox=document.getElementById('flextrixLightbox');
-const lightboxImage=document.getElementById('lightboxImage');
-const lightboxCaption=document.getElementById('lightboxCaption');
-const lightboxCounter=document.getElementById('lightboxCounter');
-const lightboxScrollArea=document.getElementById('lightboxScrollArea');
-const lightboxZoomLevel=document.getElementById('lightboxZoomLevel');
-const lightboxScrollHint=document.getElementById('lightboxScrollHint');
-const lightboxScrollHintText=document.getElementById('lightboxScrollHintText');
-let hintDismissed=false, zoomScale=1, zoomMode='fit', lastFocusedElement=null, openGallery=null;
-
-function refreshScrollHint(){
-  const scrollable=lightboxScrollArea.scrollHeight>lightboxScrollArea.clientHeight+20;
-  lightboxScrollHint.classList.toggle('visible',lightbox.classList.contains('open')&&scrollable&&!hintDismissed);
-}
-function resetScrollHint(){hintDismissed=false;requestAnimationFrame(refreshScrollHint);}
-lightboxScrollArea.addEventListener('scroll',()=>{
-  if(lightboxScrollArea.scrollTop>12){hintDismissed=true;refreshScrollHint();}
-},{passive:true});
-function setZoom(scale,mode){
-  const natural=lightboxImage.naturalWidth;
-  if(!natural)return;
-  zoomScale=Math.max(.2,Math.min(3,scale));
-  zoomMode=mode||'manual';
-  lightboxImage.style.width=Math.round(natural*zoomScale)+'px';
-  lightboxImage.style.height='auto';
-  lightboxZoomLevel.textContent=Math.round(zoomScale*100)+'%';
-  requestAnimationFrame(refreshScrollHint);
-}
-function fitImage(){
-  if(!lightboxImage.naturalWidth)return;
-  setZoom(Math.min(1,Math.max(.2,(lightboxScrollArea.clientWidth-4)/lightboxImage.naturalWidth)),'fit');
-  lightboxScrollArea.scrollTop=0;
-  lightboxScrollArea.scrollLeft=0;
-  requestAnimationFrame(refreshScrollHint);
-}
-lightboxImage.addEventListener('load',()=>{if(lightbox.classList.contains('open'))fitImage();});
-document.getElementById('lightboxZoomIn').addEventListener('click',()=>setZoom(zoomScale*1.25));
-document.getElementById('lightboxZoomOut').addEventListener('click',()=>setZoom(zoomScale/1.25));
-document.getElementById('lightboxFit').addEventListener('click',fitImage);
-window.addEventListener('resize',()=>{if(lightbox.classList.contains('open')&&zoomMode==='fit')fitImage();});
-
-function makeGallery(slidesId,thumbsId,countId,prevId,nextId){
-  const slides=[...document.querySelectorAll('#'+slidesId+' .shot')];
-  const thumbsContainer=document.getElementById(thumbsId);
-  const count=document.getElementById(countId);
-  let active=0;
-  const gallery={slides,thumbs:[],get active(){return active;},setSlide,refreshLabels};
-  slides.forEach((slide,index)=>{
-    const img=slide.querySelector('img');
-    const thumb=document.createElement('button');
-    thumb.type='button';
-    thumb.className='gallery-thumb';
-    thumb.setAttribute('aria-pressed','false');
-    const thumbImage=document.createElement('img');
-    thumbImage.src=img.getAttribute('src');
-    thumbImage.alt='';
-    thumbImage.loading='lazy';
-    thumb.appendChild(thumbImage);
-    thumb.addEventListener('click',()=>setSlide(index));
-    thumbsContainer.appendChild(thumb);
-    gallery.thumbs.push(thumb);
-    slide.querySelector('button').addEventListener('click',()=>openLightbox(gallery,index));
-  });
-  function setSlide(index){
-    active=(index+slides.length)%slides.length;
-    slides.forEach((slide,i)=>slide.classList.toggle('active',i===active));
-    gallery.thumbs.forEach((thumb,i)=>{
-      thumb.classList.toggle('active',i===active);
-      thumb.setAttribute('aria-pressed',String(i===active));
-    });
-    count.textContent=`${active+1} / ${slides.length}`;
-  }
-  function refreshLabels(){
-    const en=document.documentElement.lang==='en';
-    gallery.thumbs.forEach((thumb,i)=>{
-      const caption=slides[i].querySelector('figcaption').textContent.trim();
-      thumb.setAttribute('aria-label',(en?'Show ':'Mostrar ')+caption);
-    });
-  }
-  document.getElementById(prevId).addEventListener('click',()=>setSlide(active-1));
-  document.getElementById(nextId).addEventListener('click',()=>setSlide(active+1));
-  setSlide(0);
-  refreshLabels();
-  return gallery;
-}
-const galleries=[
-  makeGallery('flextrixScreenshots','galleryThumbnails','galleryCount','galleryPrev','galleryNext'),
-  makeGallery('identityopsScreenshots','identityopsThumbnails','identityopsCount','identityopsPrev','identityopsNext')
-];
-function showScreenshot(index){
-  if(!openGallery)return;
-  openGallery.setSlide(index);
-  const slide=openGallery.slides[openGallery.active];
-  const source=slide.querySelector('img');
-  lightboxImage.src=source.currentSrc||source.src;
-  lightboxImage.alt=source.alt;
-  lightboxCaption.textContent=slide.querySelector('figcaption').textContent.trim();
-  lightboxCounter.textContent=`${openGallery.active+1} / ${openGallery.slides.length}`;
-  lightboxScrollArea.scrollTop=0;
-  lightboxScrollArea.scrollLeft=0;
-  if(lightboxImage.complete&&lightboxImage.naturalWidth)fitImage();
-  resetScrollHint();
-}
-function openLightbox(gallery,index){
-  lastFocusedElement=document.activeElement;
-  openGallery=gallery;
-  showScreenshot(index);
-  lightbox.classList.add('open');
-  lightbox.setAttribute('aria-hidden','false');
-  document.body.style.overflow='hidden';
-  document.getElementById('lightboxClose').focus();
-  if(lightboxImage.complete&&lightboxImage.naturalWidth)fitImage();
-  resetScrollHint();
-}
-function closeLightbox(){
-  lightbox.classList.remove('open');
-  lightbox.setAttribute('aria-hidden','true');
-  document.body.style.overflow='';
-  lightboxImage.src='';
-  lightboxScrollHint.classList.remove('visible');
-  openGallery=null;
-  if(lastFocusedElement)lastFocusedElement.focus();
-}
-document.getElementById('lightboxPrev').addEventListener('click',()=>showScreenshot(openGallery.active-1));
-document.getElementById('lightboxNext').addEventListener('click',()=>showScreenshot(openGallery.active+1));
-document.getElementById('lightboxClose').addEventListener('click',closeLightbox);
-lightbox.addEventListener('click',event=>{if(event.target===lightbox)closeLightbox();});
-document.addEventListener('keydown',event=>{
-  if(!lightbox.classList.contains('open')||!openGallery)return;
-  if(event.key==='Escape')closeLightbox();
-  if(event.key==='ArrowLeft')showScreenshot(openGallery.active-1);
-  if(event.key==='ArrowRight')showScreenshot(openGallery.active+1);
-  if(event.key==='+'||event.key==='=')setZoom(zoomScale*1.25);
-  if(event.key==='-')setZoom(zoomScale/1.25);
-});
-
-/* ===== IDIOMAS =====
-   PT-BR: o texto fica direto no HTML (cada item tem data-i18n="chave").
-   EN: o texto em inglês de cada chave fica no objeto EN abaixo.
-   Para alterar um texto, mude os DOIS: o PT no HTML e o EN aqui com a mesma chave. */
 const EN = {
- "nav1": "About",
- "nav2": "Skills",
- "nav3": "Experience",
- "nav4": "Projects",
- "nav5": "Education",
- "nav6": "Contact",
- "heroEyebrow": "Professional portfolio · Information Technology",
- "role": "ServiceNow Developer | Infrastructure | IAM | SecOps",
- "heroIntro": "5+ years in IT across support, infrastructure and corporate security. Currently building solutions on ServiceNow and software projects with Python.",
- "btnProjects": "Explore projects",
- "eb1": "01 / About",
- "h1t": "About me",
- "ab1": "I build solutions on the ServiceNow platform: portals and widgets, custom tables, Flow Designer automations and REST integrations. I hold the CSA certification and am studying for the CAD (Certified Application Developer).",
- "abh2": "Infrastructure",
- "ab2": "Experience with Microsoft 365, Intune, networking, servers and IP telephony. I was responsible for the IT environment of a São Paulo branch, with data, voice and camera VLANs, 300+ standardized machines and a migration to IP/PABX.",
- "abh3": "IAM &amp; SecOps",
- "ab3": "<strong>Identity:</strong> Entra ID and Conditional Access (with geoblocking), MFA, least-privilege RBAC and user lifecycle management. <strong>SecOps:</strong> incident response in Defender, log and SIEM analysis, Fortinet and Ubiquiti, and workstation/server hardening.",
- "eb2": "02 / Technical stack",
- "h2t": "Skills",
- "sk2h": "Infrastructure &amp; Cloud",
- "sk2": "Microsoft 365 · Exchange · Teams · SharePoint · Intune · Azure · Windows · Servers · VLANs · VPN · Corporate Wi-Fi · IP telephony/PABX · Troubleshooting",
- "sk3h": "IAM &amp; SecOps",
- "sk3": "Entra ID · Conditional Access · MFA · RBAC · User lifecycle · Defender for Endpoint · Incident response · Logs and SIEM · Fortinet · Hardening",
- "sk4h": "Python &amp; Software Development",
- "sk4": "Python · FastAPI · SQLAlchemy · PostgreSQL · Pydantic · Pytest · React · TypeScript · Vite · REST APIs",
- "sk5h": "Development &amp; Automation",
- "sk5": "JavaScript · PowerShell · Glide APIs · REST integrations · Audit and automation scripts",
- "eb3": "03 / Career",
- "h3t": "Professional experience",
- "j1t": "Mid-level Infrastructure Analyst",
- "j1": "Administration of Microsoft 365 environments, including Admin Center, Exchange, Teams, and SharePoint.<br>Device and policy management through Microsoft Intune, including asset inventory and enforcement of compliance policies.<br>Security and automation using Microsoft Defender for Endpoint and scripts to audit and block unapproved applications.<br>Administration and improvement of local network infrastructure, including VLAN segmentation for data, Wi-Fi, and CCTV.<br>Configuration, monitoring, and management of corporate IP telephony and PBX systems.",
- "j2t": "Junior Analyst",
- "j2": "Employee support, including opening and tracking tickets, assisting with internal access, and resolving incidents.<br>Data center monitoring, including tracking server and infrastructure performance.<br>Identifying and resolving computer, system, and access issues.<br>Participation in installations and expansion planning for telecommunications, network, data, and server infrastructure.",
- "prevh": "Previous experience",
- "prev": "HexalT (May/2023 — Aug/2023), Teleperformance (Feb/2021 — Feb/2022) and Sitel Group (Mar/2019 — Jan/2020), in technical support and IT infrastructure.",
- "eb4": "04 / Hands-on experience",
- "h4t": "Projects",
- "pl": "Featured project · ServiceNow PDI",
- "idlabel": "IAM and SecOps monitoring",
- "idtag": "Personal project",
- "identityops": "An IAM and SecOps monitoring tool with read-only Microsoft Entra ID integration. It compares directory snapshots to detect additions and removals in security groups. The dashboard shows trends, affected groups, synchronization health, and security findings. Audit logs track when changes were observed and support access investigations.",
- "idlink": "View project on GitHub ↗",
- "ptag": "Portfolio project",
- "fx": "IT operations platform built in a ServiceNow Personal Developer Instance, featuring a corporate portal with custom widgets, IT requests, equipment and inventory management, a Knowledge Base, and an incident management application with a custom table created in App Engine Studio. The Operations Center includes an Executive Dashboard with incidents by priority, category and status, plus SLA monitoring. In Flow Designer, I built automations to assign available notebooks to requesters, update asset records, and automatically route new incidents to the responsible assignment group based on category (Hardware, Network or Access), with a fallback path for other categories.",
- "s1": "Portal home page and Knowledge Base",
- "s2": "IT requests",
- "s3": "Asset management",
- "s4": "Operations Center — Executive Dashboard",
- "coverTitle": "Flextrix | Corporate IT Service Desk platform",
- "coverDescription": "An overview of the solution built on ServiceNow, bringing together IT service management, asset management and process automation.",
- "s5": "Flow Designer — Automatic notebook assignment",
-  "s6": "Flow Designer — Automatic assignment group routing",
- "idShot1": "IdentityOps — Project cover",
- "idShot2": "IdentityOps — Login",
- "idShot3": "IdentityOps — IAM & SecOps Dashboard",
- "pc1h": "IT environment build-out — São Paulo branch",
- "pc1": "Modernized the IT infrastructure by deploying Ubiquiti Dream Machine Pro, segmenting data, voice and camera networks into VLANs, mapping 21 network points and reorganizing the server room. Standardized more than 300 devices with Microsoft Intune, migrated to IP/PABX telephony and improved security, connectivity and corporate IT management.",
- "pc2h": "Endpoint and access security",
- "pc2": "Geoblocking and session control with Conditional Access, PowerShell restriction for standard users, and a .ps1 script that blocks game launchers (Steam, EA, Epic, Rockstar) on Entra ID–joined machines.",
- "eb5": "05 / Education",
- "h5t": "Education and certifications",
- "el": "Academic background",
- "deg": "Technology Degree in Systems Analysis and Development",
- "inst": "Nove de Julho University — UNINOVE · Mar/2019 — Sep/2021",
- "cl": "Additional training",
- "badge1": "ServiceNow Certified System Administrator (CSA)",
- "badge2": "ServiceNow Micro-Certification — Flow Designer",
- "badge3": "ServiceNow Micro-Certification — Automated Test Framework",
- "badge4": "ServiceNow Delivery Accreditation — Platform Security and Identity",
- "badge5": "Microsoft Azure Fundamentals (AZ-900)",
- "badge6": "Security, Compliance and Identity Fundamentals (SC-900)",
- "badge7": "Fortinet FortiGate 7.6 Operator",
- "cad": "ServiceNow Certified Application Developer (CAD) — in preparation.",
- "badge8": "Oracle Cloud Infrastructure Foundations Associate",
- "badge9": "Oracle AI Foundations Associate",
- "badge10": "Oracle Data Platform Foundations Associate",
- "badge11": "Cisco — Introduction to Cybersecurity",
- "badge12": "Cisco — Junior Cybersecurity Analyst",
- "badge13": "Cisco — Network Defense",
- "badge14": "Fortinet Certified Associate Cybersecurity",
- "badge15": "Fortinet Certified Fundamentals Cybersecurity",
- "badge16": "Certified Red Team Operations Management (CRTOM)",
- "badge17": "Certified Cybersecurity Educator Professional (CCEP)",
- "eb6": "06 / Let’s talk",
- "h6t": "Get in touch.",
- "ct": "Open to opportunities and connections in Information Technology.",
- "mail": "Send an email ↗",
- "foot": "Built with a focus on technology, automation and solutions.",
- "bt": "Certifications",
- "more": "View all certifications (+10)"
+  "ab1": "I build solutions on the ServiceNow platform: portals and widgets, custom tables, Flow Designer automations and REST integrations. I hold the CSA certification and am studying for the CAD (Certified Application Developer).",
+  "ab2": "Experience with Microsoft 365, Intune, networking, servers and IP telephony. I was responsible for the IT environment of a São Paulo branch, with data, voice and camera VLANs, 300+ standardized machines and a migration to IP/PABX.",
+  "ab3": "<strong>Identity:</strong> Entra ID and Conditional Access (with geoblocking), MFA, least-privilege RBAC and user lifecycle management. <strong>SecOps:</strong> incident response in Defender, log and SIEM analysis, Fortinet and Ubiquiti, and workstation/server hardening.",
+  "abh2": "Infrastructure",
+  "abh3": "IAM &amp; SecOps",
+  "badge1": "ServiceNow Certified System Administrator (CSA)",
+  "badge10": "Oracle Data Platform Foundations Associate",
+  "badge11": "Cisco — Introduction to Cybersecurity",
+  "badge12": "Cisco — Junior Cybersecurity Analyst",
+  "badge13": "Cisco — Network Defense",
+  "badge14": "Fortinet Certified Associate Cybersecurity",
+  "badge15": "Fortinet Certified Fundamentals Cybersecurity",
+  "badge16": "Certified Red Team Operations Management (CRTOM)",
+  "badge17": "Certified Cybersecurity Educator Professional (CCEP)",
+  "badge2": "ServiceNow Micro-Certification — Flow Designer",
+  "badge3": "ServiceNow Micro-Certification — Automated Test Framework",
+  "badge4": "ServiceNow Delivery Accreditation — Platform Security and Identity",
+  "badge5": "Microsoft Azure Fundamentals (AZ-900)",
+  "badge6": "Security, Compliance and Identity Fundamentals (SC-900)",
+  "badge7": "Fortinet FortiGate 7.6 Operator",
+  "badge8": "Oracle Cloud Infrastructure Foundations Associate",
+  "badge9": "Oracle AI Foundations Associate",
+  "bt": "Certifications",
+  "btnProjects": "Explore projects",
+  "c1": "Cisco — Networking Basics",
+  "c3": "FIAP — IT Infrastructure Management",
+  "cad": "ServiceNow Certified Application Developer (CAD) — in preparation.",
+  "cl": "Additional training",
+  "corporate": "Corporate projects",
+  "ct": "Open to opportunities and connections in Information Technology.",
+  "d1": "Feb/2026 — Oct/2026",
+  "d2": "Aug/2023 — Feb/2026",
+  "deg": "Technology Degree in Systems Analysis and Development",
+  "eb1": "01 / About",
+  "eb2": "02 / Technical stack",
+  "eb3": "03 / Career",
+  "eb4": "04 / Hands-on experience",
+  "eb5": "05 / Education",
+  "eb6": "06 / Let’s talk",
+  "el": "Academic background",
+  "explore": "Explore project",
+  "flextrix-access-label": "Access operations and ServiceNow",
+  "flextrix-access-summary": "Brings Microsoft Entra ID identities and groups, approved ServiceNow requests and simulation records into an access operations workflow.",
+  "flextrix-label": "Service Desk and asset management",
+  "flextrix-summary": "Centralizes IT requests, incidents, equipment and knowledge in a ServiceNow portal. Automates notebook assignment and incident routing.",
+  "foot": "Built with a focus on technology, automation and solutions.",
+  "h1t": "About me",
+  "h2t": "Skills",
+  "h3t": "Professional experience",
+  "h4t": "Projects",
+  "h5t": "Education and certifications",
+  "h6t": "Get in touch.",
+  "heroEyebrow": "Professional portfolio · Information Technology",
+  "heroIntro": "5+ years in IT across support, infrastructure and corporate security. Currently building solutions on ServiceNow and software projects with Python.",
+  "identityops-label": "IAM and SecOps monitoring",
+  "identityops-summary": "Monitors Microsoft Entra ID in read-only mode and surfaces observed security group changes, findings, sync health and audit logs.",
+  "inst": "Nove de Julho University — UNINOVE · Mar/2019 — Sep/2021",
+  "j1": "Administration of Microsoft 365 environments, including Admin Center, Exchange, Teams, and SharePoint.<br>Device and policy management through Microsoft Intune, including asset inventory and enforcement of compliance policies.<br>Security and automation using Microsoft Defender for Endpoint and scripts to audit and block unapproved applications.<br>Administration and improvement of local network infrastructure, including VLAN segmentation for data, Wi-Fi, and CCTV.<br>Configuration, monitoring, and management of corporate IP telephony and PBX systems.",
+  "j1t": "Mid-level Infrastructure Analyst",
+  "j2": "Employee support, including opening and tracking tickets, assisting with internal access, and resolving incidents.<br>Data center monitoring, including tracking server and infrastructure performance.<br>Identifying and resolving computer, system, and access issues.<br>Participation in installations and expansion planning for telecommunications, network, data, and server infrastructure.",
+  "j2t": "Junior Analyst",
+  "mail": "Send an email ↗",
+  "more": "View all certifications (+10)",
+  "nav1": "About",
+  "nav2": "Skills",
+  "nav3": "Experience",
+  "nav4": "Projects",
+  "nav5": "Education",
+  "nav6": "Contact",
+  "pc1": "Modernized the IT infrastructure by deploying Ubiquiti Dream Machine Pro, segmenting data, voice and camera networks into VLANs, mapping 21 network points and reorganizing the server room. Standardized more than 300 devices with Microsoft Intune, migrated to IP/PABX telephony and improved security, connectivity and corporate IT management.",
+  "pc1h": "IT environment build-out — São Paulo branch",
+  "pc2": "Geoblocking and session control with Conditional Access, PowerShell restriction for standard users, and a .ps1 script that blocks game launchers (Steam, EA, Epic, Rockstar) on Entra ID–joined machines.",
+  "pc2h": "Endpoint and access security",
+  "prev": "HexalT (May/2023 — Aug/2023), Teleperformance (Feb/2021 — Feb/2022) and Sitel Group (Mar/2019 — Jan/2020), in technical support and IT infrastructure.",
+  "prevh": "Previous experience",
+  "role": "ServiceNow Developer | Infrastructure | IAM | SecOps",
+  "sk2": "Microsoft 365 · Exchange · Teams · SharePoint · Intune · Azure · Windows · Servers · VLANs · VPN · Corporate Wi-Fi · IP telephony/PABX · Troubleshooting",
+  "sk2h": "Infrastructure &amp; Cloud",
+  "sk3": "Entra ID · Conditional Access · MFA · RBAC · User lifecycle · Defender for Endpoint · Incident response · Logs and SIEM · Fortinet · Hardening",
+  "sk3h": "IAM &amp; SecOps",
+  "sk4": "Python · FastAPI · SQLAlchemy · PostgreSQL · Pydantic · Pytest · React · TypeScript · Vite · REST APIs",
+  "sk4h": "Python &amp; Software Development",
+  "sk5": "JavaScript · PowerShell · Glide APIs · REST integrations · Audit and automation scripts",
+  "sk5h": "Development &amp; Automation"
 };
 const META = {
   pt:{title:'Gabriel Santos Grans | Portfólio',desc:'Portfólio profissional de Gabriel Santos Grans — ServiceNow, Python, desenvolvimento de software, infraestrutura, cloud, IAM e SecOps.'},
@@ -406,11 +255,6 @@ function setLanguage(lang){
     const v=en?EN[el.dataset.i18n]:el.dataset.pt;
     if(v!==undefined) el.innerHTML=v;
   });
-  galleries.forEach(gallery=>gallery.refreshLabels());
-  if(lightbox.classList.contains('open')){
-    if(openGallery)lightboxCaption.textContent=openGallery.slides[openGallery.active].querySelector('figcaption').textContent.trim();
-  }
-  lightboxScrollHintText.textContent=en?'Scroll down to explore the full page':'Role para baixo para explorar a página completa';
   document.documentElement.lang=en?'en':'pt-BR';
   document.title=META[lang].title;
   document.querySelector('meta[name="description"]').content=META[lang].desc;
